@@ -2,7 +2,7 @@
 layout: post
 title: Introduction to Machine Learning
 categories: []
-tags: [machine learning, andrew ng, featured]
+tags: [machine learning, andrew ng]
 cover: "/assets/images/machine-learning-book.jpg"
 cover_source: "https://develandoo.com/wp-content/uploads/2017/10/machine-learning.jpg"
 description: Machine learning is a field of computer science that gives computers the ability to learn without being explicitly programmed
