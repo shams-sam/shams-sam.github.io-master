@@ -60,4 +60,7 @@ $$ ab = a'b' + (a's + b'r +rsd)d $$
 
 Generally, integers are represented geometrically using a number line, where a segment of unit length is chosen and multiplied in either directions to represent negative or positive integers.
 
+![Geometric Representation of Congruence](/assets/2017-12-20-congruence-and-modulo/fig-1-geometric-representation.svg?raw=true)
+
 But, when an integer modulo \\(d\\) is considered, the magnitude is insignificant as long as the behavior on division by \\(d\\) is same (i.e. they leave the same remainder on division by \\(d\\)). This is geometrically represented using a circle divided into d equal parts. This is because any integer divided by \\(d\\) leaves as remainder one of the \\(d\\) numbers \\(0, 1, \cdots, d-1\\) which are placed at equal distances on the circumference of the circle. Every integer is congruent modulo \\(d\\) to one of these numbers and hence can be represented by one of these points. (**Two numbers are congruent if they occur at the same point the circle.**)
+
