@@ -88,6 +88,6 @@ adder = a+b
 sess = tf.Session()
 sess.run(adder, {a: 3, b: 4})
 
-tf.summary.FileWriter('./', sess.graph)
+tf.summary.FileWriter('/path/to/save', sess.graph)
 ```
 ![TensorFlow Placeholder Graph](/assets/2018-01-02-understanding-tensorflow/fig-2-placeholder-graph.png?raw=true)
