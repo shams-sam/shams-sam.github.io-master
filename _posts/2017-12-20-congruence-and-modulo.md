@@ -130,3 +130,7 @@ But,
 $$ a \cdot b = d \equiv 0 \pmod d$$
 
 * **Law of Cancellation**: With respect to a prime modulus, if \\(ab \equiv ac\\) and \\(a \cancel{\equiv} 0\\), then \\(b \equiv c\\).
+
+## REFERENCES:
+
+<small>[What is Mathematics? Second Edition - Chapter I: Natural Numbers](https://drive.google.com/open?id=0BxedRvE84NXkSy1sdzJKNDlHZGM){:target="_blank"}</small>
