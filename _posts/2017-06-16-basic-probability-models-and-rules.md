@@ -2,7 +2,7 @@
 layout: post
 title: Basic Probability Concepts
 categories: []
-tags: [mathematics, probability, featured]
+tags: [mathematics, probability]
 description: Probability is a number between 0 and 1, where, 0 indicates impossibility and 1 indicates certainty.
 cover: "/assets/images/monty-hall-problem.jpg"
 cover_source: "https://sc5.io/wp-content/uploads/2016/04/montyhall_16_9_still.jpg"
