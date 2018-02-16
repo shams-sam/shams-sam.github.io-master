@@ -5,6 +5,12 @@
   <!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+  {% if page.noindex %}
+  <!-- implement noindex to prevent search engine crawl: https://support.google.com/webmasters/answer/93710?hl=en -->
+  <meta name="robots" content="noindex">
+  <meta name="googlebot" content="noindex">
+  {% endif %}
+
   <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
 
