@@ -9,12 +9,12 @@ exclude:
   - vendor
   - init_server.sh
   - init_dev_server.sh
-  - _drafts
 
 # Dependencies
 markdown:         kramdown
 highlighter:      rouge # changed from `pygments` as github says so
 version: 0.1
+show_drafts: false
 
 # Permalinks
 permalink: pretty
