@@ -10,3 +10,4 @@
 10. SVM
 11. AdaBoost
 12. Deaggregation of time series data
+13. http://lamda.nju.edu.cn/weixs/project/CNNTricks/CNNTricks.html
