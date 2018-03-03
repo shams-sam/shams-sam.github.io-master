@@ -4,8 +4,8 @@ title: "Images, Noise and Filters"
 categories: []
 tags: [machine learning, computer vision, image processing, udacity]
 description: Though images are generally associated with vision and perception, it can also be understood as a function in the field of computer science.
-cover: "/assets/images/computer-vision.jpg"
-cover_source: "https://cdn.nanalyze.com/uploads/2016/04/Computer-Vision-Image-Understanding-teaser.jpg"
+cover: "/assets/images/noise.jpg"
+cover_source: "https://ckysx1337.deviantart.com/art/Fractal-Noise-571494604"
 comments: true
 mathjax: true
 ---
