@@ -170,6 +170,6 @@ $$
 
 ## REFERENCES:
 
-<small>[Discrete Random Variables](https://www.hackerearth.com/practice/machine-learning/prerequisites-of-machine-learning/discrete-random-variables/tutorial/){:target="_blank"}</small>
-<small>[Expectation and Variance](https://revisionmaths.com/advanced-level-maths-revision/statistics/expectation-and-variance){:target="_blank"}</small>
+<small>[Discrete Random Variables](https://www.hackerearth.com/practice/machine-learning/prerequisites-of-machine-learning/discrete-random-variables/tutorial/){:target="_blank"}</small><br>
+<small>[Expectation and Variance](https://revisionmaths.com/advanced-level-maths-revision/statistics/expectation-and-variance){:target="_blank"}</small><br>
 <small>[Variance](https://en.wikipedia.org/wiki/Variance){:target="_blank"}</small>

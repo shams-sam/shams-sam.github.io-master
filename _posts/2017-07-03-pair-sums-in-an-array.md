@@ -71,5 +71,5 @@ while (l<h):
 
 ## REFERENCES:
 
-<small>[500 Data Structures and Algorithms practice problems and their solutions](https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-practice-problems-and-their-solutions){:target="_blank"}</small>
+<small>[500 Data Structures and Algorithms practice problems and their solutions](https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-practice-problems-and-their-solutions){:target="_blank"}</small><br>
 <small>[Find pair with given sum in the array](http://www.techiedelight.com/find-pair-with-given-sum-array/){:target="_blank"}</small>

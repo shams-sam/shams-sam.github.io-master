@@ -21,4 +21,3 @@ Discourse Analysis includes:
 * Relation between **discourse and power**.
 * Relation between **discourse and interaction**.
 * Relation between **discourse and cognition and memory**.
-

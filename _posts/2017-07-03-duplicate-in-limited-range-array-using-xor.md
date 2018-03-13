@@ -49,5 +49,5 @@ print(xor)
 
 ## REFERENCES:
 
-<small>[500 Data Structures and Algorithms practice problems and their solutions](https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-practice-problems-and-their-solutions){:target="_blank"}</small>
+<small>[500 Data Structures and Algorithms practice problems and their solutions](https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-practice-problems-and-their-solutions){:target="_blank"}</small><br>
 <small>[Find a duplicate element in a limited range array](http://www.techiedelight.com/find-duplicate-element-limited-range-array/){:target="_blank"}</small>

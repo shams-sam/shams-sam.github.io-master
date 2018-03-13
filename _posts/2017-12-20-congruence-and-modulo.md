@@ -116,7 +116,9 @@ Using a similar approach one can deduce the divisibility rule for any other inte
 
 ### Other Properties
 
-* \\(ab\equiv 0 \pmod d\\) only if either \\(a\equiv 0 \pmod d\\) or \\(b\equiv 0 \pmod d\\). Property only holds if \\(d\\) is a prime number. If \\(d\\) was a composite, there exist numbers \\(a \lt d\\) and \\(b \lt d\\), such that,
+* $$ab\equiv 0 \pmod d \tag{9} \label{9}$$ 
+
+only if either \\(a\equiv 0 \pmod d\\) or \\(b\equiv 0 \pmod d\\). Property only holds if \\(d\\) is a prime number. If \\(d\\) was a composite, there exist numbers \\(a \lt d\\) and \\(b \lt d\\), such that,
 
 $$d = a\cdot b$$
 
@@ -130,6 +132,38 @@ But,
 $$ a \cdot b = d \equiv 0 \pmod d$$
 
 * **Law of Cancellation**: With respect to a prime modulus, if \\(ab \equiv ac\\) and \\(a \cancel{\equiv} 0\\), then \\(b \equiv c\\).
+
+### Fermat's Theorem
+
+If \\(p\\) is any prime which does not divide the integer \\(a\\), then 
+
+$$a^{p-1} \equiv 1 \pmod p \tag{10} \label{10}$$
+
+Consider multiples of \\(a\\),
+
+$$m_1 = a, m_2 = 2a, m_3 = 3a, \cdots m_{p-1} = (p-1)a \tag{11} \label{11}$$
+
+Let two of these numbers, \\(m_r\\) and \\(m_s\\) be congruent modulo \\(p\\), then,
+
+\\(p\\) must be a factor of \\(m_r - m_s = (r-s)a\\) for some \\(r, s\\) such that \\(1 \leq r \lt s \leq (p-1)\\).
+
+But since it is assumed that \\(p\\) does not divide \\(a\\) and also \\(p\\) cannot be factor of \\(r-s\\) since it is less than \\(p\\).
+
+From \eqref{9}, it can be concluded that two numbers from \eqref{11} cannot be congruent modulo \\(p\\).
+
+So each of the numbers in \eqref{11} must be congruent to \\(1, 2, 3, \cdots , (p-1)\\) in some arrangement. So,
+
+$$m_1 m_2 \cdots m_{p-1} = 1 \cdot 2 \cdots (p-1) a^{p-1} \equiv 1 \cdot 2 \cdots (p-1) \pmod p \tag{12} \label{12}$$
+
+For simplicity, let \\(K = 1 \cdot 2 \cdots (p-1)\\), then
+
+$$K(a^{p-1}-1) \equiv 0 \pmod p \tag{13} \label{13}$$
+
+where \\(K\\) is not divisible by \\(p\\), since none of its factors are, hence from \eqref{9}, \\((a^{p-1} - 1)\\) must be divisible by \\(p\\), i.e.
+
+$$a^{p-1} -1 \equiv 0 \pmod p \tag{14} \label{14}$$
+
+Hence, proving \eqref{10}.
 
 ## REFERENCES:
 

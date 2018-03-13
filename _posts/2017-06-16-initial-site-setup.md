@@ -37,5 +37,5 @@ Additions:
 
 ## REFERENCES:
 
-<small>[Github Pages - Wikipedia](https://en.wikipedia.org/wiki/GitHub_Pages){:target="_blank"}</small>
+<small>[Github Pages - Wikipedia](https://en.wikipedia.org/wiki/GitHub_Pages){:target="_blank"}</small><br>
 <small>[Using Jekyll, Poole and Lanyon to setup my github user page](http://patricksteadman.ca/2014/08/04/lanyonsetup/){:target="_blank"}</small>

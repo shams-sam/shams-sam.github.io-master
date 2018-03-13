@@ -70,5 +70,5 @@ while start < end:
 
 ## REFERENCES:
 
-<small>[500 Data Structures and Algorithms practice problems and their solutions](https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-practice-problems-and-their-solutions){:target="_blank"}</small>
+<small>[500 Data Structures and Algorithms practice problems and their solutions](https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-practice-problems-and-their-solutions){:target="_blank"}</small><br>
 <small>[Sort binary array in linear time](http://www.techiedelight.com/sort-binary-array-linear-time/){:target="_blank"}</small>

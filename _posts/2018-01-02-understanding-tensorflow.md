@@ -2,7 +2,7 @@
 layout: post
 title: "Understanding TensorFlow"
 categories: []
-tags: [machine learning, tensorflow, featured]
+tags: [machine learning, tensorflow, library, featured]
 description: TensorFlow is an open source, data flow graph based, numerical computation library. Nodes in the graph represent mathematical operations, while edges represent the multidimensional data arrays communicated between them.
 cover: "/assets/images/convolution.jpg"
 cover_source: "https://d17h27t6h515a5.cloudfront.net/topher/2016/October/580f8f75_8-convolutional-neural-networks/8-convolutional-neural-networks.jpg"
