@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cost Function of Linear Regression
-categories: []
+categories: [basics of machine learning]
 tags: [machine learning, andrew ng]
 description: Linear regression is a linear approach for modeling the relationship between a scalar dependent variable y and one or more explanatory variables (or independent variables) denoted X
 cover: "/assets/images/regression.jpeg"
@@ -9,6 +9,8 @@ cover_source: "https://cdn-images-1.medium.com/max/1440/1*VoNxmH8kRLKlNI_uuEoBvw
 comments: true
 mathjax: true
 ---
+
+{% include collection-basics-of-machine-learning.md %}
 
 ### Linear Regression
 Linear regression is an approach for modeling the relationship between a **scalar dependent variable** y and one or more **explanatory variables** (or **independent variables**) denoted X. The case of one explanatory variable is called **simple linear regression** or **univariate linear regression**. For more than one explanatory variable, the process is called **multiple linear regression**.

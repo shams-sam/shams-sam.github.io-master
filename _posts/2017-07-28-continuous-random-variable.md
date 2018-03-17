@@ -11,7 +11,7 @@ mathjax: true
 ---
 
 
-{% include probability.md %}
+{% include collection-probability.md %}
 
 ### Continuous Random Variables
 A continuous random variable is a function that maps the sample space of a random experiment to an interval in real value space. A random variable is called continuous if there is an underlying function f(x) such that 

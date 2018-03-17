@@ -1,0 +1,34 @@
+---
+layout: default
+title: Collections
+permalink: /collections/
+---
+
+{% include header.html %}
+
+<main class="content" role="main">
+
+<h5 class="index-headline featured"><span>COLLECTIONS</span></h5>
+
+
+<div class="container featured">
+  {% for collection in site.collection %}
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+      <a href="{{ site.baseurl }}/collection/{{ collection.url }}" itemprop="url">
+      <div class="featuredimage">
+        <div class="featuredimage-image" {% if collection.cover %}style="background-image: url({{ collection.cover | prepend: site.baseurl }})"{% endif %}>
+        </div>
+        <div class="featured-header">
+          <div class="table-cell">
+            <h1 class="featured-title">{{ collection.title }}</h1>
+            <h2 class="featured-description">{{ collection.description }}</h2>
+          </div>
+        </div>
+      </div>
+      </a>
+    </article>
+  {% endfor %}
+</div>
+
+
+</main>

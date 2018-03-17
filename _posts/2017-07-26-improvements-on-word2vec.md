@@ -10,7 +10,7 @@ comments: true
 mathjax: true
 ---
 
-{% include distributed-vector-representation.md %}
+{% include collection-distributed-vector-representation.md %}
 
 ### Skip-Gram Model
 * Training objective of skip-gram model is to deduce word representations that help in predicting the surrounding words in a sentence or a document, i.e. give a sequence of training words \\(w_1, w_2, w_3, ... , w_T\\), the objective is to maximize the average log probability, 

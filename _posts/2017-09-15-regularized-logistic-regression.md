@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Regularized Logistic Regression
+categories: [basics of machine learning]
 tags: [machine learning, andrew ng]
 description: Regularization is a process of introducing additional information in order to solve an ill-posed problem or to prevent overfitting
 cover: "/assets/images/overfitting.png"
@@ -8,6 +9,8 @@ cover_source: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Overfit
 comments: true
 mathjax: true
 ---
+
+{% include collection-basics-of-machine-learning.md %}
 
 ### Introduction
 The intuition and implementation of logistic regression is implemented in [Classifiction and Logistic Regression]({% post_url 2017-08-31-classification-and-representation %}){:target="_blank"} and [Logistic Regression Model]({% post_url 2017-09-02-logistic-regression-model %}){:target="_blank"}

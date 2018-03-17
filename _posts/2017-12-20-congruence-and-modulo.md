@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Congruence and Modular Arithmetic"
-categories: []
+categories: [what is mathematics]
 tags: [mathematics, number system, what is mathematics]
 description: If two numbers have the property that their difference is integrally divisible by a number (i.e., is an integer), then they are said to be "congruent modulo". 
 cover: "/assets/images/clock.jpg"
@@ -10,7 +10,7 @@ comments: true
 mathjax: true
 ---
 
-{% include what-is-mathematics.md %}
+{% include collection-what-is-mathematics.md %}
 
 ### Congruence
 

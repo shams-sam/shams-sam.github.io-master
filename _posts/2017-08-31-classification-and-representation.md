@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Classification and Logistic Regression
-categories: []
+categories: [basics of machine learning]
 tags: [machine learning, andrew ng]
 description: Logistic regression, or logit regression, or logit model is a regression model where the dependent variable is categorical
 cover: "/assets/images/logistic-regression.png"
@@ -9,6 +9,8 @@ cover_source: "http://www.onthelambda.com/wp-content/uploads/2014/07/quadratic.p
 comments: true
 mathjax: true
 ---
+
+{% include collection-basics-of-machine-learning.md %}
 
 ### Introduction
 Classification is a supervised learning problem wherein the target variable is categorical unlike regression where the target variable is continuous. Classification can be binary i.e. only two possible values of the target variable or multi-class i.e. more than two categories.

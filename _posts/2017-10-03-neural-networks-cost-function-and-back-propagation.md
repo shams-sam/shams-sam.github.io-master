@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Neural Networks: Cost Function and Backpropagation"
-categories: []
+categories: [basics of machine learning]
 tags: [machine learning, andrew ng]
 description: Intuition behind the idea of backpropagation and its extension to calculate cost function
 cover: "/assets/images/neural-network.png"
@@ -9,6 +9,8 @@ cover_source: "https://s3.amazonaws.com/f6s-public/media/480903.png"
 comments: true
 mathjax: true
 ---
+
+{% include collection-basics-of-machine-learning.md %}
 
 ### Notation
 * \\({(x^{(1)}, y^{(1)}), (x^{(2)}, y^{(2)}), \cdots , (x^{(m)}, y^{(m)})}\\) are the \\(m\\) training examples

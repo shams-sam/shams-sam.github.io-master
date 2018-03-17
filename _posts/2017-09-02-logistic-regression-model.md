@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Logistic Regression Model
-categories: []
+categories: [basics of machine learning]
 tags: [machine learning, andrew ng]
 description: Mathematics and Implementation of training a logistic regression model
 cover: "/assets/images/logistic-regression.png"
@@ -9,6 +9,8 @@ cover_source: "http://www.onthelambda.com/wp-content/uploads/2014/07/quadratic.p
 comments: true
 mathjax: true
 ---
+
+{% include collection-basics-of-machine-learning.md %}
 
 ### Introduction
 [Classifiction and Logistic Regression]({% post_url 2017-08-31-classification-and-representation %}){:target="_blank"} explains why logistic regression and intuition behind it. This post is about how the model works and some intuitions behind it.

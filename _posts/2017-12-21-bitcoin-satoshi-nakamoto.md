@@ -10,7 +10,7 @@ comments: true
 mathjax: true
 ---
 
-{% include cryptocurrency.md %}
+{% include collection-cryptocurrency.md %}
 
 ### Introduction
 

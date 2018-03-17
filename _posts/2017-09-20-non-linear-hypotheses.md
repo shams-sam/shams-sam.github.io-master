@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Non-linear Hypotheses
-categories: []
+categories: [basics of machine learning]
 tags: [machine learning, andrew ng]
 description: Advantages of neural networks over logistic regession and the relationship between the two. Neural network is essentially the successor of logistic regression.
 cover: "/assets/images/abstract.png"
@@ -9,6 +9,8 @@ cover_source: "https://maxoffsky.com/word/wp-content/uploads/2014/04/Screen-Shot
 comments: true
 mathjax: true
 ---
+
+{% include collection-basics-of-machine-learning.md %}
 
 
 ### Drawbacks of Logistic Regression

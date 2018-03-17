@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Linear Algebra Review
-categories: []
+categories: [basics of machine learning]
 tags: [machine learning, mathematics, andrew ng]
 description: Linear algebra is the branch of mathematics concerning vector spaces and linear mappings between such spaces
 cover: "/assets/images/linear-algebra.png"
@@ -9,6 +9,8 @@ cover_source: "https://ka-perseus-images.s3.amazonaws.com/6eca6b57567643dd7743f2
 comments: true
 mathjax: true
 ---
+
+{% include collection-basics-of-machine-learning.md %}
 
 ### Matrices
 In mathematics, a matrix is a **rectangular array** of numbers, symbols, or expressions, arranged in rows and columns. For example, A is a matrix below, 

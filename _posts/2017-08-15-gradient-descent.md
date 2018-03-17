@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gradient Descent
-categories: []
+categories: [basics of machine learning]
 tags: [machine learning, andrew ng]
 description: Gradient descent is a first-order iterative optimization algorithm for finding the minimum of a function
 cover: "/assets/images/gradient-descent.png"
@@ -9,6 +9,8 @@ cover_source: "https://upload.wikimedia.org/wikipedia/commons/3/31/Gradient99.pn
 comments: true
 mathjax: true
 ---
+
+{% include collection-basics-of-machine-learning.md %}
 
 ### [Gradient Descent](https://en.wikipedia.org/wiki/Gradient_descent){:target="_blank"}
 Gradient descent is a **first-order iterative optimization algorithm** for finding the minimum of a function. To find a local minimum of a function using gradient descent, one takes **steps proportional to the negative of the gradient** (or of the approximate gradient) of the function at the current point. If instead one takes steps proportional to the positive of the gradient, one approaches a local maximum of that function; the procedure is then known as **gradient ascent**. Gradient descent is also known as **steepest descent**. 

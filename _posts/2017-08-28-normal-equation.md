@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Normal Equation
-categories: []
+categories: [basics of machine learning]
 tags: [machine learning, mathematics, andrew ng]
 description: Given a matrix equation, the normal equation is one which minimizes the sum of the square differences between the left and right sides
 cover: "/assets/images/regression.jpeg"
@@ -9,6 +9,8 @@ cover_source: "https://cdn-images-1.medium.com/max/1440/1*VoNxmH8kRLKlNI_uuEoBvw
 comments: true
 mathjax: true
 ---
+
+{% include collection-basics-of-machine-learning.md %}
 
 ### Introduction
 Gradient descent is an algorithm which is used to reach an optimal solution iteratively using the gradient of the loss function or the cost function. In contrast, normal equation is a method that helps **solve for the parameters analytically** i.e. instead of reaching the solution iteratively, solution for the parameter \\(\theta\\) is reached at directly by solving the normal equation.

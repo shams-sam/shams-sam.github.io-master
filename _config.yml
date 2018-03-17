@@ -17,11 +17,11 @@ version: 0.1
 show_drafts: false
 
 # Permalinks
-permalink: pretty
+permalink: /:year/:month/:day/:title/
 
 # Site settings
 title: "Machine Learning Medium"
-description: Mathematics, Machine Learning, Natural Language Processing Etc.
+description: A step away from the illusion of knowledge.
 cover: "/assets/images/cover.jpeg"
 footer: "/assets/images/footer.jpg"
 url: "https://machinelearningmedium.com"
@@ -34,7 +34,24 @@ category:
   - machine-learning: Machine Learning
   - mathematics: Mathematics
   - papers: Papers
-  - dsa: DSA
+
+# Collections to Highlight
+collection:
+  - title: Basics of Machine Learning
+    description: Inspired by the Machine Learning lectures by Andrew Ng at Coursera, this is a beginner series that provides a broad introduction to machine learning, datamining, and statistical pattern recognition.
+    url: basics-of-machine-learning
+    cover: "/assets/images/basics-of-machine-learning.jpg"
+
+  - title: What is Mathematics?
+    description: A series of posts to consolidate the ideas in the famous book "What is Mathematics?" by R. Courant which gives lucid representation of the fundamental concepts and methods of the field.
+    url: what-is-mathematics
+    cover: "/assets/images/what-is-mathematics.jpg"
+
+  - title: Basics of Computer Vision
+    description: Summary of the course on Udacity, "Introduction to Computer Vision". Introduces fundamentals of image formation, noise, filtering, feature detection, classification etc.
+    url: basics-of-computer-vision
+    cover: "/assets/images/basics-of-computer-vision.jpg"
+
 
 # Pagination using jekyll-paginate-v2
 pagination:
@@ -58,7 +75,10 @@ pagination:
 autopages:
   enabled: true
   categories: 
-    enabled: false
+    layouts:
+      - 'autopage_categories.html'
+    title: ':cat Series'
+    permalink: '/collection/:cat'
   tags:
     layouts: 
       - 'autopage_tags.html'

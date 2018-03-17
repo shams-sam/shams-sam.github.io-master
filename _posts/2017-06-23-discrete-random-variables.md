@@ -10,7 +10,7 @@ comments: true
 mathjax: true
 ---
 
-{% include probability.md %}
+{% include collection-probability.md %}
 
 ### Discrete Random Variables
 

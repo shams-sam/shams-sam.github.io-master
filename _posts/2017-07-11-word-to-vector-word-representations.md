@@ -10,7 +10,7 @@ comments: true
 mathjax: true
 ---
 
-{% include distributed-vector-representation.md %}
+{% include collection-distributed-vector-representation.md %}
 
 ### Introduction
 * Computing the **continuous vector representations** of words from very large data sets.

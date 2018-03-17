@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Neural Networks Intuition
-categories: []
+categories: [basics of machine learning]
 tags: [machine learning, andrew ng]
 description: The relationship between logistic regression and neural networks. Explaination about how neural network is the logical successor of logistic regression
 cover: "/assets/images/abstract.png"
@@ -9,6 +9,8 @@ cover_source: "https://maxoffsky.com/word/wp-content/uploads/2014/04/Screen-Shot
 comments: true
 mathjax: true
 ---
+
+{% include collection-basics-of-machine-learning.md %}
 
 ### Introduction
 Neural networks can be used to build all types of function. This post tries to **map functions of logical operations using the network**. How the parameters are derived in explained in the later posts.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multivariate Linear Regression
-categories: []
+categories: [basics of machine learning]
 tags: [machine learning, andrew ng]
 description: When linear regression is applied on a higher-dimensional dataset, a generalization of linear regression is obtained
 cover: "/assets/images/multi-dimensional.jpg"
@@ -9,6 +9,8 @@ cover_source: "https://i.pinimg.com/originals/12/10/17/121017deafcab3026b8fba0a9
 comments: true
 mathjax: true
 ---
+
+{% include collection-basics-of-machine-learning.md %}
 
 ### Introduction
 Multivariate linear regression is the generalization of the univariate linear regression seen earlier i.e. [Cost Function of Linear Regression]({% post_url 2017-08-11-cost-function-of-linear-regression %}){:target="_blank"}. As the name suggests, there are more than one independent variables, \\(x_1, x_2 \cdots, x_n\\) and a dependent variable \\(y\\). 

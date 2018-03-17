@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multiclass Logistic Regression
-categories: []
+categories: [basics of machine learning]
 tags: [machine learning, andrew ng]
 description: Application of logistic regression to multi-dimensional datasets. It is a generalization of the binary logistic regression.
 cover: "/assets/images/logistic-regression.png"
@@ -9,6 +9,8 @@ cover_source: "http://www.onthelambda.com/wp-content/uploads/2014/07/quadratic.p
 comments: true
 mathjax: true
 ---
+
+{% include collection-basics-of-machine-learning.md %}
 
 ### Introduction
 For intuition and implementation of Binary Logistic Regression refer [Classifiction and Logistic Regression]({% post_url 2017-08-31-classification-and-representation %}){:target="_blank"} and [Logistic Regression Model]({% post_url 2017-09-02-logistic-regression-model %}){:target="_blank"}.

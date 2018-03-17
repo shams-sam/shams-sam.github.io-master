@@ -9,7 +9,7 @@ cover_source: "https://www.dailydot.com/wp-content/uploads/58a/11/ea87086c485460
 comments: true
 ---
 
-{% include cryptocurrency.md %}
+{% include collection-cryptocurrency.md %}
 
 ### Introduction
 

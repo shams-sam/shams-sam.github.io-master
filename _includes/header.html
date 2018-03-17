@@ -19,6 +19,7 @@
         <a href="{{ site.baseurl }}/tag/{{ category.first[0] }}">{{ category.first[1] }}</a>
         {% endfor %}
         <span class="right-padding-22">|</span>
+        <a href={{ "/collections/" | prepend: site.baseurl }} class="{% if page.url == node.url %} active{% endif %}">Collections</a>
         <a href={{ "/tags/" | prepend: site.baseurl }} class="{% if page.url == node.url %} active{% endif %}">Tags</a>
       </div>
       <div class="social-links table-cell">

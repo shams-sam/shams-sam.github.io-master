@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Mysterious Primes"
-categories: []
+categories: [what is mathematics]
 tags: [mathematics, number system, what is mathematics]
 description: Mathematicians have tried in vain to this day to discover some order in the sequence of prime numbers, a mystery into which the human mind will possibly never penetrate.
 cover: "/assets/images/primes.png"
@@ -10,7 +10,7 @@ comments: true
 mathjax: true
 ---
 
-{% include what-is-mathematics.md %}
+{% include collection-what-is-mathematics.md %}
 
 ### Introduction
 

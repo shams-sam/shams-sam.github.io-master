@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Regularized Linear Regression
-categories: []
+categories: [basics of machine learning]
 tags: [machine learning, andrew ng]
 description: Regularization is a process of introducing additional information in order to solve an ill-posed problem or to prevent overfitting
 cover: "/assets/images/overfitting.png"
@@ -9,6 +9,8 @@ cover_source: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Overfit
 comments: true
 mathjax: true
 ---
+
+{% include collection-basics-of-machine-learning.md %}
 
 The intuition of regularization are explained in the previous post: [Overfitting and Regularization]({% post_url 2017-09-08-overfitting-and-regularization %}){:target="_blank"}. The cost function for a regularized linear equation is given by,
 

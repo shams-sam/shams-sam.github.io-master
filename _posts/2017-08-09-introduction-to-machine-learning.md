@@ -1,13 +1,15 @@
 ---
 layout: post
 title: Introduction to Machine Learning
-categories: []
+categories: [basics of machine learning]
 tags: [machine learning, andrew ng]
 cover: "/assets/images/machine-learning-book.jpg"
 cover_source: "https://develandoo.com/wp-content/uploads/2017/10/machine-learning.jpg"
 description: Machine learning is a field of computer science that gives computers the ability to learn without being explicitly programmed
 comments: true
 ---
+
+{% include collection-basics-of-machine-learning.md %}
 
 ### What is Machine Learning ?
 Machine learning is the science of getting computers to learn, without explicitly being programmed. It has developed as a subset of the larger problem of building AI i.e. Artificially Intelligent systems. 

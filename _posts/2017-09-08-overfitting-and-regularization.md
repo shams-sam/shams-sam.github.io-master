@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overfitting and Regularization
-categories: []
+categories: [basics of machine learning]
 tags: [machine learning, andrew ng]
 description:  Overfitting occurs when a model is excessively complex, such as having too many parameters relative to the number of observations
 cover: "/assets/images/overfitting.png"
@@ -9,6 +9,8 @@ cover_source: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Overfit
 comments: true
 mathjax: true
 ---
+
+{% include collection-basics-of-machine-learning.md %}
 
 ### Overfitting
 If the number of features is very high, then there is a probability that the hypothesis fill fit all the points in the training data. It might seem like a good thing to happen but has a contradictory results. Suppose a hypothesis of high degree is fit to a set of points such that all the points lie of the hypothesis. Plot below shows a case of overfitting with a regression of order 100.

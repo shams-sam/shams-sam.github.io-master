@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gradient Descent for Linear Regression
-categories: []
+categories: [basics of machine learning]
 tags: [machine learning, andrew ng]
 description: Application of gradient descent for optimization of a linear regression cost function and its comparison with normal equation method of finding solution
 cover: "/assets/images/gradient-descent.png"
@@ -9,6 +9,8 @@ cover_source: "https://upload.wikimedia.org/wikipedia/commons/3/31/Gradient99.pn
 comments: true
 mathjax: true
 ---
+
+{% include collection-basics-of-machine-learning.md %}
 
 ### Introduction
 The posts [Cost Function of Linear Regression]({% post_url 2017-08-11-cost-function-of-linear-regression %}){:target="_blank"} and [Gradient Descent]({% post_url 2017-08-15-gradient-descent %}){:target="_blank} introduced the linear regression cost function and the gradient descent algorithm individually. If the gradient descent is applied to the linear regression cost function would help reach an optimal solution without much manual intervention.

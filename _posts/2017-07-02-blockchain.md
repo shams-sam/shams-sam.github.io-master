@@ -9,7 +9,7 @@ cover_source: "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/rtcKLbaBipw
 comments: true
 ---
 
-{% include cryptocurrency.md %}
+{% include collection-cryptocurrency.md %}
 
 ### What is **blockchain** ?
 * Originally developed as a part of digital currency [**Bitcoin**](https://bitcoin.org/){:target="_blank"}.

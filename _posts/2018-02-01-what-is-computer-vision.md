@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What is Computer Vision?"
-categories: []
+categories: [basics of computer vision]
 tags: [machine learning, computer vision, image processing, udacity]
 description: The goal of computer vision is to write computer programs that can interpret images.
 cover: "/assets/images/computer-vision.jpg"
@@ -10,7 +10,7 @@ comments: true
 mathjax: true
 ---
 
-{% include introduction-to-computer-vision.md %}
+{% include collection-introduction-to-computer-vision.md %}
 
 ### What is Computer Vision?
 
