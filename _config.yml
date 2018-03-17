@@ -22,7 +22,7 @@ permalink: /:year/:month/:day/:title/
 # Site settings
 title: "Machine Learning Medium"
 description: A step away from the illusion of knowledge.
-cover: "/assets/images/cover.jpeg"
+cover: "/assets/images/cover.jpg"
 footer: "/assets/images/footer.jpg"
 url: "https://machinelearningmedium.com"
 facebook_page: "https://www.facebook.com/machinelearningmedium/"
