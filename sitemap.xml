@@ -21,6 +21,7 @@
     </url>
   {% endfor %}
   {% for page in site.pages %}
+  {% if page.noindex != true %}
   <url>
     <loc>{{ site.url }}{{ page.url }}</loc>
     {% if page.sitemap.lastmod %}
@@ -43,5 +44,6 @@
       <priority>0.3</priority>
     {% endif %}
   </url>
+  {% endif %}
   {% endfor %}
 </urlset>
