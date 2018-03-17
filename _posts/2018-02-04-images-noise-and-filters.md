@@ -10,7 +10,7 @@ comments: true
 mathjax: true
 ---
 
-{% include collection-introduction-to-computer-vision.md %}
+{% include collection-basics-to-computer-vision.md %}
 
 ### Images as Function
 
