@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Model Representation And Hypothesis
-categories: [basics of machine learning]
-tags: [machine learning, andrew ng]
+categories: [basics-of-machine-learning]
+tags: [machine-learning, andrew-ng]
 description: The aim of the supervised learning algorithm is to use the training Dataset and output a hypothesis function
 cover: "/assets/images/supervised-learning.jpg"
 cover_source: "https://phrasee.co/wp-content/uploads/2016/03/machine-learning-3.jpg"

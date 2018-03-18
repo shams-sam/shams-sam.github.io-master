@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Overfitting and Regularization
-categories: [basics of machine learning]
-tags: [machine learning, andrew ng]
+categories: [basics-of-machine-learning]
+tags: [machine-learning, andrew-ng]
 description:  Overfitting occurs when a model is excessively complex, such as having too many parameters relative to the number of observations
 cover: "/assets/images/overfitting.png"
 cover_source: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Overfitting.svg/1200px-Overfitting.svg.png"

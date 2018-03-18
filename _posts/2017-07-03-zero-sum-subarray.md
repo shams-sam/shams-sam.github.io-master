@@ -2,7 +2,7 @@
 layout: post
 title: Zero Sum Subarrays
 categories: []
-tags: [array algorithms, references, algorithms]
+tags: [array-algorithms, references, algorithms]
 cover: "/assets/images/algorithm.png"
 cover_source: "https://www.pixelstalk.net/mathematics-hd-desktop-wallpapers/"
 description: To find continous sub-arrays that have sum zero.

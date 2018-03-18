@@ -2,7 +2,7 @@
 layout: post
 title: Discounted Cumulative Gain
 categories: []
-tags: [concept, machine learning, mathematics]
+tags: [concept, machine-learning, mathematics]
 description: Discounted cumulative gain (DCG) is a measure of ranking quality. In information retrieval, it is often used to measure effectiveness of web search engine.
 cover: "/assets/images/documents.jpg"
 cover_source: "http://opencopy.com/wp-content/uploads/2014/07/file000165248177196dpi.jpg"

@@ -2,7 +2,7 @@
 layout: post
 title: Duplicate In Limited Range Array (XOR)
 categories: []
-tags: [array algorithms, references, algorithms]
+tags: [array-algorithms, references, algorithms]
 cover: "/assets/images/algorithm.png"
 cover_source: "https://www.pixelstalk.net/mathematics-hd-desktop-wallpapers/"
 description: One way to find the duplicate in a limited range array using XOR operation.

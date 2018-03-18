@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Gradient Descent
-categories: [basics of machine learning]
-tags: [machine learning, andrew ng]
+categories: [basics-of-machine-learning]
+tags: [machine-learning, andrew-ng]
 description: Gradient descent is a first-order iterative optimization algorithm for finding the minimum of a function
 cover: "/assets/images/gradient-descent.png"
 cover_source: "https://upload.wikimedia.org/wikipedia/commons/3/31/Gradient99.png"

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Neural Networks Intuition
-categories: [basics of machine learning]
-tags: [machine learning, andrew ng]
+categories: [basics-of-machine-learning]
+tags: [machine-learning, andrew-ng]
 description: The relationship between logistic regression and neural networks. Explaination about how neural network is the logical successor of logistic regression
 cover: "/assets/images/abstract.png"
 cover_source: "https://maxoffsky.com/word/wp-content/uploads/2014/04/Screen-Shot-2014-04-28-at-10.32.16-AM.png"

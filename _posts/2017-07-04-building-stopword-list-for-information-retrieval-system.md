@@ -2,7 +2,7 @@
 layout: post
 title: Building Stopword List for Information Retrieval System
 categories: []
-tags: [NLP, machine learning, papers]
+tags: [NLP, machine-learning, papers]
 description: In computing, stop words are words which are filtered out before or after processing of natural language data (text).
 cover: "/assets/images/word-cloud.jpg"
 cover_source: "https://orig00.deviantart.net/f759/f/2012/244/b/9/asoiaf_word_cloud___jon_snow_by_galanix-d5d83v0.jpg"

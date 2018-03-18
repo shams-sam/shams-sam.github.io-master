@@ -2,7 +2,7 @@
 layout: post
 title: The One With Github Pages
 categories: []
-tags: [setup, github pages, jekyll]
+tags: [setup, github-pages, jekyll]
 description: GitHub Pages is designed to host personal, organization, or project pages directly from a GitHub repository.
 cover: "/assets/images/github.png"
 cover_source: "http://incurs.us/sites/default/files/2016-07/github-wallpaper-1.png"

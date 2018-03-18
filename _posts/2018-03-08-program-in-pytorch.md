@@ -2,7 +2,7 @@
 layout: post
 title: "Program in PyTorch"
 categories: []
-tags: [machine learning, pytorch, library]
+tags: [machine-learning, pytorch, library]
 description: PyTorch is an open source machine learning library for Python, based upon Torch, an open-source machine learning library, a scientific computing framework, and a script language based on Lua programming language.
 cover: "/assets/images/pytorch.jpg"
 cover_source: "https://mesosphere.com/wp-content/uploads/2017/12/pytorch-header.jpg"

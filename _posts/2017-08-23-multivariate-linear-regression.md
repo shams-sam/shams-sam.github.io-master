@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Multivariate Linear Regression
-categories: [basics of machine learning]
-tags: [machine learning, andrew ng]
+categories: [basics-of-machine-learning]
+tags: [machine-learning, andrew-ng]
 description: When linear regression is applied on a higher-dimensional dataset, a generalization of linear regression is obtained
 cover: "/assets/images/multi-dimensional.jpg"
 cover_source: "https://i.pinimg.com/originals/12/10/17/121017deafcab3026b8fba0a9bce9b68.jpg"

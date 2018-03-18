@@ -2,7 +2,7 @@
 layout: post
 title: "Automatic Differentiation (AD)"
 categories: []
-tags: [machine learning, mathematics, concepts]
+tags: [machine-learning, mathematics, concepts]
 description: In mathematics and computer algebra, automatic differentiation, also called algorithmic differentiation or computational differentiation, is a set of techniques to numerically evaluate the derivative of a function specified by a computer program.
 cover: "/assets/images/differentiation.jpg"
 cover_source: "https://i.ytimg.com/vi/nGhF1qPPlyU/maxresdefault.jpg"

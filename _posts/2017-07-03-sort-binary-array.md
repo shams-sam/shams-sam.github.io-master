@@ -2,7 +2,7 @@
 layout: post
 title: Sort Binary Array
 categories: []
-tags: [array algorithms, references, algorithms]
+tags: [array-algorithms, references, algorithms]
 cover: "/assets/images/algorithm.png"
 cover_source: "https://www.pixelstalk.net/mathematics-hd-desktop-wallpapers/"
 description: To sort a binary array using Quicksort logic.

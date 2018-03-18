@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Mathematical Induction
-categories: [what is mathematics]
-tags: [mathematics, number system, what is mathematics, theorems]
+categories: [what-is-mathematics]
+tags: [mathematics, number-system, what-is-mathematics, theorems]
 description: Mathematical induction is a mathematical proof technique used to prove a given statement about any well-ordered set.
 cover: "/assets/images/domino.jpg"
 cover_source: "http://fungyung.com/data/out/34/62844389-domino-wallpapers.jpg"

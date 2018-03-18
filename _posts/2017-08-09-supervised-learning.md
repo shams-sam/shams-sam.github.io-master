@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Supervised and Unsupervised Learning
-categories: [basics of machine learning]
-tags: [machine learning, andrew ng]
+categories: [basics-of-machine-learning]
+tags: [machine-learning, andrew-ng]
 description: Supervised learning is the machine learning task of inferring a function from labeled training data
 cover: "/assets/images/supervised-learning.jpg"
 cover_source: "https://phrasee.co/wp-content/uploads/2016/03/machine-learning-3.jpg"

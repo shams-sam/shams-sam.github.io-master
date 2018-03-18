@@ -2,7 +2,7 @@
 layout: post
 title: Random Projection in Dimensionality Reduction
 categories: []
-tags: [concept, machine learning, mathematics]
+tags: [concept, machine-learning, mathematics]
 description: The dimensions and distribution of random projections matrices are controlled so as to preserve the pairwise distances between any two samples of the dataset.
 cover: "/assets/images/projection.jpg"
 cover_source: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Staircase_perspective.jpg/1200px-Staircase_perspective.jpg"

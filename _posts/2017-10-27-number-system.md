@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "What is Number System ?"
-categories: [what is mathematics]
-tags: [mathematics, number system, what is mathematics]
+categories: [what-is-mathematics]
+tags: [mathematics, number-system, what-is-mathematics]
 description: A number system is a way to represent numbers. We are used to using the base-10 number system, which is also called decimal.
 cover: "/assets/images/number-system.jpg"
 cover_source: "http://jonvilma.com/images/binary-9.jpg"

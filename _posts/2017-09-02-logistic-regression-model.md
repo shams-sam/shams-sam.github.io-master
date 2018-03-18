@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Logistic Regression Model
-categories: [basics of machine learning]
-tags: [machine learning, andrew ng]
+categories: [basics-of-machine-learning]
+tags: [machine-learning, andrew-ng]
 description: Mathematics and Implementation of training a logistic regression model
 cover: "/assets/images/logistic-regression.png"
 cover_source: "http://www.onthelambda.com/wp-content/uploads/2014/07/quadratic.png"

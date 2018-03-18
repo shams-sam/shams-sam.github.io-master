@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Neural Networks Theory
-categories: [basics of machine learning]
-tags: [machine learning, andrew ng]
+categories: [basics-of-machine-learning]
+tags: [machine-learning, andrew-ng]
 description: An Artificial Neural Network is an information processing paradigm that is inspired by the way biological nervous systems, such as the brain, process information
 cover: "/assets/images/neural-network.png"
 cover_source: "https://s3.amazonaws.com/f6s-public/media/480903.png"

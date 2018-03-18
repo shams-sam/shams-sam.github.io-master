@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Normal Equation
-categories: [basics of machine learning]
-tags: [machine learning, mathematics, andrew ng]
+categories: [basics-of-machine-learning]
+tags: [machine-learning, mathematics, andrew-ng]
 description: Given a matrix equation, the normal equation is one which minimizes the sum of the square differences between the left and right sides
 cover: "/assets/images/regression.jpeg"
 cover_source: "https://cdn-images-1.medium.com/max/1440/1*VoNxmH8kRLKlNI_uuEoBvw.jpeg"

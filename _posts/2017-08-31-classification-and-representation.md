@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Classification and Logistic Regression
-categories: [basics of machine learning]
-tags: [machine learning, andrew ng]
+categories: [basics-of-machine-learning]
+tags: [machine-learning, andrew-ng]
 description: Logistic regression, or logit regression, or logit model is a regression model where the dependent variable is categorical
 cover: "/assets/images/logistic-regression.png"
 cover_source: "http://www.onthelambda.com/wp-content/uploads/2014/07/quadratic.png"

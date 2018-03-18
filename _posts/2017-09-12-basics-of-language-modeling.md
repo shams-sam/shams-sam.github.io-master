@@ -2,7 +2,7 @@
 layout: post
 title: Basics of Language Model
 categories: []
-tags: [NLP, machine learning]
+tags: [NLP, machine-learning]
 description: Language modeling is used in speech recognition, machine translation, part-of-speech tagging, parsing, handwriting recognition, information retrieval and other applications.
 cover: "/assets/images/language-model.jpg"
 cover_source: "https://i.pinimg.com/originals/54/1f/45/541f45629bb88e0c905ed6d3e4eac121.jpg"
