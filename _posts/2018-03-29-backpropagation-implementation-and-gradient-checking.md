@@ -137,13 +137,17 @@ Often times, it is normal for small bugs to creep in the backpropagtion code. Th
 
 As visible in the plot above, the gradient approximation can be calculated using the **centred difference formula** as follows,
 
-$${d \over d \Theta} J(\Theta) \approx \frac{J(\Theta + \epsilon) - J(\Theta - \epsilon)} {2 \epsilon} \tag{1} \label{1}$$
+$${\partial \over \partial \Theta} J(\Theta) \approx \frac{J(\Theta + \epsilon) - J(\Theta - \epsilon)} {2 \epsilon} \tag{1} \label{1}$$
 
 The approximation in \eqref{1}, works better than the **single sided difference**, i.e.,
 
-$${d \over d \Theta} J(\Theta) \approx \frac{J(\Theta + \epsilon) - J(\Theta)} {\epsilon} \tag{2} \label{2}$$
+$${\partial \over \partial \Theta} J(\Theta) \approx \frac{J(\Theta + \epsilon) - J(\Theta)} {\epsilon} \tag{2} \label{2}$$
 
 This is basically because if the error is approximated for the terms using **Taylor expansion**, it is observed that \eqref{1} has error of order \\(O(h)\\) while \eqref{2} has error of order \\(O(h^2)\\), i.e. **second order approximation**.
+
+With multiple parameter matrices, using \eqref{1}, the derivative with respect to \\(\Theta_j\\) can be approximated as,
+
+$${\partial \over \partial \Theta_j} J(\Theta) \approx \frac{J(\Theta_1, \cdots, \Theta_j + \epsilon, \cdots \Theta_n) - J(\Theta_1, \cdots, \Theta_j - \epsilon, \cdots \Theta_n)} {2 \epsilon} \tag{3} \label{3}$$
 
 Using the NumPy example of backpropagation, gradient checking can be confirmed as follows:
 
