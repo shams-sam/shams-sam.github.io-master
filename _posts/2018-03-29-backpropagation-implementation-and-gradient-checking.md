@@ -192,6 +192,8 @@ from grad check:
 
 **It can be seen that the two values are very similar and hence it proves that the back propagation is working well.**
 
+> Once the gradient checking is done, it should be turned off before running the network for entire set of training epochs. This is because the numerical approximation of gradient as explained works well for checking the results of backpropagation, but in practice the calculations are much slower than backpropagation and would slow down the training process.
+
 **Note:** Gradient from backpropagation is adjusted linearly by division with 2. Because of the approximate implementation of backpropagation there is a linear scaling in the derivatives given by the backpropagation function. This still works fine for the overall network because the application of **learning rate nullifies the minor scaling error**. **Let me know if anyone can point out the mistake.**
 
 ## REFERENCES:
