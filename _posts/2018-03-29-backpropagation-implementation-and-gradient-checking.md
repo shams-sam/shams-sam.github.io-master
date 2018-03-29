@@ -196,6 +196,15 @@ from grad check:
 
 **Note:** Gradient from backpropagation is adjusted linearly by division with 2. Because of the approximate implementation of backpropagation there is a linear scaling in the derivatives given by the backpropagation function. This still works fine for the overall network because the application of **learning rate nullifies the minor scaling error**. **Let me know if anyone can point out the mistake.**
 
+### Random Initialization
+
+Initializing all the weights with the same values does not work well because it would basically mean that all the neurons in the following layers will calculate the same functions of the previous layers neurons and hence would have the same updates and would fail to learn anything significant.
+
+Because of this reason, the parameter initialization must be in such a way that it **breaks the symmetry** and prevents the calculation of similar functions across neurons in the same layer.
+
+Random initialization helps break this symmetry by picking random values between \\([-\epsilon, +\epsilon]\\)to fill the parameter matrices.
+
+
 ## REFERENCES:
 
 <small>[Machine Learning: Coursera - Gradient Checking](https://www.coursera.org/learn/machine-learning/lecture/Y3s6r/gradient-checking){:target="_blank"}</small><br>

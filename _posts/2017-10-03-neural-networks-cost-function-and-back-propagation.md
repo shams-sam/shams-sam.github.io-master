@@ -137,6 +137,7 @@ The basis of backpropagation is benched on the propagating the error term calcul
 
 For more on mathematics of backpropagation, refer [Mathematics of Backpropagation]({% post_url 2018-03-20-backpropagation-derivation %}). For an approximate implementation of backpropagation using NumPy and checking results using Gradient Checking technique refer [Backpropagation Implementation and Gradient Checking]({% post_url 2018-03-29-backpropagation-implementation-and-gradient-checking %})
 
+
 ## REFERENCES:
 
 <small>[Machine Learning: Coursera - Cost Function](https://www.coursera.org/learn/machine-learning/lecture/na28E/cost-function){:target="_blank"}</small>
