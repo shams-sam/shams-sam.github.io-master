@@ -135,7 +135,7 @@ So, \eqref{8} conveys mathematically the intent to change the cost function (by 
 
 The basis of backpropagation is benched on the propagating the error term calculated for the final layer using \eqref{3} and \eqref{4} backwards to the preceding layers.
 
-For more on mathematics of backpropagation, refer [Mathematics of Backpropagation]({% post_url 2018-03-20-backpropagation-derivation %}).
+For more on mathematics of backpropagation, refer [Mathematics of Backpropagation]({% post_url 2018-03-20-backpropagation-derivation %}). For an approximate implementation of backpropagation using NumPy and checking results using Gradient Checking technique refer [Backpropagation Implementation and Gradient Checking]({% post_url 2018-03-29-backpropagation-implementation-and-gradient-checking %})
 
 ## REFERENCES:
 
