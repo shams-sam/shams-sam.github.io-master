@@ -192,5 +192,5 @@ from grad check:
 
 ## REFERENCES:
 
-<small>[Machine Learning: Coursera - Gradient Checking](https://www.coursera.org/learn/machine-learning/lecture/Y3s6r/gradient-checking){:target="_blank"}</small></br>
-<small>[CS231n Gradient checks](http://cs231n.github.io/neural-networks-3/#gradcheck){:target="_blank"}</small></br>
+<small>[Machine Learning: Coursera - Gradient Checking](https://www.coursera.org/learn/machine-learning/lecture/Y3s6r/gradient-checking){:target="_blank"}</small><br>
+<small>[CS231n Gradient checks](http://cs231n.github.io/neural-networks-3/#gradcheck){:target="_blank"}</small>
