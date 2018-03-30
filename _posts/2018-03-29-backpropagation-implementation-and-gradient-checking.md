@@ -3,7 +3,7 @@ layout: post
 title: "Backpropagation Implementation and Gradient Checking"
 categories: [basics-of-machine-learning]
 tags: [machine-learning, andrew-ng]
-description: Approximate implementation of backpropagation using NumPy, and Gradient Checking for the Derivatives.
+description: Approximate implementation of backpropagation without regularization using NumPy, and Gradient Checking for the Derivatives.
 cover: "/assets/images/gradient-descent.png"
 cover_source: "https://upload.wikimedia.org/wikipedia/commons/3/31/Gradient99.png"
 comments: true
