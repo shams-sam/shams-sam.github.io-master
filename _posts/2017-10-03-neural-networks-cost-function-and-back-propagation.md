@@ -46,6 +46,21 @@ $$ J(\theta) = -{1 \over m} \left[ \sum_{i=1}^m \sum_{k=1}^K y_k^{(i)}\,log(h_\t
 
 Here the summation term \\(\sum_{k=1}^K\\) is to **generalize over the K output units** of the neural network by calculating the cost function and summing over all the output units in the network. Also following the convention in regularization, the **bias term in skipped from the regularization penalty** in the cost function defination. Even if one includes the index 0, it would not effect the process in practice.
 
+```matlab
+% y_vec is the target vector in one-hot encoded matrix form
+% y_hat is the prediction from the network after forward propagation
+J = ones(1, m) * ((- (y_vec .* log(y_hat)) - ((1 - y_vec) .* log(1 - y_hat))) * ones(k, 1)) / m;
+
+% vectorized implementation of regularization terms
+% note that (2:end) ensures that the biases are not regularized
+% which is also seen the equations (2) above
+reg_Theta1 = ones(1, size(Theta1, 1)) * ((Theta1 .* Theta1)(:, 2:end) * ones(size(Theta1, 2)-1, 1));
+reg_Theta2 = ones(1, size(Theta2, 1)) * ((Theta2 .* Theta2)(:, 2:end) * ones(size(Theta2, 2)-1, 1));
+
+% final cost with regularization
+J = J + (lambda / (2*m) * (reg_Theta1 + reg_Theta2));
+```
+
 ### Backpropagation Algorithm
 Backpropagation algorithm is based on the **repeated application of the error calculation** used for gradient descent similar to the regression techniques, and since it is repeatedly applied in the **reverse order starting from output layer and continuing towards input layer** it is termed as backpropagation.
 
@@ -107,7 +122,25 @@ $$\Delta^{(l)} := \Delta^{(l)} + \delta^{(l+1)}\,(a^{(l)})^T \tag{6} \label{6}$$
 * \\(D_{ij}^{(l)} := {1 \over m} \Delta\_{ij}^{(l)} \\) if \\(j = 0\\)
 * And finally, \\( \frac {\partial} {\partial \Theta_{ij}^{(l)} } = D\_{ij}^{(l)} \\)
 
+```matlab
+% example of backward propgation of error signal
+del_3 = y_hat - y_vec;
+del_2 = (del_3 * Theta2)(:, 2:end) .* sigmoidGradient(z2);
+
+% calculation of partial derivatives from the error signals
+Theta2_grad = (del_3' * a2) / m;
+Theta1_grad = (del_2' * a1) / m;
+
+% calculation of regularization parameters
+% (2:end) ensures no regularization of biases
+% as seen in equation (6)
+Theta2_grad(:, 2:end) = Theta2_grad(:, 2:end) + lambda * Theta2(:, 2:end) / m;
+Theta1_grad(:, 2:end) = Theta1_grad(:, 2:end) + lambda * Theta1(:, 2:end) / m;
+```
+
 The capital delta matrix \\(D\\), is used as an **accumulator** to add up the values as backpropagation proceeds and finally compute the partial derivatives.
+
+The complete vectorized implementation for the MNIST dataset using vanilla neural network with a single hidden layer can be found [**here**](https://github.com/shams-sam/logic-lab/tree/master/CourseraMachineLearningAndrewNg/Assignments/machine-learning-ex4){:target="_blank"}.
 
 ### Backpropagation Intuition
 
@@ -135,7 +168,7 @@ So, \eqref{8} conveys mathematically the intent to change the cost function (by 
 
 The basis of backpropagation is benched on the propagating the error term calculated for the final layer using \eqref{3} and \eqref{4} backwards to the preceding layers.
 
-For more on mathematics of backpropagation, refer [Mathematics of Backpropagation]({% post_url 2018-03-20-backpropagation-derivation %}). For an approximate implementation of backpropagation using NumPy and checking results using Gradient Checking technique refer [Backpropagation Implementation and Gradient Checking]({% post_url 2018-03-29-backpropagation-implementation-and-gradient-checking %})
+For more on mathematics of backpropagation, refer [**Mathematics of Backpropagation**]({% post_url 2018-03-20-backpropagation-derivation %}). For an approximate implementation of backpropagation using NumPy and checking results using Gradient Checking technique refer [**Backpropagation Implementation and Gradient Checking**]({% post_url 2018-03-29-backpropagation-implementation-and-gradient-checking %}).
 
 
 ## REFERENCES:
