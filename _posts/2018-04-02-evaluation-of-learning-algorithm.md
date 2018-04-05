@@ -44,6 +44,12 @@ Test set error can be defined as follows:
 
 $$J_{test}(\Theta) = {1 \over 2m_{test}} \sum_{i=1}^{m_{test}}(h_{\Theta}(x_{test}^{(i)}) - y_{test}^{(i)})^2 \tag{1} \label{1}$$
 
+```matlab
+% vectorized implementation to calculate cost function
+error = (X * theta - y);
+J = 1 / (2*m) * (error' * error)
+```
+
 * For logistic regression, the cross-entropy cost function, defined as,
 
 $$J_{test}(\Theta) = {1 \over m_{test}} \sum_{i=1}^{m_{test}} y_{test}^{(i)} log\, h_{\Theta}(x_{test}^{(i)}) + (1 - y_{test}^{(i)}) log\, (1-h_{\Theta}(x_{test}^{(i)})) \tag{2} \label{2}$$
@@ -101,6 +107,22 @@ Similarly, for a very high value of \\(\lambda\\), since all the parameters woul
 
 Therefore, an optimal value of regularization parameter would balance the tradeoff between the bias-variance and help achieve the ideal model settings.
 
+```matlab
+% plot a validation curve that we can use to select lambda
+lambda_vec = [0 0.001 0.003 0.01 0.03 0.1 0.3 1 3 10]';
+
+error_train = zeros(length(lambda_vec), 1);
+error_val = zeros(length(lambda_vec), 1);
+
+for i = 1:length(lambda_vec)
+  lambda = lambda_vec(i);
+  [theta] = trainLinearReg(X, y, lambda);
+  error_train(i) = linearRegCostFunction(X, y, theta, 0);
+  error_val(i) = linearRegCostFunction(Xval, yval, theta, 0);
+endfor
+```
+
+![Effect of Lambda](/assets/2018-04-02-evaluation-of-learning-algorithm/effect-of-lambda-plot.png?raw=true){:width="50%"}
 
 ### Learning Curves
 
@@ -113,6 +135,24 @@ In a high bias setting, as the number of training examples increase the training
 ![Fig-4. High Variance Learning Curves](/assets/2018-04-02-evaluation-of-learning-algorithm/fig-4-high-variance-learning-curves.png?raw=true){:width="50%"}
 
 In case of high variance, since the order of polynomial is high, the training error will grow slowly but would be well within the desired performance as in the plot above. But the high variance leads to overfitting and hence would cause high cross-validation errors. In this setting, **getting more data would help** because as the number of training data increases, the model would be forced to learn more generalized parameters that cannot be compensated by a overfit curve. As the plot shows as the number of training data increase, the gap between the training and cross-validation error would close down.
+
+```matlab
+% plot a learning curve
+m = size(X, 1);
+
+error_train = zeros(m, 1);
+error_val   = zeros(m, 1);
+
+for i = 1: m
+  Xi = X(1:i, :);
+  yi = y(1:i, :);
+  [theta] = trainLinearReg(Xi, yi, lambda);
+  error_train(i) = linearRegCostFunction(Xi, yi, theta, 0);
+  error_val(i) = linearRegCostFunction(Xval, yval, theta, 0);
+endfor
+```
+
+![Learning Curves Plot](/assets/2018-04-02-evaluation-of-learning-algorithm/learning-curve-plot.png?raw=true){:width="50%"}
 
 ### Summarizing Bias and Variance
 
@@ -133,6 +173,8 @@ So, based on the study of bias and variance, the steps mentions in [Problem Stat
 Generally larger nueral networks are used to solve the hard problems of machine learning and the issue of overfitting is solved by choosing and optimal value of regularization parameter, \\(\lambda\\).
 
 [Earlier posts]({% post_url 2018-03-31-how-to-train-your-neural-network %}#pick-a-network-architecture) suggested using a single hidden layer as the default. Reading this post, it can be seen that one can use the train-validation split to choose the best combination of number of hidden layers.
+
+**Note:**[**Complete Code Sample**](https://github.com/shams-sam/logic-lab/tree/master/CourseraMachineLearningAndrewNg/Assignments/machine-learning-ex5/ex5){:target="_blank"}
 
 ## REFERENCES:
 
