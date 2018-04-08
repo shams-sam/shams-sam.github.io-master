@@ -50,6 +50,8 @@ error = (X * theta - y);
 J = 1 / (2*m) * (error' * error)
 ```
 
+**Note:**[**Complete Code Sample**](https://github.com/shams-sam/logic-lab/tree/master/CourseraMachineLearningAndrewNg/Assignments/machine-learning-ex5/ex5){:target="_blank"}
+
 * For logistic regression, the cross-entropy cost function, defined as,
 
 $$J_{test}(\Theta) = {1 \over m_{test}} \sum_{i=1}^{m_{test}} y_{test}^{(i)} log\, h_{\Theta}(x_{test}^{(i)}) + (1 - y_{test}^{(i)}) log\, (1-h_{\Theta}(x_{test}^{(i)})) \tag{2} \label{2}$$
@@ -174,7 +176,14 @@ Generally larger nueral networks are used to solve the hard problems of machine 
 
 [Earlier posts]({% post_url 2018-03-31-how-to-train-your-neural-network %}#pick-a-network-architecture) suggested using a single hidden layer as the default. Reading this post, it can be seen that one can use the train-validation split to choose the best combination of number of hidden layers.
 
-**Note:**[**Complete Code Sample**](https://github.com/shams-sam/logic-lab/tree/master/CourseraMachineLearningAndrewNg/Assignments/machine-learning-ex5/ex5){:target="_blank"}
+### Recommendations of Experiments
+
+* Implement a simple learning algorithm as the first draft to test it on the cross-validation data.
+* Plot the learning curves to see if there is a high bias or high variance problem and whether increasing training data or working on features is likely to help.
+* Manual examination of errors can help find the trends in frequent misclassifications.
+* **Error Analysis**Get error results in terms of a single numerical value. Otherwise it would be difficult to assess the performance solely on intuition and would take longer time to analyze. For example, if one uses stemming and sees a rise in accuracy then adding the feature is a definite plus. Hence trying different options and strengthening the process by reinforced numerical estimates will speed up the process of keeping or rejecting features.
+
+> The error analysis should be done on cross-validation and not on the test dataset, because test set should be the bearer of actual performance of the model and not used to overfit the features being tested.
 
 ## REFERENCES:
 
