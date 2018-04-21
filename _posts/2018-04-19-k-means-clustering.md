@@ -185,7 +185,7 @@ plt.title('elbow plot of image 2')
 
 ![K-Means Compression - Image 2](/assets/2018-04-19-k-means-clustering/fig-5-elbow-plot.png?raw=true){:width="80%"}
 
-Seeing the two plots it is evident while the elbow plot gives a optimal value of two for image 1, there is no well defined elbow for the image 2 and it is not very clear which value would be optimal as mentioned in the ![section](#choosing-the-number-of-clusters) above.
+Seeing the two plots it is evident while the elbow plot gives a optimal value of two for image 1, there is no well defined elbow for the image 2 and it is not very clear which value would be optimal as mentioned in the [section](#choosing-the-number-of-clusters) above.
 
 ## REFERENCES:
 
