@@ -63,7 +63,7 @@ Notation:
 
 Following the above notation, the cost function of the k-means clustering is given by,
 
-$$J(c^{(1)}, c^{(2)}, \cdots, c^{(m)}, \mu_1, \mu_2, \cdots, \mu_K) = {1 \over m} \sigma_{i=1}^m \lVert x^{(i)} - \mu_{c^{(i)}} \rVert^2 \tag{2} \label{2}$$
+$$J(c^{(1)}, c^{(2)}, \cdots, c^{(m)}, \mu_1, \mu_2, \cdots, \mu_K) = {1 \over m} \sum_{i=1}^m \lVert x^{(i)} - \mu_{c^{(i)}} \rVert^2 \tag{2} \label{2}$$
 
 Hence the optimization objective is,
 
