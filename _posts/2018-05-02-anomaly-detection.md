@@ -335,4 +335,6 @@ Also, the original model in \eqref{7} is a special case of the multivariate gaus
 
 <small>[Machine Learning: Coursera - Problem Motivation](https://www.coursera.org/learn/machine-learning/lecture/V9MNG/problem-motivation){:target="_blank"}</small><br>
 <small>[Machine Learning: Coursera - Gaussian Distribution](https://www.coursera.org/learn/machine-learning/lecture/ZYAyC/gaussian-distribution){:target="_blank"}</small><br>
-<small>[Machine Learning: Coursera - Algorithm](https://www.coursera.org/learn/machine-learning/lecture/C8IJp/algorithm){:target="_blank"}</small>
+<small>[Machine Learning: Coursera - Algorithm](https://www.coursera.org/learn/machine-learning/lecture/C8IJp/algorithm){:target="_blank"}</small><br>
+<small>[Machine Learning: Coursera - Anomaly Detection vs Supervised Learning](https://www.coursera.org/learn/machine-learning/lecture/Rkc5x/anomaly-detection-vs-supervised-learning){:target="_blank"}</small><br>
+<small>[Machine Learning: Coursera - Multivariate Gaussian Distribution](https://www.coursera.org/learn/machine-learning/lecture/Cf8DF/multivariate-gaussian-distribution){:target="_blank"}</small>
