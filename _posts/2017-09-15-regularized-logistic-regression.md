@@ -123,7 +123,7 @@ def update_theta(theta, X, y, lamda=None):
 
 ~~~
 
-Link to [Rough Working Code](https://github.com/shams-sam/logic-lab/blob/master/CourseraMachineLearningAndrewNg/LogisticRegressionHigherOrder.ipynb){:target="_blank"}. Change the value of lamda in the code to get different decision boundaries for the [data](https://github.com/shams-sam/logic-lab/blob/master/CourseraMachineLearningAndrewNg/logistic_regression_data_2.csv){:target="_blank"} as shown below.
+Link to [Rough Working Code](https://github.com/shams-sam/CourseraMachineLearningAndrewNg/blob/master/LogisticRegressionHigherOrder.ipynb){:target="_blank"}. Change the value of lamda in the code to get different decision boundaries for the [data](https://github.com/shams-sam/CourseraMachineLearningAndrewNg/blob/master/logistic_regression_data_2.csv){:target="_blank"} as shown below.
 
 ![Regularization with \\(\lambda = 0.01\\)](\assets\2017-09-15-regularized-logistic-regression\fig-1-regularization.png?raw=true)
 ![Regularization with \\(\lambda = 0.1\\)](\assets\2017-09-15-regularized-logistic-regression\fig-2-regularization.png?raw=true)

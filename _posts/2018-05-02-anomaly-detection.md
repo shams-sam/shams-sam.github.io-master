@@ -123,7 +123,7 @@ $$\sigma_j = {1 \over m} \sum_{i=1}^m (x_j^{(i)} - \mu_j)^2 \tag{9} \label{9}$$
 
 **Implementation**
 
-[**Ipython Notebook**](https://github.com/shams-sam/logic-lab/blob/master/CourseraMachineLearningAndrewNg/Anomaly%20Detection.ipynb){:target="\_blank"}
+[**Ipython Notebook**](https://github.com/shams-sam/CourseraMachineLearningAndrewNg/blob/master/Anomaly%20Detection.ipynb){:target="\_blank"}
 
 ```python
 import matplotlib.pyplot as plt

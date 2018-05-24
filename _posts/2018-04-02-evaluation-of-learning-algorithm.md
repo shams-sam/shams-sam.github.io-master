@@ -50,7 +50,7 @@ error = (X * theta - y);
 J = 1 / (2*m) * (error' * error)
 ```
 
-**Note:**[**Complete Code Sample**](https://github.com/shams-sam/logic-lab/tree/master/CourseraMachineLearningAndrewNg/Assignments/machine-learning-ex5/ex5){:target="_blank"}
+**Note:**[**Complete Code Sample**](https://github.com/shams-sam/CourseraMachineLearningAndrewNg/tree/master/Assignments/machine-learning-ex5/ex5){:target="_blank"}
 
 * For logistic regression, the cross-entropy cost function, defined as,
 

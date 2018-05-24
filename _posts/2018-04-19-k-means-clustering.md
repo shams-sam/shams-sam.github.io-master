@@ -95,7 +95,7 @@ Generally the trick of multiple random initializations will help only if the num
 
 ### Example
 
-[**Ipython Notebook**](https://github.com/shams-sam/logic-lab/blob/master/CourseraMachineLearningAndrewNg/k-means.ipynb){:target="\_blank"}
+[**Ipython Notebook**](https://github.com/shams-sam/CourseraMachineLearningAndrewNg/blob/master/k-means.ipynb){:target="\_blank"}
 
 ```python
 import cv2

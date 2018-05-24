@@ -262,7 +262,7 @@ The above plot shows the working of **multivariate linear regression to fit poly
 
 ![Multivariate Regression](/assets/2017-08-23-multivariate-linear-regression/fig-5-feature-scaling.gif?raw=true)
 
-A rough implementation of the feature scaling used to get the plot above can be found [here](https://github.com/shams-sam/logic-lab/blob/master/CourseraMachineLearningAndrewNg/GradientDescentForMultivariateRegression.ipynb){:target="_blank"}.
+A rough implementation of the feature scaling used to get the plot above can be found [here](https://github.com/shams-sam/CourseraMachineLearningAndrewNg/blob/master/GradientDescentForMultivariateRegression.ipynb){:target="_blank"}.
 
 ## REFERENCES:
 

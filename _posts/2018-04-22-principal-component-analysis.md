@@ -20,7 +20,7 @@ For a given dataset, PCA tries to find a lower dimensional surface onto which th
 
 ### Implementation
 
-[**Ipython Notebook**](https://github.com/shams-sam/logic-lab/blob/master/CourseraMachineLearningAndrewNg/PCA.ipynb){:target="_blank"}
+[**Ipython Notebook**](https://github.com/shams-sam/CourseraMachineLearningAndrewNg/blob/master/PCA.ipynb){:target="_blank"}
 
 ```python
 # library imports

@@ -330,7 +330,7 @@ The following plot shows the **circular decision boundary**.
 
 ![Non-Linear Decision Boundary](/assets/2017-09-02-logistic-regression-model/fig-5-non-linear-decision-boundary.png?raw=true)
 
-A rough implementation of all these plots and some more can be found [here](https://github.com/shams-sam/logic-lab/blob/master/CourseraMachineLearningAndrewNg/LogisticRegression.ipynb){:target="_blank"}.
+A rough implementation of all these plots and some more can be found [here](https://github.com/shams-sam/CourseraMachineLearningAndrewNg/blob/master/LogisticRegression.ipynb){:target="_blank"}.
 
 ## REFERENCES:
 

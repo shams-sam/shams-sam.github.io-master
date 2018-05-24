@@ -140,7 +140,7 @@ Theta1_grad(:, 2:end) = Theta1_grad(:, 2:end) + lambda * Theta1(:, 2:end) / m;
 
 The capital delta matrix \\(D\\), is used as an **accumulator** to add up the values as backpropagation proceeds and finally compute the partial derivatives.
 
-The complete vectorized implementation for the MNIST dataset using vanilla neural network with a single hidden layer can be found [**here**](https://github.com/shams-sam/logic-lab/tree/master/CourseraMachineLearningAndrewNg/Assignments/machine-learning-ex4){:target="_blank"}.
+The complete vectorized implementation for the MNIST dataset using vanilla neural network with a single hidden layer can be found [**here**](https://github.com/shams-sam/CourseraMachineLearningAndrewNg/tree/master/Assignments/machine-learning-ex4){:target="_blank"}.
 
 ### Backpropagation Intuition
 
