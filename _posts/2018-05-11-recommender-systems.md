@@ -19,6 +19,8 @@ Give \\(n_m\\) choices and \\(n_u\\) users,
 * \\(r(i, j) = 1\\) if user \\(j\\) has rated choice \\(i\\).
 * \\(y(i,j)\\) is the rating given by user \\(j\\) to the choice \\(i\\), defined only if \\(r(i, j) = 1\\).
 
+[**Kaggle Kernel**](https://www.kaggle.com/shamssam/recommender-systems){:target="\_blank"}
+
 ```python
 import numpy as np
 
@@ -330,8 +332,8 @@ predictions = np.matmul(x, theta.transpose()) + y_mean
 
 ## REFERENCES:
 
-<small>[Machine Learning: Coursera - Problem Motivation](https://www.coursera.org/learn/machine-learning/lecture/V9MNG/problem-motivation){:target="_blank"}</small><br>
-<small>[Machine Learning: Coursera - Gaussian Distribution](https://www.coursera.org/learn/machine-learning/lecture/ZYAyC/gaussian-distribution){:target="_blank"}</small><br>
-<small>[Machine Learning: Coursera - Algorithm](https://www.coursera.org/learn/machine-learning/lecture/C8IJp/algorithm){:target="_blank"}</small><br>
-<small>[Machine Learning: Coursera - Anomaly Detection vs Supervised Learning](https://www.coursera.org/learn/machine-learning/lecture/Rkc5x/anomaly-detection-vs-supervised-learning){:target="_blank"}</small><br>
-<small>[Machine Learning: Coursera - Multivariate Gaussian Distribution](https://www.coursera.org/learn/machine-learning/lecture/Cf8DF/multivariate-gaussian-distribution){:target="_blank"}</small>
+<small>[Machine Learning: Coursera - Content Based Recommendations](https://www.coursera.org/learn/machine-learning/lecture/uG59z/content-based-recommendations){:target="_blank"}</small><br>
+<small>[Machine Learning: Coursera - Collaborative Filtering](https://www.coursera.org/learn/machine-learning/lecture/2WoBV/collaborative-filtering){:target="_blank"}</small><br>
+<small>[Machine Learning: Coursera - Algorithm](https://www.coursera.org/learn/machine-learning/lecture/f26nH/collaborative-filtering-algorithm){:target="_blank"}</small><br>
+<small>[Machine Learning: Coursera - Low Rank Matrix Factorization](https://www.coursera.org/learn/machine-learning/lecture/CEXN0/vectorization-low-rank-matrix-factorization){:target="_blank"}</small><br>
+<small>[Machine Learning: Coursera - Mean Normalization](https://www.coursera.org/learn/machine-learning/lecture/Adk8G/implementational-detail-mean-normalization){:target="_blank"}</small>
