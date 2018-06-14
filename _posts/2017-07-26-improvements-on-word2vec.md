@@ -2,7 +2,7 @@
 layout: post
 title: Improvements on Word2Vec
 categories: []
-tags: [NLP, machine-learning, papers]
+tags: [NLP, machine-learning, papers, word-embedding]
 description: Importance of optimization and its effect on training time for Word2Vec. Effective utilization of Hierarchical Softmax, Negative Sampling and Subsampling of frequent words.
 cover: "/assets/images/wordembedding.png"
 cover_source: "http://www.deep-solutions.net/blog/wordembeddings/wordembedding.png"

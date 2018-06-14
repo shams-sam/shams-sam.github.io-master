@@ -12,3 +12,4 @@
 12. Deaggregation of time series data
 13. http://lamda.nju.edu.cn/weixs/project/CNNTricks/CNNTricks.html
 14. Symmetric Positive Definite in Covariance matrix PCA
+15. low rank matrix factorization
