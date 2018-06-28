@@ -20,7 +20,7 @@ For example, consider the update rule for parameter optimization using gradient 
 
 $$\theta_j := \theta_j - \alpha {1 \over m} \sum_{i=1}^m \left( h_{\theta}(x^{(i)}) - y^{(i)} \right) x_j^{(i)} \tag{1} \label{1}$$
 
-[**Kaggle Kernel Implementation**]()
+> [Kaggle Kernel Implementation](https://www.kaggle.com/shamssam/gradient-descent-for-regression){:target="\_blank"}
 
 ```python
 def batch_update_vectorized(self):
