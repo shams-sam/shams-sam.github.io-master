@@ -56,6 +56,8 @@ Limitations of BoW model:
 * Sparsity of the encoded space cannot be avoided most BoW models.
 * Discarding of word order often times leads to loss of meaning and context.
 
+### Skip Gram 
+
 
 
 ## REFERENCES:
