@@ -26,7 +26,7 @@ mathjax: true
 
 * It is an empirical law formulated using mathematical statistics that states that many types of data in physical and social sciences can be approximated with a **Zipfian Distribution (ZD)**.
 
-* ZD belongs to a family of discrete power law probabiliy distributions.
+* ZD belongs to a family of discrete power law probability distributions.
 
 ### Observations
 

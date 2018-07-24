@@ -9,12 +9,21 @@ exclude:
   - vendor
   - init_server.sh
   - init_dev_server.sh
+  - init_algolia_index.sh
+  - _algolia_api_key
+  - _algolia_api_key.sample
 
 # Dependencies
 markdown:         kramdown
 highlighter:      rouge # changed from `pygments` as github says so
 version: 0.1
 show_drafts: false
+
+# Algolia
+algolia:
+  application_id: 99NYQNU15U
+  index_name: machine_learning_medium
+  search_only_api_key: c1a81c44a486ccb7fb3e44114bf37b26
 
 # Permalinks
 permalink: /:year/:month/:day/:title/
@@ -51,6 +60,11 @@ collection:
     description: Summary of the course on Udacity, "Introduction to Computer Vision". Introduces fundamentals of image formation, noise, filtering, feature detection, classification etc.
     url: basics-of-computer-vision
     cover: "/assets/images/basics-of-computer-vision.jpg"
+
+  - title: "NPTEL: Computer Architecture"
+    description: Computer architecture is the view of a computer as presented to software designers, while computer organization is the actual hardware implementation of a computer.
+    url: nptel-computer-architecture
+    cover: "/assets/images/computer-architecture.jpg"
 
 
 # Pagination using jekyll-paginate-v2

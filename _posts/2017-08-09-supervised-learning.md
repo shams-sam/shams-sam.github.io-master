@@ -14,7 +14,7 @@ comments: true
 ### Supervised Learning
 Supervised learning is the machine learning task of **inferring a function from labeled training data**. The training data consist of a set of training examples. In supervised learning, each example is a pair consisting of an input object (typically a vector) and a desired output value (also called the supervisory signal).
 
-* **Regression**: When the target variable is **continuous**. Regression in supervised learning is different from regression in statistics. Also, **logistic regression** is a classification technique despite its name as its response variable is categorical.
+* **Regression**: When the target variable is **continuous**. Regression in supervised learning is different from regression in statistics. Also, **logistic regression** is a classification technique despite its name as originally it outputs the probability of belongingness to a class. It is converted in to a classification algorithm by applying a threshold on this probability output by the algorithm to convert it into binary classes.
 
   * **Example**: Given a picture of a person, predict the age on the basis of the given picture.
 

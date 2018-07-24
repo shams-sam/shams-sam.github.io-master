@@ -12,7 +12,7 @@ comments: true
 ### Dimensions of human language:
 * **Discrete infinity**: A discrete set, a set with finite number of elements which can be used to make infinitely many combinations is called a discrete infinity. For example, the alphabets in english are 26 and form a discrete set but can be combined to form infinitely many sentences and hence is a discrete infinity.
 * **Displacement**: It is the ability to communicate about time, space or any other abstract notion. For example, conversation about future or about good vs bad.
-* **Joint Attention**: Human anguages can express shared goals. For example, conversation about voting for a leader.
+* **Joint Attention**: Human languages can express shared goals. For example, conversation about voting for a leader.
 
 
 > Sign language is also a human language as it serves the same purposes as a spoken language.

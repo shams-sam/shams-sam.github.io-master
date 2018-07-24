@@ -136,7 +136,7 @@ $$
 
 **Binomial Distribution**
 
-  * Used to model \\(n\\) independent traits of Bernoulli Distribution.
+  * Used to model \\(n\\) independent trails of Bernoulli Distribution.
   * If X follows Binomial(n, p) then, X = k implies, the event of k successes in n independent Bernoulli trials.
 
   \\[P(X=k) = C_k^n * (p^k) * ((1-p)^{n-k})\\]

@@ -5,4 +5,6 @@ gem 'github-pages'
 gem 'bourbon'
 gem 'jemoji'
 gem "jekyll-paginate-v2"
-gem 'jekyll-algolia'
+group :jekyll_plugins do
+  gem 'jekyll-algolia'
+end
