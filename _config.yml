@@ -35,8 +35,10 @@ cover: "/assets/images/cover.jpg"
 footer: "/assets/images/footer.jpg"
 url: "https://machinelearningmedium.com"
 facebook_page: "https://www.facebook.com/machinelearningmedium/"
+facebook_app_id: 391866664565981
 baseurl: ""
 google_analytics: UA-108148924-1
+vicomi: 334e9d2a5dc341469cda15d8c4bd935e
 
 # Tags in sectionbar
 category:
@@ -62,7 +64,7 @@ collection:
     cover: "/assets/images/basics-of-computer-vision.jpg"
 
   - title: "NPTEL: Computer Architecture"
-    description: Computer architecture is the view of a computer as presented to software designers, while computer organization is the actual hardware implementation of a computer.
+    description: Offered by NPTEL, this course is a dive into theoretical computer science introducing the software and hardware aspects of a computer organization in terms of instruction execution and design implementations.
     url: nptel-computer-architecture
     cover: "/assets/images/computer-architecture.jpg"
 

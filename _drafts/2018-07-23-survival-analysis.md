@@ -48,6 +48,63 @@ $$h(t, \theta) = \frac{f(t, \theta)} {1-F(t, \theta)} = \frac{f(t, \theta)} {S(t
 
 **While \\(f(t, \theta)\\) roughly represents the proportion of original cohort that should be expected to fail between time \\(t\\) and \\(t+1\\), hazard rate \\(h(t, \theta)\\) represents the proportion of survivors until time \\(t\\) that should be expected to fail in the same time window, \\(t\\) to \\(t+1\\).**
 
+The relationship betwee the cumulative distribution function and the hazard rate is given by,
+
+$$F(t, \theta) = 1 - exp \left[ - \int_0^t h(x, \theta) dx \right] \tag{3} \label{3}$$
+
+and 
+
+$$h(t, \theta) = - \frac {d\,ln\,[1 - F(t, \theta)]} {dt} \tag{4} \label{4}$$
+
+The fact that \\(F(t, \theta)\\) is a cdf puts some restrictions on the hazard rate, 
+
+- hazard rate is non-negative function 
+
+$$H(t, \theta) = \int_0^t h(x, \theta) dx \tag{5} \label{5}$$
+
+- the integrated hazard in \eqref{5} is finite for finite \\(t\\) and tends to \\(\infty\\) as \\(t\\) approaches \\(\infty\\).
+
+### State Dependence
+
+- Positive state dependence or an increasing hazard rate \\(dh(t)/dt \gt 0 \\) indicates that the **probability of failure during the next time unit increases** as the length of time at risk increases.
+- Negative state dependence or a decreasing hazard rate \\(dh(t)/dt \lt 0 \\) indicates that the **probability of failure in the next time unit decreases** as the length of time at risk decreases.
+- No state dependence indicates a **constant hazard rate**.
+
+> Only exponential distribution displays no state dependence.
+
+### Censoring and Truncation
+
+A common feature of data on survival times is that they are censored or truncated. Censoring and truncation are statistical terms that refer to the **inability to observe the variable of interest for the entire population**.
+
+- A standard example to understand this can be understood in the form of a case of an individual shooting at a round target with a rifle and the variable of interest is the distance by which the bullet misses the center of the target. 
+- If all shots hit the target, this distance can be measure for all the shots and there is no problem of censoring or truncation.
+- If some shots miss the target, but we know the number of shots fired, **the sample is censored**. In this case either the distance of shot from center is known or it is known that it was atleast as large as the radius of the target.
+- Similarly if one does not know how many shots were fired but only have information about distance for shots that hit the target, **the sample is truncated**.
+
+> Censored sample has more information than a truncated sample.
+
+Survival times are often censored because not all candidates would fail by the end of time during which the data was collected. This **censoring of data must be taken into account** while making the estimations because it is **not legitimate to drop such observations** with unobserved survival times **r to set survival times for these observations equal to the length of the follow-up period** (when the data was collected).
+
+- Infrequently so, but there is also a chance of getting information about a candidate during a follow-up collection who was not a part of the original population. In such cases the **survival time is truncated** because there is no information of the candidate or his survival time.
+
+### Problem of Estimation
+
+The initial assumption specifies a cumulative distribution function \\(F(t, \theta)\\), or equivalently a density \\(f(t, \theta)\\) or hazard \\(h(t, \theta)\\) that is of a known form except that it depends on a unknown parameter \\(\theta\\). Estimation of this parameter is first step for the model to make any meaningful prediction about the survival time of new candidate
+
+Consider a case of estimation of parameter for a censored sample which is defined as follows,
+
+- sample has \\(N\\) individuals with follow-up periods \\(T_1, T_2, \cdots, T_N\\). These follow-ups may be all equal, but they usually are not.
+- \\(n\\) is number of individuals who fail, numbered \\(1, 2, \cdots, n\\) and individuals numbered \\(n+1, n+2, \cdots, N\\) are the non-failures.
+- for the candidates who fail, there exists a survival time \\(t_i \leq T_i, \, i \in [1, n]\\) 
+- for the non-failures, survival time \\(t_i\\) is not observed but it is known that it is greater than the length of the follow-up period \\(T_i\\), \\(i \in [n+1, N]\\).
+
+If it is assumed that **all the outcomes are independent** of each other the likelyhood function of the sample is, 
+
+$$L = \prod_{i=1}^n f(t_i, \theta) \prod_{i=n+1}^N S(T_i, \theta) \tag{6} \label{6}$$
+
+> Likelyhood function is a general statistical tool that expresses the probability of outcomes observed in terms of unknown parameters that are to be estimated, i.e., it is function of the parameters to be estimated, which serves as a measure of how likely it is that the statistical model, with a given parameter value, would generate the given data.
+
+A common used estimator of \\(\theta\\) is the **Maximum Likelyhood Estimator (MLE)** which is defined as the value of \\(\theta\\) that maximizes the likelyhood function.
 
 ## REFERENCES:
 
