@@ -106,6 +106,12 @@ $$L = \prod_{i=1}^n f(t_i, \theta) \prod_{i=n+1}^N S(T_i, \theta) \tag{6} \label
 
 A common used estimator of \\(\theta\\) is the **Maximum Likelyhood Estimator (MLE)** which is defined as the value of \\(\theta\\) that maximizes the likelyhood function.
 
+The MLE have been shown to display the following desirable properties over a large sample (**as the sample size approaches infinity**),
+
+- Unbiased
+- Efficient
+- Normally Distributed
+
 ## REFERENCES:
 
 <small>[Survival Analysis: A Survey](https://link.springer.com/article/10.1007/BF01083132#){:target="_blank"}</small><br>

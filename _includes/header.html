@@ -21,6 +21,10 @@
         <span class="right-padding-22">|</span>
         <a href={{ "/collections/" | prepend: site.baseurl }} class="{% if page.url == node.url %} active{% endif %}">Collections</a>
         <a href={{ "/tags/" | prepend: site.baseurl }} class="{% if page.url == node.url %} active{% endif %}">Tags</a>
+        {% if page.title != "Search" %}
+          <span class="right-padding-22">|</span>
+          <a class="icon-search" href="{{ site.baseurl }}/search/"><i class="fa fa-search"></i></a>
+        {% endif %}
       </div>
       <div class="social-links table-cell">
         <!-- {% for social in site.social %}
