@@ -83,6 +83,7 @@
         {%if site.vicomi %}
         <div id="vc-feelback-main" data-access-token="{{site.vicomi}}" data-display-type="4"></div>
         {% endif %}
+        {% include page-navigation.html %}
         {% if site.author.disqus and jekyll.environment=='production' %}
         <div id="disqus_thread"></div>
         <script type="text/javascript">

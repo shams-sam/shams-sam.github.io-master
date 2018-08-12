@@ -1,0 +1,8 @@
+<nav class="page-navigation" role="navigation">
+  {% if page.previous.url %}
+    <a href={{ page.previous.url | prepend: site.baseurl | remove: 'index.html'  }} class="arrow-button left-arrow-button"><span class="left-arrow"></span><span class="label left-label">{{ page.previous.title }}</span></a>
+  {% endif %}
+  {% if page.next.url %}
+    <a href={{ page.next.url | prepend: site.baseurl | remove: 'index.html' }} class="arrow-button right-arrow-button"><span class="label right-label">{{ page.next.title }}</span><span class="right-arrow"></span></a>
+  {% endif %}
+</nav>
