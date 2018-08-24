@@ -122,7 +122,7 @@ $$
 
 **Uniform Distribution**
 
-  * All outcomes are eqully possible. 
+  * All outcomes are equally possible. 
   * Eg: Probability of getting a heads or tails for a fair coin. 
   * Uniform(N) implies N outcomes and each has probability 1/N.
 

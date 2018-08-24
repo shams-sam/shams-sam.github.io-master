@@ -30,11 +30,11 @@ Assume **survival time T is a random variable** following some distribution **ch
 * \\(\theta\\) is the set of **parameters to be estimated**
 * \\(F(t, \theta) = P(T \leq t) = \\) **probability that there is a failure** at or before time \\(t\\), for any \\(t \geq 0\\)
 * \\(F(t, \theta) \to 1\\) as \\(t \to \infty\\), since \\(F(t, \theta)\\) is a **cumulative distribution function**
-* Above tendency leads to an **implicit assumption that all candidates would eventuall fail**. While this assumptions works selectively based on settings (true for patient survival times, not true for time of repayment of loans)and hence needs to be relaxed where it does not hold true.
+* Above tendency leads to an **implicit assumption that all candidates would eventually fail**. While this assumptions works selectively based on settings (true for patient survival times, not true for time of repayment of loans) and hence needs to be relaxed where it does not hold true.
 
 **Survival times are non-negative** by definition and hence the distributions (like exponential, Weibull, gamma, lognormal etc.) characterising it are defined for value of time \\(t\\) from \\(0\\) to \\(\infty\\). 
 
-Let \\(f(t, \theta\\)\\) be the **density function** correponding to the distribution function \\(F(t, \theta)\\), then the **survival function** is given by,
+Let \\(f(t, \theta)\\) be the **density function** correponding to the distribution function \\(F(t, \theta)\\), then the **survival function** is given by,
 
 $$S(t, \theta) = 1 - F(t, \theta) = P(T \gt t) \tag{1} \label{1}$$
 
@@ -111,6 +111,191 @@ The MLE have been shown to display the following desirable properties over a lar
 - Unbiased
 - Efficient
 - Normally Distributed
+
+As mentioned, the properties of MLE are only **relevant when the sample size is large**. It is often **observed that the sample sizes in these studies are much smaller** and hence reliance on large sample properties of estimator is more tenuous.
+
+The above survival model uses observed survival time \\(t_i\\) while **ignoring the specific timing of the observed returns**. So the analysis of the fact of failure or non-failure, ignoring the timing of observed failures, would properly be based on the likelyhood function 
+
+$$L = \prod_{i=1}^n F(T_i, \theta) \prod_{i=n+1}^N S(T_i, \theta) \tag{7} \label{7}$$
+
+Estimation using \eqref{7} is a legitimate procedure and does not cause any bias or inconsistency, but the estimates are inefficient relative to MLEs from \eqref{6}.
+
+**The estimates of \\(\theta\\) gotten by maximizing \eqref{7} will be less efficient (have larger variance) than the estimates of \\(\theta\\) gotten by maximizing \eqref{6}, atleast for large sample sizes. Hence if the information on time of return is available, it should be used.**
+
+If the **truncated** case of sample is considered, then there is **no information on all the individuals who do not fail**. Formally, one starts with a cohort of \\(N\\) candidates, where **\\(N\\) is unknown**, and the only **observations available are the survival times \\(t_i\\) for the \\(n\\) individuals who fail** before the end of follow-up period. The \\(n\\) individuals appear in sample because \\(t_i \leq T_i\\), and the appropriate density is therefore
+
+$$f(t_i, \theta \mid t_i \leq T_i) = \frac{f(t_i, \theta)}{P(t_i \leq T_i)} =  \frac{f(t_i, \theta)}{F(T_i, \theta)} \tag{8} \label{8}$$
+
+And the corresponding **likelyhood function** which can be maximized to obtain the MLEs is given by,
+
+$$L = \prod_{i=1}^n f(t_i, \theta \mid t_i \leq T_i) = \prod_{i=1}^n \frac{f(t_i, \theta)}{F(T_i, \theta)} \tag{9} \label{9}$$
+
+### Explanatory Variables
+
+Information on **explanatory variables may or may not be used** in estimating survival time models. Some models that are based on the **implicit assumption that distribution of survival time is the same for all individuals**, do not use explanatory variables.
+
+**But practically it is observed that some individuals are more prone to failing than others and hence if information on individual charestistics and environmental variables is available, it should be used.**
+
+This information can be incorporated is survival models by letting the parameter \\(\theta\\) depend on these individual characteristics and a new set of parameters. E.g. exponential model depends on a single parameter, say \\(\theta\\), and **\\(\theta\\) can be assumed to depend on the individual characteristics** as in linear regression.
+
+### Non-Parametric Hazard Rate and Kaplan Meier
+
+Before beginning any formal analyses of the data, it is often instructive to check the hazard rate. For this purpose, the **time until failure are rounded to the nearest quantized time unit** (month, week, day etc.). Following this it is easy to count the **number of candidates at risk at the beginning of the said time period** (i.e. the number of individuals who have not yet failed or been censored at the beginining of the time unit) and the **number of individuals who fail during the time period**. 
+
+Then, the **non-parametric hazard rate** can be estimated as the ratio of number of failures during the time period to the number of individuals at risk at the beginning of time period, i.e., if the number of individuals at risk at the beginning of time \\(t \, (t = 1, 2, \cdots)\\) is denoted by \\(r\\), and the number of individuals who fail during this time \\(t\\) is denoted by \\(n_t\\), then the estimated hazard for time \\(t\\), \\(\hat{h}(t)\\) is given by,
+
+$$\hat{h}(t) = \frac{n_t}{r} \tag{10} \label{10}$$
+
+Such estimated hazard rates are prone to high variability. Also this high variability makes the purely non parametric estimates unattractive as they are less likely to give an accurate prediction on a new dataset. The parametric models such as exponential, Weibull or lognormal take care of this high variability and makes the model more tractable.
+
+**But the plots of non parametric estimates of hazard rate provides a good initial guide as to which probability distribution may work well for a given usecase.**
+
+As noted earlier, the hazard function, density function, and distribution function are alternative but equivalent ways of characterizing the distribution of the time until failure. Hence, once the hazard rate is estimated, then implicitly so is the density and the distribution function. It is possible to solve explicitly for the estimated density of distribution function in terms of the estimated hazard function. The resulting estimator (called **Kaplan Meier** or **product limit** estimator in statistical literature which is nothing but the non-parametric estimate) of the distribution function is given by,
+
+$$\hat{F}(t) = 1 - \prod_{j=1}^t [1 - \hat{h}(j)] \tag{11} \label{11}$$
+
+### Models without Explanatory Variables
+
+There are various models that do not consider the explanatory variables, and instead **assume some specific distribution** such as exponential, Weibull, or lognormal for the length of time until failure. Essentially, the distribution of time until failure is known, except for some **unknown parameters that have to be estimated**. Hence, models of this type are called parametric models, which are different from the models discussed before as the later have no associated parameters or distribution.
+
+The unknown parameters are **estimated by maximizing the likelyhood function** of the form \eqref{6}. 
+
+> In case of exponential distribution, MLEs cannot be written in closed form (i.e. expressed algebraically), and so the maximization of likelyhood function is done numerically.
+
+Once the characteristic parameters have been estimated, one can determine the following (which cannot be determined in case of non-parametric estimates like Kaplan Meier):
+
+- **mean time** until failures
+- **proportion of population that should be expected to fail** within any arbitrary period of time.
+
+While the **advantage of such models lies in the smoothness of predictions**, the **disadvatage is the fact that it can be wrong and inturn lead to statements that are systematically misleading**. 
+
+**Exponential Distribution**
+
+The exponential distribution has density,
+
+$$f(t) = \theta \, e^{-\theta t} \tag{12} \label{12}$$
+
+and **survivor function**,
+
+$$S(t) = e^{-\theta t} \tag{13} \label{13}$$
+
+where
+
+- the parameter is constrained, \\(\theta \gt 0\\)
+- mean: \\(1 / \theta\\) and variance: \\(1 / \theta^2\\)
+- only distribution with a **constant hazard rate**, specifically \\(h(t) = \theta\\) for all \\(t \geq 0\\)
+- such hazard rates are generally seen in some physical processes such as radioactive decay.
+- it is often not the most reasonable distribution for survival models.
+- exponential distribution requires estimation of single parameter \\(\theta\\).
+
+Consider a sample of \\(N\\) individuals, of which \\(n\\) have failed before the end of the follow-up period. The observed failure times be denoted by \\(t_i\, (i=1, 2, \cdots, n)\\) and the censoring times (length of follow up) for the non-failures de denoted by \\(T_i\, (i = n+1, \cdots, N)\\). Then the likelyhood function \eqref{6} can be written as 
+
+$$L = \prod_{i=1}^n \theta\,e^{-\theta t_i} \prod_{i=n+1}^N e^{-\theta T_i} \tag{14} \label{14}$$
+
+Maximizing \eqref{14} w.r.t. \\(\theta\\) yields MLE in closed form:
+
+$$\hat{\theta} = \frac {n} {\sum_{i=1}^n t_i + \sum_{i=n+1}^N T_i} \tag{15} \label{15}$$
+
+For large samples \\(\hat{\theta}\\) is normal with mean \\(\theta\\) and variance
+
+$$\frac{\theta^2}{\sum_{i=1}^N [1 - exp(-\theta T_i)]} \tag{16} \label{16}$$
+
+which for large \\(N\\) is adequately approximated by \\(\theta^2/n\\).
+
+- Exponential distribution is highly skewed.
+- Mean may not be a good measure of central tendency for exponential distribution.
+- Median may be more preferrable indicator in most cases.
+
+> Logarithm of likelyhood or log-likelyhood is used as a value to measure the goodness of fit. A higher value (more positive or less negative) for this variable indicates that the model fits the data better.
+
+
+**Weibull Distribution**
+
+In statistical literature, a very common alternative to the exponential distribution is the Weibull distribution. It is a generalization of the exponential distribution. By using Weibull distribution one can test to check if a simpler exponential model is more appropriate.
+
+- A variable \\(T\\) has Weibull distribution if \\(T^{\tau}\\) has an exponential distribution for some value of \\(\tau\\).
+- increasing hazard rate if \\(\tau \gt 1\\) and decreasing hazard rate if \\(\tau \lt 1\\). Also, if \\(\tau = 1\\) the hazard rate is constant and the Weibull distribution reduces to the exponential.
+- **Weibull distribution has a monotonic hazard rate**, i.e it can be increasing, constant or decreasing but it cannot be increasing at first and then decreasing after some point.
+
+The density of Weibull distribution is given by,
+
+$$f(t) = \tau \theta^{\tau} \, t^{\tau -1} e^{-(\theta t)^\tau} \tag{17} \label{17}$$
+
+and the survivor function is,
+
+$$S(t) = e^{-(\theta t)^\tau} \tag{18} \label{18}$$
+
+The likelyhood function for Weibull distribution can be derived by substituting \eqref{17} and \eqref{18} in \eqref{6}.
+
+
+**Lognormal Distribution**
+
+If \\(z\\) is distributed as \\(N(\mu, \sigma^2)\\), then \\(y = e^z\\) has a lognormal distribution with mean
+
+$$\phi = exp(\mu + {1 \over 2} \sigma^2) \tag{19} \label{19}$$
+
+and variance,
+
+$$\tau^2 = exp(2 \mu + \sigma^2) [exp(\sigma^2) -1] = \phi^2 \psi^2 \tag{20} \label{20}$$
+
+where 
+
+$$\psi^2 = exp(\sigma^2) - 1 \tag{21} \label{21}$$
+
+The **density** of \\(z = ln \, y\\) is the density of \\(N(\mu, \sigma^2)\\) given by,
+
+$$f(ln \, y) = (1 / \sqrt{2\pi} \sigma) exp [-(1/2 \sigma^2) (ln\, y - \mu)^2] \tag{22} \label{22}$$
+
+Generally there is **no advantage to working with the density of \\(y\\) itself, rather than \\(ln \, y\\)**. Thus, one can simply assume that log of survival time is distributed normally, and hence the likelyhood function \eqref{6} becomes
+
+$$
+\begin{align}
+L = &- {n \over 2} ln(2\pi) - {n \over 2} ln(\sigma^2) - {1 \over 2\sigma^2} \sum_{i=1}^n (ln\, t_i - \mu)^2 \\
+&+ \sum_{i=n+1}^N ln \, F \left[ \frac {\mu - ln\, T_i} {\sigma} \right]
+\end{align}
+\tag{23} \label{23}
+$$
+
+- where **\\(F\\) is the cumulative distribution function** for \\(N(0, 1)\\) distribution.
+- **No analytical solution** exists for the maximization of \eqref{23} w.r.t. \\(\mu\\), and \\(\sigma^2\\), so it **must be maximized numerically**.
+- the hazard function for lognormal distribution is complicated; it **increases first and then decreases**.
+
+**Other distributions**
+
+Although exponential, Weibull and lognormal are among the three most used distributions, there are various other well-known probability distributions possible, such as 
+
+- log-logistic
+- LaGuerre
+- distributions based on Box-Cox power transformation of the normal
+
+There are various ways of measuring how well models fit the data:
+
+- value of likelyhood (or log-likelyhood) function
+- maximum difference between the fitted value and actual cumulative distribution function
+- standard Kolmogorov-Smirnov test of goodness of fit
+- chi-square goodness-of-fit statistic based on predicted and actual failure times.
+
+Over time it has been observed that even though some of these parametric distributions **might fit the data** better than others and excel on various metrics of good fit of data, these **do not give any explaination about the reasons governing the distribution** or any **insight into the affecting parameters** that lead to the different survival times in a population. Hence, these parametric models without the explanatory variables are not considered to be an effective tool for analysis.
+
+### Models with Explanatory Variables
+
+- Explanatory variables are in general added to survival models in an attempt to make more accurate predictions: the practical experiments over time corroborate the fact that individual characteristics, previous experiences and environmental setup helps predict whether or not a person will fail.
+
+- An analysis of survival time without using the explanatory variables amounts to an analysis of its **marginal distribution**, whereas an analysis using explanatory variable amounts to an analysis of the **distribution of survival time conditional on these variables**.
+
+> Variance of the conditional distribution is less than the variance of the marginal distribution, i.e. expect more precise distribution from former.
+
+- Another more fundamental reason may include the interest of understanding the effect of explanatory variables on the survival time.
+
+- More generally, these variables might be the demographics or environmental characteristics.
+
+### Proportional Hazards Model
+
+- allows one to estimate the effects of individual characteristics on survival time without having to assume a specific parametric form of distribution of time until failure.
+
+- For an individual with the vector of characteristics, \\(x\\), the proportional hazards model assumes a hazard rate of the form, 
+
+$$h(t \mid x) = h_0(t) e^{x' \beta} \tag{24} \label{24}$$
 
 ## REFERENCES:
 

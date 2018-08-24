@@ -62,7 +62,7 @@ $$nDCG_p = \frac {DCG_p} {IDCG_p}$$
 
 * The average of nDCG for all queries gives a measure of average performance of ranking algorithms in the search process.
 
-* For a **perfect ranking algorithm*,
+* For a **perfect ranking algorithm**,
 
 \\[DCG_p = IDCG_p\\]
 

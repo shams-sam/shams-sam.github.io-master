@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Machine Learning Medium</title>
- <link href="https://machinelearningmedium.com/atom.xml" rel="self"/>
- <link href="https://machinelearningmedium.com/"/>
- <updated>2018-08-13T01:38:41+05:30</updated>
- <id>https://machinelearningmedium.com</id>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2018-08-23T15:44:41+05:30</updated>
+ <id>http://localhost:4000</id>
  <author>
    <name>Shams S</name>
    <email>shams.sam@live.com</email>
@@ -13,10 +13,46 @@
 
  
  <entry>
+   <title>The Language of Bits</title>
+   <link href="http://localhost:4000/2018/08/09/language-of-bits/"/>
+   <updated>2018-08-09T00:00:00+05:30</updated>
+   <id>http://localhost:4000/2018/08/09/language-of-bits</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Todo</title>
+   <link href="http://localhost:4000/2018/07/26/todo/"/>
+   <updated>2018-07-26T01:27:20+05:30</updated>
+   <id>http://localhost:4000/2018/07/26/todo</id>
+   <content type="html">&lt;ol&gt;
+  &lt;li&gt;continuous random variable derivations for cdf and expected value, and variance for different distributions.&lt;/li&gt;
+  &lt;li&gt;difference between regression in statistics vs in supervised learning&lt;/li&gt;
+  &lt;li&gt;maximum likelyhood estimation&lt;/li&gt;
+  &lt;li&gt;Value of regularization parameter in gradient descent vs normal equation&lt;/li&gt;
+  &lt;li&gt;Primality Test https://en.wikipedia.org/wiki/Primality_test&lt;/li&gt;
+  &lt;li&gt;Euclid’s Algorithm, https://en.wikipedia.org/wiki/Euclidean_algorithm, https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm, http://e-maxx.ru/algo/extended_euclid_algorithm#3&lt;/li&gt;
+  &lt;li&gt;Legal Side of Open Source https://opensource.guide/legal/#why-do-people-care-so-much-about-the-legal-side-of-open-source&lt;/li&gt;
+  &lt;li&gt;Chinese Remainder Theorem&lt;/li&gt;
+  &lt;li&gt;Unsupervised learning&lt;/li&gt;
+  &lt;li&gt;SVM&lt;/li&gt;
+  &lt;li&gt;AdaBoost&lt;/li&gt;
+  &lt;li&gt;Deaggregation of time series data&lt;/li&gt;
+  &lt;li&gt;http://lamda.nju.edu.cn/weixs/project/CNNTricks/CNNTricks.html&lt;/li&gt;
+  &lt;li&gt;Symmetric Positive Definite in Covariance matrix PCA&lt;/li&gt;
+  &lt;li&gt;low rank matrix factorization&lt;/li&gt;
+  &lt;li&gt;Expander Graph Learning Approach&lt;/li&gt;
+  &lt;li&gt;Beam Search&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Introduction to Computer Architecture</title>
-   <link href="https://machinelearningmedium.com/2018/07/25/introduction-to-computer-architecture/"/>
+   <link href="http://localhost:4000/2018/07/25/introduction-to-computer-architecture/"/>
    <updated>2018-07-25T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2018/07/25/introduction-to-computer-architecture</id>
+   <id>http://localhost:4000/2018/07/25/introduction-to-computer-architecture</id>
    <content type="html">&lt;h3 id=&quot;what-is-a-computer&quot;&gt;What is a Computer?&lt;/h3&gt;
 
 &lt;p&gt;A computer is a general purpose device that can be programmed process information, yield meaningful results.&lt;/p&gt;
@@ -259,10 +295,366 @@ mem[a] = r3
  </entry>
  
  <entry>
+   <title>Introduction to Survival Analysis</title>
+   <link href="http://localhost:4000/2018/07/23/survival-analysis/"/>
+   <updated>2018-07-23T00:00:00+05:30</updated>
+   <id>http://localhost:4000/2018/07/23/survival-analysis</id>
+   <content type="html">&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
+
+&lt;p&gt;Survival analysis refers to the set of statistical analyses that are used to analyze the length of time until an event of interest occurs. These methods have been traditionally used in analysing the survival times of patients and hence the name. But they also have a utility in a lot of different application including but not limited to analysis of the time of recidivism, failure of equipments, survival time of patients etc. Hence, simply put the phrase &lt;strong&gt;survival time&lt;/strong&gt; is used to refer to the type of variable of interest. It is often also referred by names such as &lt;strong&gt;failure time&lt;/strong&gt; and &lt;strong&gt;waiting time&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Such studies generally work with &lt;strong&gt;data leading upto an event of interest&lt;/strong&gt; along with several other characteristics of individual data points that may be used to explain the survival times statistically.&lt;/p&gt;
+
+&lt;p&gt;The statistical problem (survival analysis) is to construct and estimate an appropriate model of the time of event occurance. A survival model fulfills the following expectations:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;yield predictions of number of individuals who will fail (undergo the event of interest) at any length of time since the beginning of observation (or other decided point in time).&lt;/li&gt;
+  &lt;li&gt;estimate the effect of observable individual characteristics on the survival time (to check the relevance of one variable holding constant all others).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It is often observed that the survival models such as proportional hazard model are capable of &lt;strong&gt;explaining the survival times in terms of observed characteristics&lt;/strong&gt; which is better than straight-forward statistical inferences such as &lt;strong&gt;rates of event occurence without considering characteristic features&lt;/strong&gt; of data.&lt;/p&gt;
+
+&lt;h3 id=&quot;basics&quot;&gt;Basics&lt;/h3&gt;
+
+&lt;p&gt;Assume &lt;strong&gt;survival time T is a random variable&lt;/strong&gt; following some distribution &lt;strong&gt;characterized by cumulative distribution function \(F(t, \theta)\)&lt;/strong&gt;, where&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;\(\theta\) is the set of &lt;strong&gt;parameters to be estimated&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;\(F(t, \theta) = P(T \leq t) = \) &lt;strong&gt;probability that there is a failure&lt;/strong&gt; at or before time \(t\), for any \(t \geq 0\)&lt;/li&gt;
+  &lt;li&gt;\(F(t, \theta) \to 1\) as \(t \to \infty\), since \(F(t, \theta)\) is a &lt;strong&gt;cumulative distribution function&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Above tendency leads to an &lt;strong&gt;implicit assumption that all candidates would eventually fail&lt;/strong&gt;. While this assumptions works selectively based on settings (true for patient survival times, not true for time of repayment of loans) and hence needs to be relaxed where it does not hold true.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Survival times are non-negative&lt;/strong&gt; by definition and hence the distributions (like exponential, Weibull, gamma, lognormal etc.) characterising it are defined for value of time \(t\) from \(0\) to \(\infty\).&lt;/p&gt;
+
+&lt;p&gt;Let \(f(t, \theta)\) be the &lt;strong&gt;density function&lt;/strong&gt; correponding to the distribution function \(F(t, \theta)\), then the &lt;strong&gt;survival function&lt;/strong&gt; is given by,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S(t, \theta) = 1 - F(t, \theta) = P(T \gt t) \tag{1} \label{1}&lt;/script&gt;
+
+&lt;p&gt;which gives the &lt;strong&gt;probability of survival&lt;/strong&gt; until time \(t\) (\(S(t, \theta) \to 0\) as \(t \to \infty\) because, \(F(t, \theta) \to 1\) as \(t \to \infty\)).&lt;/p&gt;
+
+&lt;p&gt;Another useful concept in survival analysis is called &lt;strong&gt;hazard rate&lt;/strong&gt;, defined by,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;h(t, \theta) = \frac{f(t, \theta)} {1-F(t, \theta)} = \frac{f(t, \theta)} {S(t, \theta)} \tag{2} \label{2}&lt;/script&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hazard rate represents the density of a failure at time \(t\), conditional on no failure prior to time \(t\), i.e., it indicates the probability of failure in the next unit of time, given that no failure has occured yet.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;While \(f(t, \theta)\) roughly represents the proportion of original cohort that should be expected to fail between time \(t\) and \(t+1\), hazard rate \(h(t, \theta)\) represents the proportion of survivors until time \(t\) that should be expected to fail in the same time window, \(t\) to \(t+1\).&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The relationship betwee the cumulative distribution function and the hazard rate is given by,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;F(t, \theta) = 1 - exp \left[ - \int_0^t h(x, \theta) dx \right] \tag{3} \label{3}&lt;/script&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;h(t, \theta) = - \frac {d\,ln\,[1 - F(t, \theta)]} {dt} \tag{4} \label{4}&lt;/script&gt;
+
+&lt;p&gt;The fact that \(F(t, \theta)\) is a cdf puts some restrictions on the hazard rate,&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;hazard rate is non-negative function&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;H(t, \theta) = \int_0^t h(x, \theta) dx \tag{5} \label{5}&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the integrated hazard in \eqref{5} is finite for finite \(t\) and tends to \(\infty\) as \(t\) approaches \(\infty\).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;state-dependence&quot;&gt;State Dependence&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Positive state dependence or an increasing hazard rate \(dh(t)/dt \gt 0 \) indicates that the &lt;strong&gt;probability of failure during the next time unit increases&lt;/strong&gt; as the length of time at risk increases.&lt;/li&gt;
+  &lt;li&gt;Negative state dependence or a decreasing hazard rate \(dh(t)/dt \lt 0 \) indicates that the &lt;strong&gt;probability of failure in the next time unit decreases&lt;/strong&gt; as the length of time at risk decreases.&lt;/li&gt;
+  &lt;li&gt;No state dependence indicates a &lt;strong&gt;constant hazard rate&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Only exponential distribution displays no state dependence.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;censoring-and-truncation&quot;&gt;Censoring and Truncation&lt;/h3&gt;
+
+&lt;p&gt;A common feature of data on survival times is that they are censored or truncated. Censoring and truncation are statistical terms that refer to the &lt;strong&gt;inability to observe the variable of interest for the entire population&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A standard example to understand this can be understood in the form of a case of an individual shooting at a round target with a rifle and the variable of interest is the distance by which the bullet misses the center of the target.&lt;/li&gt;
+  &lt;li&gt;If all shots hit the target, this distance can be measure for all the shots and there is no problem of censoring or truncation.&lt;/li&gt;
+  &lt;li&gt;If some shots miss the target, but we know the number of shots fired, &lt;strong&gt;the sample is censored&lt;/strong&gt;. In this case either the distance of shot from center is known or it is known that it was atleast as large as the radius of the target.&lt;/li&gt;
+  &lt;li&gt;Similarly if one does not know how many shots were fired but only have information about distance for shots that hit the target, &lt;strong&gt;the sample is truncated&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Censored sample has more information than a truncated sample.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Survival times are often censored because not all candidates would fail by the end of time during which the data was collected. This &lt;strong&gt;censoring of data must be taken into account&lt;/strong&gt; while making the estimations because it is &lt;strong&gt;not legitimate to drop such observations&lt;/strong&gt; with unobserved survival times &lt;strong&gt;r to set survival times for these observations equal to the length of the follow-up period&lt;/strong&gt; (when the data was collected).&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Infrequently so, but there is also a chance of getting information about a candidate during a follow-up collection who was not a part of the original population. In such cases the &lt;strong&gt;survival time is truncated&lt;/strong&gt; because there is no information of the candidate or his survival time.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;problem-of-estimation&quot;&gt;Problem of Estimation&lt;/h3&gt;
+
+&lt;p&gt;The initial assumption specifies a cumulative distribution function \(F(t, \theta)\), or equivalently a density \(f(t, \theta)\) or hazard \(h(t, \theta)\) that is of a known form except that it depends on a unknown parameter \(\theta\). Estimation of this parameter is first step for the model to make any meaningful prediction about the survival time of new candidate&lt;/p&gt;
+
+&lt;p&gt;Consider a case of estimation of parameter for a censored sample which is defined as follows,&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;sample has \(N\) individuals with follow-up periods \(T_1, T_2, \cdots, T_N\). These follow-ups may be all equal, but they usually are not.&lt;/li&gt;
+  &lt;li&gt;\(n\) is number of individuals who fail, numbered \(1, 2, \cdots, n\) and individuals numbered \(n+1, n+2, \cdots, N\) are the non-failures.&lt;/li&gt;
+  &lt;li&gt;for the candidates who fail, there exists a survival time \(t_i \leq T_i, \, i \in [1, n]\)&lt;/li&gt;
+  &lt;li&gt;for the non-failures, survival time \(t_i\) is not observed but it is known that it is greater than the length of the follow-up period \(T_i\), \(i \in [n+1, N]\).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If it is assumed that &lt;strong&gt;all the outcomes are independent&lt;/strong&gt; of each other the likelyhood function of the sample is,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;L = \prod_{i=1}^n f(t_i, \theta) \prod_{i=n+1}^N S(T_i, \theta) \tag{6} \label{6}&lt;/script&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Likelyhood function is a general statistical tool that expresses the probability of outcomes observed in terms of unknown parameters that are to be estimated, i.e., it is function of the parameters to be estimated, which serves as a measure of how likely it is that the statistical model, with a given parameter value, would generate the given data.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A common used estimator of \(\theta\) is the &lt;strong&gt;Maximum Likelyhood Estimator (MLE)&lt;/strong&gt; which is defined as the value of \(\theta\) that maximizes the likelyhood function.&lt;/p&gt;
+
+&lt;p&gt;The MLE have been shown to display the following desirable properties over a large sample (&lt;strong&gt;as the sample size approaches infinity&lt;/strong&gt;),&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Unbiased&lt;/li&gt;
+  &lt;li&gt;Efficient&lt;/li&gt;
+  &lt;li&gt;Normally Distributed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As mentioned, the properties of MLE are only &lt;strong&gt;relevant when the sample size is large&lt;/strong&gt;. It is often &lt;strong&gt;observed that the sample sizes in these studies are much smaller&lt;/strong&gt; and hence reliance on large sample properties of estimator is more tenuous.&lt;/p&gt;
+
+&lt;p&gt;The above survival model uses observed survival time \(t_i\) while &lt;strong&gt;ignoring the specific timing of the observed returns&lt;/strong&gt;. So the analysis of the fact of failure or non-failure, ignoring the timing of observed failures, would properly be based on the likelyhood function&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;L = \prod_{i=1}^n F(T_i, \theta) \prod_{i=n+1}^N S(T_i, \theta) \tag{7} \label{7}&lt;/script&gt;
+
+&lt;p&gt;Estimation using \eqref{7} is a legitimate procedure and does not cause any bias or inconsistency, but the estimates are inefficient relative to MLEs from \eqref{6}.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The estimates of \(\theta\) gotten by maximizing \eqref{7} will be less efficient (have larger variance) than the estimates of \(\theta\) gotten by maximizing \eqref{6}, atleast for large sample sizes. Hence if the information on time of return is available, it should be used.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;If the &lt;strong&gt;truncated&lt;/strong&gt; case of sample is considered, then there is &lt;strong&gt;no information on all the individuals who do not fail&lt;/strong&gt;. Formally, one starts with a cohort of \(N\) candidates, where &lt;strong&gt;\(N\) is unknown&lt;/strong&gt;, and the only &lt;strong&gt;observations available are the survival times \(t_i\) for the \(n\) individuals who fail&lt;/strong&gt; before the end of follow-up period. The \(n\) individuals appear in sample because \(t_i \leq T_i\), and the appropriate density is therefore&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(t_i, \theta \mid t_i \leq T_i) = \frac{f(t_i, \theta)}{P(t_i \leq T_i)} =  \frac{f(t_i, \theta)}{F(T_i, \theta)} \tag{8} \label{8}&lt;/script&gt;
+
+&lt;p&gt;And the corresponding &lt;strong&gt;likelyhood function&lt;/strong&gt; which can be maximized to obtain the MLEs is given by,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;L = \prod_{i=1}^n f(t_i, \theta \mid t_i \leq T_i) = \prod_{i=1}^n \frac{f(t_i, \theta)}{F(T_i, \theta)} \tag{9} \label{9}&lt;/script&gt;
+
+&lt;h3 id=&quot;explanatory-variables&quot;&gt;Explanatory Variables&lt;/h3&gt;
+
+&lt;p&gt;Information on &lt;strong&gt;explanatory variables may or may not be used&lt;/strong&gt; in estimating survival time models. Some models that are based on the &lt;strong&gt;implicit assumption that distribution of survival time is the same for all individuals&lt;/strong&gt;, do not use explanatory variables.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;But practically it is observed that some individuals are more prone to failing than others and hence if information on individual charestistics and environmental variables is available, it should be used.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This information can be incorporated is survival models by letting the parameter \(\theta\) depend on these individual characteristics and a new set of parameters. E.g. exponential model depends on a single parameter, say \(\theta\), and &lt;strong&gt;\(\theta\) can be assumed to depend on the individual characteristics&lt;/strong&gt; as in linear regression.&lt;/p&gt;
+
+&lt;h3 id=&quot;non-parametric-hazard-rate-and-kaplan-meier&quot;&gt;Non-Parametric Hazard Rate and Kaplan Meier&lt;/h3&gt;
+
+&lt;p&gt;Before beginning any formal analyses of the data, it is often instructive to check the hazard rate. For this purpose, the &lt;strong&gt;time until failure are rounded to the nearest quantized time unit&lt;/strong&gt; (month, week, day etc.). Following this it is easy to count the &lt;strong&gt;number of candidates at risk at the beginning of the said time period&lt;/strong&gt; (i.e. the number of individuals who have not yet failed or been censored at the beginining of the time unit) and the &lt;strong&gt;number of individuals who fail during the time period&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then, the &lt;strong&gt;non-parametric hazard rate&lt;/strong&gt; can be estimated as the ratio of number of failures during the time period to the number of individuals at risk at the beginning of time period, i.e., if the number of individuals at risk at the beginning of time \(t \, (t = 1, 2, \cdots)\) is denoted by \(r\), and the number of individuals who fail during this time \(t\) is denoted by \(n_t\), then the estimated hazard for time \(t\), \(\hat{h}(t)\) is given by,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{h}(t) = \frac{n_t}{r} \tag{10} \label{10}&lt;/script&gt;
+
+&lt;p&gt;Such estimated hazard rates are prone to high variability. Also this high variability makes the purely non parametric estimates unattractive as they are less likely to give an accurate prediction on a new dataset. The parametric models such as exponential, Weibull or lognormal take care of this high variability and makes the model more tractable.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;But the plots of non parametric estimates of hazard rate provides a good initial guide as to which probability distribution may work well for a given usecase.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;As noted earlier, the hazard function, density function, and distribution function are alternative but equivalent ways of characterizing the distribution of the time until failure. Hence, once the hazard rate is estimated, then implicitly so is the density and the distribution function. It is possible to solve explicitly for the estimated density of distribution function in terms of the estimated hazard function. The resulting estimator (called &lt;strong&gt;Kaplan Meier&lt;/strong&gt; or &lt;strong&gt;product limit&lt;/strong&gt; estimator in statistical literature which is nothing but the non-parametric estimate) of the distribution function is given by,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{F}(t) = 1 - \prod_{j=1}^t [1 - \hat{h}(j)] \tag{11} \label{11}&lt;/script&gt;
+
+&lt;h3 id=&quot;models-without-explanatory-variables&quot;&gt;Models without Explanatory Variables&lt;/h3&gt;
+
+&lt;p&gt;There are various models that do not consider the explanatory variables, and instead &lt;strong&gt;assume some specific distribution&lt;/strong&gt; such as exponential, Weibull, or lognormal for the length of time until failure. Essentially, the distribution of time until failure is known, except for some &lt;strong&gt;unknown parameters that have to be estimated&lt;/strong&gt;. Hence, models of this type are called parametric models, which are different from the models discussed before as the later have no associated parameters or distribution.&lt;/p&gt;
+
+&lt;p&gt;The unknown parameters are &lt;strong&gt;estimated by maximizing the likelyhood function&lt;/strong&gt; of the form \eqref{6}.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In case of exponential distribution, MLEs cannot be written in closed form (i.e. expressed algebraically), and so the maximization of likelyhood function is done numerically.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Once the characteristic parameters have been estimated, one can determine the following (which cannot be determined in case of non-parametric estimates like Kaplan Meier):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;mean time&lt;/strong&gt; until failures&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;proportion of population that should be expected to fail&lt;/strong&gt; within any arbitrary period of time.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;While the &lt;strong&gt;advantage of such models lies in the smoothness of predictions&lt;/strong&gt;, the &lt;strong&gt;disadvatage is the fact that it can be wrong and inturn lead to statements that are systematically misleading&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Exponential Distribution&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The exponential distribution has density,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(t) = \theta \, e^{-\theta t} \tag{12} \label{12}&lt;/script&gt;
+
+&lt;p&gt;and &lt;strong&gt;survivor function&lt;/strong&gt;,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S(t) = e^{-\theta t} \tag{13} \label{13}&lt;/script&gt;
+
+&lt;p&gt;where&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the parameter is constrained, \(\theta \gt 0\)&lt;/li&gt;
+  &lt;li&gt;mean: \(1 / \theta\) and variance: \(1 / \theta^2\)&lt;/li&gt;
+  &lt;li&gt;only distribution with a &lt;strong&gt;constant hazard rate&lt;/strong&gt;, specifically \(h(t) = \theta\) for all \(t \geq 0\)&lt;/li&gt;
+  &lt;li&gt;such hazard rates are generally seen in some physical processes such as radioactive decay.&lt;/li&gt;
+  &lt;li&gt;it is often not the most reasonable distribution for survival models.&lt;/li&gt;
+  &lt;li&gt;exponential distribution requires estimation of single parameter \(\theta\).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Consider a sample of \(N\) individuals, of which \(n\) have failed before the end of the follow-up period. The observed failure times be denoted by \(t_i\, (i=1, 2, \cdots, n)\) and the censoring times (length of follow up) for the non-failures de denoted by \(T_i\, (i = n+1, \cdots, N)\). Then the likelyhood function \eqref{6} can be written as&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;L = \prod_{i=1}^n \theta\,e^{-\theta t_i} \prod_{i=n+1}^N e^{-\theta T_i} \tag{14} \label{14}&lt;/script&gt;
+
+&lt;p&gt;Maximizing \eqref{14} w.r.t. \(\theta\) yields MLE in closed form:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\hat{\theta} = \frac {n} {\sum_{i=1}^n t_i + \sum_{i=n+1}^N T_i} \tag{15} \label{15}&lt;/script&gt;
+
+&lt;p&gt;For large samples \(\hat{\theta}\) is normal with mean \(\theta\) and variance&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\theta^2}{\sum_{i=1}^N [1 - exp(-\theta T_i)]} \tag{16} \label{16}&lt;/script&gt;
+
+&lt;p&gt;which for large \(N\) is adequately approximated by \(\theta^2/n\).&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Exponential distribution is highly skewed.&lt;/li&gt;
+  &lt;li&gt;Mean may not be a good measure of central tendency for exponential distribution.&lt;/li&gt;
+  &lt;li&gt;Median may be more preferrable indicator in most cases.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Logarithm of likelyhood or log-likelyhood is used as a value to measure the goodness of fit. A higher value (more positive or less negative) for this variable indicates that the model fits the data better.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Weibull Distribution&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In statistical literature, a very common alternative to the exponential distribution is the Weibull distribution. It is a generalization of the exponential distribution. By using Weibull distribution one can test to check if a simpler exponential model is more appropriate.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A variable \(T\) has Weibull distribution if \(T^{\tau}\) has an exponential distribution for some value of \(\tau\).&lt;/li&gt;
+  &lt;li&gt;increasing hazard rate if \(\tau \gt 1\) and decreasing hazard rate if \(\tau \lt 1\). Also, if \(\tau = 1\) the hazard rate is constant and the Weibull distribution reduces to the exponential.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Weibull distribution has a monotonic hazard rate&lt;/strong&gt;, i.e it can be increasing, constant or decreasing but it cannot be increasing at first and then decreasing after some point.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The density of Weibull distribution is given by,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(t) = \tau \theta^{\tau} \, t^{\tau -1} e^{-(\theta t)^\tau} \tag{17} \label{17}&lt;/script&gt;
+
+&lt;p&gt;and the survivor function is,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;S(t) = e^{-(\theta t)^\tau} \tag{18} \label{18}&lt;/script&gt;
+
+&lt;p&gt;The likelyhood function for Weibull distribution can be derived by substituting \eqref{17} and \eqref{18} in \eqref{6}.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lognormal Distribution&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;If \(z\) is distributed as \(N(\mu, \sigma^2)\), then \(y = e^z\) has a lognormal distribution with mean&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\phi = exp(\mu + {1 \over 2} \sigma^2) \tag{19} \label{19}&lt;/script&gt;
+
+&lt;p&gt;and variance,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\tau^2 = exp(2 \mu + \sigma^2) [exp(\sigma^2) -1] = \phi^2 \psi^2 \tag{20} \label{20}&lt;/script&gt;
+
+&lt;p&gt;where&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\psi^2 = exp(\sigma^2) - 1 \tag{21} \label{21}&lt;/script&gt;
+
+&lt;p&gt;The &lt;strong&gt;density&lt;/strong&gt; of \(z = ln \, y\) is the density of \(N(\mu, \sigma^2)\) given by,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f(ln \, y) = (1 / \sqrt{2\pi} \sigma) exp [-(1/2 \sigma^2) (ln\, y - \mu)^2] \tag{22} \label{22}&lt;/script&gt;
+
+&lt;p&gt;Generally there is &lt;strong&gt;no advantage to working with the density of \(y\) itself, rather than \(ln \, y\)&lt;/strong&gt;. Thus, one can simply assume that log of survival time is distributed normally, and hence the likelyhood function \eqref{6} becomes&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+L = &amp;- {n \over 2} ln(2\pi) - {n \over 2} ln(\sigma^2) - {1 \over 2\sigma^2} \sum_{i=1}^n (ln\, t_i - \mu)^2 \\
+&amp;+ \sum_{i=n+1}^N ln \, F \left[ \frac {\mu - ln\, T_i} {\sigma} \right]
+\end{align}
+\tag{23} \label{23} %]]&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;where &lt;strong&gt;\(F\) is the cumulative distribution function&lt;/strong&gt; for \(N(0, 1)\) distribution.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;No analytical solution&lt;/strong&gt; exists for the maximization of \eqref{23} w.r.t. \(\mu\), and \(\sigma^2\), so it &lt;strong&gt;must be maximized numerically&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;the hazard function for lognormal distribution is complicated; it &lt;strong&gt;increases first and then decreases&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Other distributions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Although exponential, Weibull and lognormal are among the three most used distributions, there are various other well-known probability distributions possible, such as&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;log-logistic&lt;/li&gt;
+  &lt;li&gt;LaGuerre&lt;/li&gt;
+  &lt;li&gt;distributions based on Box-Cox power transformation of the normal&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are various ways of measuring how well models fit the data:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;value of likelyhood (or log-likelyhood) function&lt;/li&gt;
+  &lt;li&gt;maximum difference between the fitted value and actual cumulative distribution function&lt;/li&gt;
+  &lt;li&gt;standard Kolmogorov-Smirnov test of goodness of fit&lt;/li&gt;
+  &lt;li&gt;chi-square goodness-of-fit statistic based on predicted and actual failure times.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Over time it has been observed that even though some of these parametric distributions &lt;strong&gt;might fit the data&lt;/strong&gt; better than others and excel on various metrics of good fit of data, these &lt;strong&gt;do not give any explaination about the reasons governing the distribution&lt;/strong&gt; or any &lt;strong&gt;insight into the affecting parameters&lt;/strong&gt; that lead to the different survival times in a population. Hence, these parametric models without the explanatory variables are not considered to be an effective tool for analysis.&lt;/p&gt;
+
+&lt;h3 id=&quot;models-with-explanatory-variables&quot;&gt;Models with Explanatory Variables&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Explanatory variables are in general added to survival models in an attempt to make more accurate predictions: the practical experiments over time corroborate the fact that individual characteristics, previous experiences and environmental setup helps predict whether or not a person will fail.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;An analysis of survival time without using the explanatory variables amounts to an analysis of its &lt;strong&gt;marginal distribution&lt;/strong&gt;, whereas an analysis using explanatory variable amounts to an analysis of the &lt;strong&gt;distribution of survival time conditional on these variables&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Variance of the conditional distribution is less than the variance of the marginal distribution, i.e. expect more precise distribution from former.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Another more fundamental reason may include the interest of understanding the effect of explanatory variables on the survival time.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;More generally, these variables might be the demographics or environmental characteristics.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;proportional-hazards-model&quot;&gt;Proportional Hazards Model&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;allows one to estimate the effects of individual characteristics on survival time without having to assume a specific parametric form of distribution of time until failure.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;For an individual with the vector of characteristics, \(x\), the proportional hazards model assumes a hazard rate of the form,&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;h(t \mid x) = h_0(t) e^{x' \beta} \tag{24} \label{24}&lt;/script&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;REFERENCES:&lt;/h2&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;a href=&quot;https://link.springer.com/article/10.1007/BF01083132#&quot; target=&quot;_blank&quot;&gt;Survival Analysis: A Survey&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Google Smart Reply</title>
-   <link href="https://machinelearningmedium.com/2018/07/22/google-smart-reply/"/>
+   <link href="http://localhost:4000/2018/07/22/google-smart-reply/"/>
    <updated>2018-07-22T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2018/07/22/google-smart-reply</id>
+   <id>http://localhost:4000/2018/07/22/google-smart-reply</id>
    <content type="html">&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;Smart reply is an end to end method for automatically generating &lt;strong&gt;short yet semantically diverse&lt;/strong&gt; email repsonses. The feature also depends on some novel methods for &lt;strong&gt;semantic clustering of user-generated content&lt;/strong&gt; that requires minimal amount of explicitly labeled data.&lt;/p&gt;
 
@@ -622,9 +1014,9 @@ mem[a] = r3
  
  <entry>
    <title>Large Scale Learning</title>
-   <link href="https://machinelearningmedium.com/2018/06/22/large-scale-learning/"/>
+   <link href="http://localhost:4000/2018/06/22/large-scale-learning/"/>
    <updated>2018-06-22T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2018/06/22/large-scale-learning</id>
+   <id>http://localhost:4000/2018/06/22/large-scale-learning</id>
    <content type="html">&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
 
 &lt;p&gt;The popularity of machine learning techniques have increased in the recent past. One of the reasons leading to this trend is the exponential growth in data available to learn from. Large datasets coupled with a high variance model has the potential to perform well. But as the size of datasets increase, it poses various problems in terms of space and time complexities of the algorithms.&lt;/p&gt;
@@ -785,10 +1177,95 @@ mem[a] = r3
  </entry>
  
  <entry>
+   <title>Word Embedding</title>
+   <link href="http://localhost:4000/2018/06/07/word-embedding/"/>
+   <updated>2018-06-07T00:00:00+05:30</updated>
+   <id>http://localhost:4000/2018/06/07/word-embedding</id>
+   <content type="html">&lt;h3 id=&quot;distributed-vector-representation-series&quot;&gt;Distributed Vector Representation Series&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;/2017/07/11/word-to-vector-word-representations/&quot;&gt;Word2Vec&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;/2017/07/26/improvements-on-word2vec/&quot;&gt;Improvements on Word2Vec&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;horizontal-divider&quot;&gt;· · ·&lt;/div&gt;
+
+&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
+
+&lt;p&gt;The need of vector representation for words arises from the fact that most of the NLP and machine learning techniques operate on fixed-length numerical values (except algorithms like decisions trees etc. which can operate on raw text as well).&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The conversion of words into numbers or vector of number is termed as feature extraction or feature encoding.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Bag of Words (BoW) is one of the most popular feature encoding techniques in NLP that is simple to understand, easy to implement and gives promising results on a large dataset (that helps generalization over varieties).&lt;/p&gt;
+
+&lt;h3 id=&quot;bag-of-words-model&quot;&gt;Bag of Words Model&lt;/h3&gt;
+
+&lt;p&gt;The bag of words is a representations of text that describes the occurences of words in a sentence using two attributes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Vocabulary&lt;/strong&gt;: is the set of all known words.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Word Occurence Measure (Score)&lt;/strong&gt;: defines the words that are present in a document.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The word “bag” symbolizes the fact that the order/structure of words represented by this model is lost in the BoW representation.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This model stems from the observation that documents with similar words have similar content.&lt;/p&gt;
+
+&lt;p&gt;The implementation of a BoW model can vary in a lot of ways as one can customize the way the vocabulary is built or the way occurences of words scored.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Vocabulary can be built by taking all unique words or considering n-grams for frequently occuring phrases, with or without case sensitivity while ignoring or keeping the punctuations.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Scoring:&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Simplest way is to score the presence of word as 1 and absence as 0.&lt;/li&gt;
+      &lt;li&gt;Apart from 1/0 encoding, one can score the presence with term count, term frequency, tf-idf etc.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As the size of vocabulary increases, the length of vector representing a document also increases. As a direct result of this one would observe that BoW model over a big corpus leads to a sparse matrix, which increase memory utilization and affect the computation cost as well.&lt;/p&gt;
+
+&lt;p&gt;In order to cope with this one can limit vocabulary by following basic approaches:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Ignore case&lt;/li&gt;
+  &lt;li&gt;Ignore punctuations&lt;/li&gt;
+  &lt;li&gt;Remove stopwords&lt;/li&gt;
+  &lt;li&gt;Avoiding spell errors&lt;/li&gt;
+  &lt;li&gt;stemming or lemmatization&lt;/li&gt;
+  &lt;li&gt;incorporate n-grams&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Word hashing&lt;/strong&gt; can also be used to limit the vocabulary. But one has to consider the trade-off between probability of collision and sparsity. This is called the &lt;strong&gt;hashing trick&lt;/strong&gt; or &lt;strong&gt;feature hashing&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Limitations of BoW model:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Vocabulary selection must be done carefully as it may lead to exploding sparsity.&lt;/li&gt;
+  &lt;li&gt;Sparsity of the encoded space cannot be avoided most BoW models.&lt;/li&gt;
+  &lt;li&gt;Discarding of word order often times leads to loss of meaning and context.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;skip-gram&quot;&gt;Skip Gram&lt;/h3&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;REFERENCES:&lt;/h2&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;a href=&quot;https://machinelearningmastery.com/gentle-introduction-bag-words-model/&quot; target=&quot;_blank&quot;&gt;A Gentle Introduction to the Bag-of-Words Model&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;a href=&quot;https://arxiv.org/pdf/1301.3781.pdf&quot; target=&quot;_blank&quot;&gt;Efficient Estimation of Word Representations in Vector Space&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Recommender Systems</title>
-   <link href="https://machinelearningmedium.com/2018/05/11/recommender-systems/"/>
+   <link href="http://localhost:4000/2018/05/11/recommender-systems/"/>
    <updated>2018-05-11T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2018/05/11/recommender-systems</id>
+   <id>http://localhost:4000/2018/05/11/recommender-systems</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -1134,9 +1611,9 @@ Y = \left[
  
  <entry>
    <title>Anomaly Detection</title>
-   <link href="https://machinelearningmedium.com/2018/05/02/anomaly-detection/"/>
+   <link href="http://localhost:4000/2018/05/02/anomaly-detection/"/>
    <updated>2018-05-02T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2018/05/02/anomaly-detection</id>
+   <id>http://localhost:4000/2018/05/02/anomaly-detection</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -1508,9 +1985,9 @@ x_n &amp;\sim \mathcal{N}(\mu_n, \sigma_n^2) \\
  
  <entry>
    <title>Principal Component Analysis</title>
-   <link href="https://machinelearningmedium.com/2018/04/22/principal-component-analysis/"/>
+   <link href="http://localhost:4000/2018/04/22/principal-component-analysis/"/>
    <updated>2018-04-22T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2018/04/22/principal-component-analysis</id>
+   <id>http://localhost:4000/2018/04/22/principal-component-analysis</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -1782,9 +2259,9 @@ x_n &amp;\sim \mathcal{N}(\mu_n, \sigma_n^2) \\
  
  <entry>
    <title>K-Means Clustering</title>
-   <link href="https://machinelearningmedium.com/2018/04/19/k-means-clustering/"/>
+   <link href="http://localhost:4000/2018/04/19/k-means-clustering/"/>
    <updated>2018-04-19T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2018/04/19/k-means-clustering</id>
+   <id>http://localhost:4000/2018/04/19/k-means-clustering</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -1991,9 +2468,9 @@ Repeat \{ \\
  
  <entry>
    <title>Support Vector Machine</title>
-   <link href="https://machinelearningmedium.com/2018/04/10/support-vector-machines/"/>
+   <link href="http://localhost:4000/2018/04/10/support-vector-machines/"/>
    <updated>2018-04-10T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2018/04/10/support-vector-machines</id>
+   <id>http://localhost:4000/2018/04/10/support-vector-machines</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -2348,9 +2825,9 @@ f_3 &amp;= similarity(x, l^{(3)}) = exp \left(- \frac {\lVert x - l^{(3)} \rVert
  
  <entry>
    <title>Error Metrics for Skewed Classes and Using Large Datasets</title>
-   <link href="https://machinelearningmedium.com/2018/04/08/error-metrics-for-skewed-data-and-large-datasets/"/>
+   <link href="http://localhost:4000/2018/04/08/error-metrics-for-skewed-data-and-large-datasets/"/>
    <updated>2018-04-08T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2018/04/08/error-metrics-for-skewed-data-and-large-datasets</id>
+   <id>http://localhost:4000/2018/04/08/error-metrics-for-skewed-data-and-large-datasets</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -2479,9 +2956,9 @@ f_3 &amp;= similarity(x, l^{(3)}) = exp \left(- \frac {\lVert x - l^{(3)} \rVert
  
  <entry>
    <title>Docker for Machine Learning Developement</title>
-   <link href="https://machinelearningmedium.com/2018/04/06/docker-for-machine-learning-development/"/>
+   <link href="http://localhost:4000/2018/04/06/docker-for-machine-learning-development/"/>
    <updated>2018-04-06T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2018/04/06/docker-for-machine-learning-development</id>
+   <id>http://localhost:4000/2018/04/06/docker-for-machine-learning-development</id>
    <content type="html">&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
 
 &lt;p&gt;Containerization, also known as operating-system-level virtualization is a feature of the operating system in which the kernel allows the existence of multiple isolated user-space instances. Such instances may be called containers, partitions, virtualization engines (VEs), or jails. These look like real computers from the point of view of a program running in them.&lt;/p&gt;
@@ -2787,9 +3264,9 @@ docker-machine &lt;span class=&quot;nt&quot;&gt;--native-ssh&lt;/span&gt; ssh &a
  
  <entry>
    <title>Evaluation of Learning Algorithm</title>
-   <link href="https://machinelearningmedium.com/2018/04/02/evaluation-of-learning-algorithm/"/>
+   <link href="http://localhost:4000/2018/04/02/evaluation-of-learning-algorithm/"/>
    <updated>2018-04-02T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2018/04/02/evaluation-of-learning-algorithm</id>
+   <id>http://localhost:4000/2018/04/02/evaluation-of-learning-algorithm</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -3003,9 +3480,9 @@ docker-machine &lt;span class=&quot;nt&quot;&gt;--native-ssh&lt;/span&gt; ssh &a
  
  <entry>
    <title>How to train your Neural Network?</title>
-   <link href="https://machinelearningmedium.com/2018/03/31/how-to-train-your-neural-network/"/>
+   <link href="http://localhost:4000/2018/03/31/how-to-train-your-neural-network/"/>
    <updated>2018-03-31T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2018/03/31/how-to-train-your-neural-network</id>
+   <id>http://localhost:4000/2018/03/31/how-to-train-your-neural-network</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -3051,9 +3528,9 @@ docker-machine &lt;span class=&quot;nt&quot;&gt;--native-ssh&lt;/span&gt; ssh &a
  
  <entry>
    <title>Backpropagation Implementation and Gradient Checking</title>
-   <link href="https://machinelearningmedium.com/2018/03/29/backpropagation-implementation-and-gradient-checking/"/>
+   <link href="http://localhost:4000/2018/03/29/backpropagation-implementation-and-gradient-checking/"/>
    <updated>2018-03-29T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2018/03/29/backpropagation-implementation-and-gradient-checking</id>
+   <id>http://localhost:4000/2018/03/29/backpropagation-implementation-and-gradient-checking</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -3262,9 +3739,9 @@ from grad check:
  
  <entry>
    <title>Backpropagation Derivation</title>
-   <link href="https://machinelearningmedium.com/2018/03/20/backpropagation-derivation/"/>
+   <link href="http://localhost:4000/2018/03/20/backpropagation-derivation/"/>
    <updated>2018-03-20T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2018/03/20/backpropagation-derivation</id>
+   <id>http://localhost:4000/2018/03/20/backpropagation-derivation</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -3436,10 +3913,60 @@ a^{(4)} &amp;= g(z^{(4)}) = h(x^{(i)}) = \hat{y}^{(i)}
  </entry>
  
  <entry>
+   <title>Notes</title>
+   <link href="http://localhost:4000/2018/03/09/notes/"/>
+   <updated>2018-03-09T13:30:26+05:30</updated>
+   <id>http://localhost:4000/2018/03/09/notes</id>
+   <content type="html">&lt;p&gt;https://en.wikipedia.org/wiki/Discourse_analysis
+https://en.wikipedia.org/wiki/Semiotics&lt;/p&gt;
+
+&lt;h3 id=&quot;discourse-analysis&quot;&gt;Discourse Analysis&lt;/h3&gt;
+
+&lt;p&gt;Discourse Analysis or discourse studies is a general term used for a number of approaches used to analyze written, vocal, or sign language use, or any semiotic event.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Semiotics (also called semiotic studies) is the study of meaning-making, the study of sign process (semiosis) and meaningful communication.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Objects of discourse analysis can be defined in terms of &lt;strong&gt;coherent sequences&lt;/strong&gt; of sentences, propositions, speech, or turns-at-talk. It studies language beyond the boundary of sentences and prefers to analyze naturally occuring language.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Discourse analysis differs from text linguistics in that former aims at revealing socio-psychological characteristics of the person rather than the text structure.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Discourse Analysis includes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Dimensions of discourse&lt;/strong&gt; such as sounds, gestures, syntax, lexicon, style, rhetoric, meanings, speech acts, moves, strategies, turns, and other aspects of interaction.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Genres of discourse&lt;/strong&gt;: various types of discourse in politics, media, education, science etc.&lt;/li&gt;
+  &lt;li&gt;Relation between &lt;strong&gt;discourse and syntactic structure&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Relation between &lt;strong&gt;text and context&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Relation between &lt;strong&gt;discourse and power&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Relation between &lt;strong&gt;discourse and interaction&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Relation between &lt;strong&gt;discourse and cognition and memory&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Automatic Differentiation (AD)</title>
+   <link href="http://localhost:4000/2018/03/09/automatic-differentiation/"/>
+   <updated>2018-03-09T00:00:00+05:30</updated>
+   <id>http://localhost:4000/2018/03/09/automatic-differentiation</id>
+   <content type="html">&lt;p&gt;https://justindomke.wordpress.com/2009/03/24/a-simple-explanation-of-reverse-mode-automatic-differentiation/&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;REFERENCES:&lt;/h2&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;a href=&quot;http://www.autodiff.org/&quot; target=&quot;_blank&quot;&gt;Auto Diff Org&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Automatic_differentiation&quot; target=&quot;_blank&quot;&gt;Automatic differentiation - Wikipedia&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Program in PyTorch</title>
-   <link href="https://machinelearningmedium.com/2018/03/08/program-in-pytorch/"/>
+   <link href="http://localhost:4000/2018/03/08/program-in-pytorch/"/>
    <updated>2018-03-08T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2018/03/08/program-in-pytorch</id>
+   <id>http://localhost:4000/2018/03/08/program-in-pytorch</id>
    <content type="html">&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
 
 &lt;p&gt;Pytorch provides two high-level features:&lt;/p&gt;
@@ -3778,9 +4305,9 @@ a^{(4)} &amp;= g(z^{(4)}) = h(x^{(i)}) = \hat{y}^{(i)}
  
  <entry>
    <title>Images, Noise and Filters</title>
-   <link href="https://machinelearningmedium.com/2018/02/04/images-noise-and-filters/"/>
+   <link href="http://localhost:4000/2018/02/04/images-noise-and-filters/"/>
    <updated>2018-02-04T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2018/02/04/images-noise-and-filters</id>
+   <id>http://localhost:4000/2018/02/04/images-noise-and-filters</id>
    <content type="html">&lt;h3 id=&quot;basics-to-computer-vision-series&quot;&gt;Basics to Computer Vision Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -4301,9 +4828,9 @@ a^{(4)} &amp;= g(z^{(4)}) = h(x^{(i)}) = \hat{y}^{(i)}
  
  <entry>
    <title>What is Computer Vision?</title>
-   <link href="https://machinelearningmedium.com/2018/02/01/what-is-computer-vision/"/>
+   <link href="http://localhost:4000/2018/02/01/what-is-computer-vision/"/>
    <updated>2018-02-01T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2018/02/01/what-is-computer-vision</id>
+   <id>http://localhost:4000/2018/02/01/what-is-computer-vision</id>
    <content type="html">&lt;h3 id=&quot;basics-to-computer-vision-series&quot;&gt;Basics to Computer Vision Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -4357,9 +4884,9 @@ a^{(4)} &amp;= g(z^{(4)}) = h(x^{(i)}) = \hat{y}^{(i)}
  
  <entry>
    <title>Understanding TensorFlow</title>
-   <link href="https://machinelearningmedium.com/2018/01/02/understanding-tensorflow/"/>
+   <link href="http://localhost:4000/2018/01/02/understanding-tensorflow/"/>
    <updated>2018-01-02T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2018/01/02/understanding-tensorflow</id>
+   <id>http://localhost:4000/2018/01/02/understanding-tensorflow</id>
    <content type="html">&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
 
 &lt;ul&gt;
@@ -4943,9 +5470,9 @@ a^{(4)} &amp;= g(z^{(4)}) = h(x^{(i)}) = \hat{y}^{(i)}
  
  <entry>
    <title>B-Money</title>
-   <link href="https://machinelearningmedium.com/2017/12/28/b-money-wei-dai/"/>
+   <link href="http://localhost:4000/2017/12/28/b-money-wei-dai/"/>
    <updated>2017-12-28T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/12/28/b-money-wei-dai</id>
+   <id>http://localhost:4000/2017/12/28/b-money-wei-dai</id>
    <content type="html">&lt;h3 id=&quot;cryptocurrency-series&quot;&gt;Cryptocurrency Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -5035,9 +5562,9 @@ a^{(4)} &amp;= g(z^{(4)}) = h(x^{(i)}) = \hat{y}^{(i)}
  
  <entry>
    <title>Bitcoin</title>
-   <link href="https://machinelearningmedium.com/2017/12/21/bitcoin-satoshi-nakamoto/"/>
+   <link href="http://localhost:4000/2017/12/21/bitcoin-satoshi-nakamoto/"/>
    <updated>2017-12-21T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/12/21/bitcoin-satoshi-nakamoto</id>
+   <id>http://localhost:4000/2017/12/21/bitcoin-satoshi-nakamoto</id>
    <content type="html">&lt;h3 id=&quot;cryptocurrency-series&quot;&gt;Cryptocurrency Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -5389,10 +5916,97 @@ Output
  </entry>
  
  <entry>
+   <title>Cryptography powering the Cryptocurrencies</title>
+   <link href="http://localhost:4000/2017/12/21/cryptocurrency-cryptography/"/>
+   <updated>2017-12-21T00:00:00+05:30</updated>
+   <id>http://localhost:4000/2017/12/21/cryptocurrency-cryptography</id>
+   <content type="html">&lt;h3 id=&quot;what-is-cryptography&quot;&gt;What is Cryptography?&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Cryptography is associated with the process of converting ordinary plain text into unintelligible text and vice-versa.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It is a method of storing and transmitting data in a particular form so that only those for whom it is intended can read and process it. Cryptography not only protects data from theft or alteration, but can also be used for user authentication.&lt;/p&gt;
+
+&lt;p&gt;Particularly, in computer science, cryptography is closely associated with scrambling plaintext (ordinary text, sometimes referred to as &lt;strong&gt;cleartext&lt;/strong&gt;) into &lt;strong&gt;ciphertext&lt;/strong&gt; (a process called &lt;strong&gt;encryption&lt;/strong&gt;), then back again (known as &lt;strong&gt;decryption&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;Four major objectives of cryptography are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Confidentiality:&lt;/strong&gt; Data can be understood by the concerned parties.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Integrity:&lt;/strong&gt; In the process of encryption and decryption, there can be no alteration of data stored and transmitted.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Non-repudiation:&lt;/strong&gt; Creator/sender cannot later deny the intent of creating/sending the information.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Authentication:&lt;/strong&gt; Sender and receiver should be able to confirm each other’s identities.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;encryption&quot;&gt;Encryption&lt;/h3&gt;
+
+&lt;p&gt;In cryptography, encryption is the process of encoding a message or information in such a way that only authorized parties can access it and those who are not authorized cannot. Encryption does not itself prevent interference, but denies the intelligible content to a would-be interceptor.&lt;/p&gt;
+
+&lt;p&gt;Majorly, there are three types of encrytion:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Symmetric Encryption&lt;/li&gt;
+  &lt;li&gt;Asymmetric Encryption&lt;/li&gt;
+  &lt;li&gt;Hashing&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;symmetric-encryption&quot;&gt;Symmetric Encryption&lt;/h3&gt;
+
+&lt;p&gt;Also known as the &lt;strong&gt;shared secret encryption&lt;/strong&gt;, this form of encryption is uses a secret key, called &lt;strong&gt;shared secret&lt;/strong&gt;, to scramble data into unitelligible gibberish. But the receiver has to have access to the same secret key in order to decipher the sequence and gain information from it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2017-12-21-cryptocurrency-cryptography/fig-1-symmetric-encryption.jpg?raw=true&quot; alt=&quot;Symmetric Encryption Flowchart&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It is called symmetric encryption because the same key is used on both the ends, i.e. during encryption and decryption. This property presents a challenge to this form of encryption, because the secret key itself can get intercepted if the channel of communication is not secure, and would beat the entire underlying purpose of encryption.&lt;/p&gt;
+
+&lt;p&gt;To overcome this very drawback of the symmetric encryption, the pioneers of the field came up with the &lt;strong&gt;Public Key Encryption&lt;/strong&gt;, popularly known as the asymmetric cryptography.&lt;/p&gt;
+
+&lt;h3 id=&quot;asymmetric-encryption&quot;&gt;Asymmetric Encryption&lt;/h3&gt;
+
+&lt;p&gt;Under this type of encryption splits the key into two parts, one is made public and other is kept private. Messages are encrypted with the receivers public key which can be only decrypted by the corresponding private key.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2017-12-21-cryptocurrency-cryptography/fig-2-asymmetric-encryption.jpg?raw=true&quot; alt=&quot;Asymmetric Encryption Flowchart&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This differs from the symmetric encryption, because one does not need a party’s private key to send them a message. Once the public key of a person is broadcasted, all the messages to them is secure because it can be only deciphered by the owner of the complementary private key. So there is no need of prior exchange of confidential data, to set up a secure line of communication.&lt;/p&gt;
+
+&lt;p&gt;Public key encryption is usually implemented using the one-way functions. In mathematics, these functions are easy to compute in one direction but very difficult to compute in the inverse direction. This property is what helps publish the public key without comprimising the encryption of the message as long as the private key is securely managed.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A common one-way function used today is factoring large prime numbers. It is easy to multiply two prime numbers together and get a product. However, to determine which of the many possibilities are the two factors of the product is one of the great mathematical problems.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;RSA is currently the most widely used public key encryptions algorithms.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;rsa-cipher&quot;&gt;RSA Cipher&lt;/h3&gt;
+
+&lt;h3 id=&quot;understanding-digital-signature&quot;&gt;Understanding Digital Signature&lt;/h3&gt;
+
+&lt;p&gt;A digital signature in essence tries to replicate the properties of the on-paper signature, i.e. the following properties,&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Verification:&lt;/strong&gt; Signature should verify the identity of the person.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Non-forgeable:&lt;/strong&gt; Signature should not be easy to copy and forge by another party.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Non-repudiation:&lt;/strong&gt; Once signed by a person, it cannot be claimed to be fake or retrieved back.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thinking on these lines the traditional on-paper signatures, no matter how intricate, are &lt;strong&gt;not that efficient or relaible&lt;/strong&gt; owing to the ease with which it can be copied and forged. Also there is no measure to determine authenticity with simple visual tools owing to the variance between two instances of signatures by the same person.&lt;/p&gt;
+
+&lt;p&gt;These shortcomings are solved by digital signatures, which cryptography provides in the form of keys.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;REFERENCES:&lt;/h2&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;a href=&quot;https://economictimes.indiatimes.com/definition/cryptography&quot; target=&quot;_blank&quot;&gt;Definition of Cryptography&lt;/a&gt;&lt;/small&gt;
+&lt;small&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Encryption&quot; target=&quot;_blank&quot;&gt;Encryption - Wikipedia&lt;/a&gt;&lt;/small&gt;
+&lt;small&gt;&lt;a href=&quot;http://searchsoftwarequality.techtarget.com/definition/cryptography&quot; target=&quot;_blank&quot;&gt;What is cryptography? - Definition from WhatIs.com&lt;/a&gt;&lt;/small&gt;
+&lt;small&gt;&lt;a href=&quot;http://books.gigatux.nl/mirror/securitytools/ddu/ch09lev1sec1.html&quot; target=&quot;_blank&quot;&gt;http://books.gigatux.nl/mirror/securitytools/ddu/ch09lev1sec1.html&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Congruence and Modular Arithmetic</title>
-   <link href="https://machinelearningmedium.com/2017/12/20/congruence-and-modulo/"/>
+   <link href="http://localhost:4000/2017/12/20/congruence-and-modulo/"/>
    <updated>2017-12-20T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/12/20/congruence-and-modulo</id>
+   <id>http://localhost:4000/2017/12/20/congruence-and-modulo</id>
    <content type="html">&lt;h3 id=&quot;what-is-mathematics-series&quot;&gt;What is Mathematics Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -5574,9 +6188,9 @@ Output
  
  <entry>
    <title>The Mysterious Primes</title>
-   <link href="https://machinelearningmedium.com/2017/11/01/prime-numbers/"/>
+   <link href="http://localhost:4000/2017/11/01/prime-numbers/"/>
    <updated>2017-11-01T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/11/01/prime-numbers</id>
+   <id>http://localhost:4000/2017/11/01/prime-numbers</id>
    <content type="html">&lt;h3 id=&quot;what-is-mathematics-series&quot;&gt;What is Mathematics Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -5793,9 +6407,9 @@ Output
  
  <entry>
    <title>Mathematical Induction</title>
-   <link href="https://machinelearningmedium.com/2017/10/28/mathematical-induction/"/>
+   <link href="http://localhost:4000/2017/10/28/mathematical-induction/"/>
    <updated>2017-10-28T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/10/28/mathematical-induction</id>
+   <id>http://localhost:4000/2017/10/28/mathematical-induction</id>
    <content type="html">&lt;h3 id=&quot;what-is-mathematics-series&quot;&gt;What is Mathematics Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -6076,9 +6690,9 @@ then all the statements \(A_s, A_{s+1}, \cdots\) are true; i.e. \(A_n\) is true 
  
  <entry>
    <title>What is Number System ?</title>
-   <link href="https://machinelearningmedium.com/2017/10/27/number-system/"/>
+   <link href="http://localhost:4000/2017/10/27/number-system/"/>
    <updated>2017-10-27T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/10/27/number-system</id>
+   <id>http://localhost:4000/2017/10/27/number-system</id>
    <content type="html">&lt;h3 id=&quot;what-is-mathematics-series&quot;&gt;What is Mathematics Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -6525,9 +7139,9 @@ then all the statements \(A_s, A_{s+1}, \cdots\) are true; i.e. \(A_n\) is true 
  
  <entry>
    <title>Neural Networks: Cost Function and Backpropagation</title>
-   <link href="https://machinelearningmedium.com/2017/10/03/neural-networks-cost-function-and-back-propagation/"/>
+   <link href="http://localhost:4000/2017/10/03/neural-networks-cost-function-and-back-propagation/"/>
    <updated>2017-10-03T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/10/03/neural-networks-cost-function-and-back-propagation</id>
+   <id>http://localhost:4000/2017/10/03/neural-networks-cost-function-and-back-propagation</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -6734,9 +7348,9 @@ then all the statements \(A_s, A_{s+1}, \cdots\) are true; i.e. \(A_n\) is true 
  
  <entry>
    <title>Neural Networks Intuition</title>
-   <link href="https://machinelearningmedium.com/2017/09/27/neural-network-intuition/"/>
+   <link href="http://localhost:4000/2017/09/27/neural-network-intuition/"/>
    <updated>2017-09-27T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/09/27/neural-network-intuition</id>
+   <id>http://localhost:4000/2017/09/27/neural-network-intuition</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -7064,9 +7678,9 @@ then all the statements \(A_s, A_{s+1}, \cdots\) are true; i.e. \(A_n\) is true 
  
  <entry>
    <title>Neural Networks Theory</title>
-   <link href="https://machinelearningmedium.com/2017/09/21/neural-networks/"/>
+   <link href="http://localhost:4000/2017/09/21/neural-networks/"/>
    <updated>2017-09-21T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/09/21/neural-networks</id>
+   <id>http://localhost:4000/2017/09/21/neural-networks</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -7196,9 +7810,9 @@ then all the statements \(A_s, A_{s+1}, \cdots\) are true; i.e. \(A_n\) is true 
  
  <entry>
    <title>Non-linear Hypotheses</title>
-   <link href="https://machinelearningmedium.com/2017/09/20/non-linear-hypotheses/"/>
+   <link href="http://localhost:4000/2017/09/20/non-linear-hypotheses/"/>
    <updated>2017-09-20T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/09/20/non-linear-hypotheses</id>
+   <id>http://localhost:4000/2017/09/20/non-linear-hypotheses</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -7235,9 +7849,9 @@ then all the statements \(A_s, A_{s+1}, \cdots\) are true; i.e. \(A_n\) is true 
  
  <entry>
    <title>Regularized Logistic Regression</title>
-   <link href="https://machinelearningmedium.com/2017/09/15/regularized-logistic-regression/"/>
+   <link href="http://localhost:4000/2017/09/15/regularized-logistic-regression/"/>
    <updated>2017-09-15T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/09/15/regularized-logistic-regression</id>
+   <id>http://localhost:4000/2017/09/15/regularized-logistic-regression</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -7374,9 +7988,9 @@ Simultaneous update
  
  <entry>
    <title>Basics of Language Model</title>
-   <link href="https://machinelearningmedium.com/2017/09/12/basics-of-language-modeling/"/>
+   <link href="http://localhost:4000/2017/09/12/basics-of-language-modeling/"/>
    <updated>2017-09-12T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/09/12/basics-of-language-modeling</id>
+   <id>http://localhost:4000/2017/09/12/basics-of-language-modeling</id>
    <content type="html">&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;Given the &lt;strong&gt;finite set of all the words&lt;/strong&gt; in a language, \(\nu\), a sentence in the language is the &lt;strong&gt;sequence of words&lt;/strong&gt;&lt;/p&gt;
 
@@ -7755,9 +8369,9 @@ q_{BO}(w|v) =
  
  <entry>
    <title>Regularized Linear Regression</title>
-   <link href="https://machinelearningmedium.com/2017/09/11/regularized-linear-regression/"/>
+   <link href="http://localhost:4000/2017/09/11/regularized-linear-regression/"/>
    <updated>2017-09-11T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/09/11/regularized-linear-regression</id>
+   <id>http://localhost:4000/2017/09/11/regularized-linear-regression</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -7931,9 +8545,9 @@ Regularized Version
  
  <entry>
    <title>Overfitting and Regularization</title>
-   <link href="https://machinelearningmedium.com/2017/09/08/overfitting-and-regularization/"/>
+   <link href="http://localhost:4000/2017/09/08/overfitting-and-regularization/"/>
    <updated>2017-09-08T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/09/08/overfitting-and-regularization</id>
+   <id>http://localhost:4000/2017/09/08/overfitting-and-regularization</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -8015,9 +8629,9 @@ Regularized Version
  
  <entry>
    <title>Multiclass Logistic Regression</title>
-   <link href="https://machinelearningmedium.com/2017/09/06/multiclass-logistic-regression/"/>
+   <link href="http://localhost:4000/2017/09/06/multiclass-logistic-regression/"/>
    <updated>2017-09-06T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/09/06/multiclass-logistic-regression</id>
+   <id>http://localhost:4000/2017/09/06/multiclass-logistic-regression</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -8120,9 +8734,9 @@ Regularized Version
  
  <entry>
    <title>Logistic Regression Model</title>
-   <link href="https://machinelearningmedium.com/2017/09/02/logistic-regression-model/"/>
+   <link href="http://localhost:4000/2017/09/02/logistic-regression-model/"/>
    <updated>2017-09-02T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/09/02/logistic-regression-model</id>
+   <id>http://localhost:4000/2017/09/02/logistic-regression-model</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -8481,9 +9095,9 @@ Cost(h_\theta(x), y) =
  
  <entry>
    <title>Classification and Logistic Regression</title>
-   <link href="https://machinelearningmedium.com/2017/08/31/classification-and-representation/"/>
+   <link href="http://localhost:4000/2017/08/31/classification-and-representation/"/>
    <updated>2017-08-31T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/08/31/classification-and-representation</id>
+   <id>http://localhost:4000/2017/08/31/classification-and-representation</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -8635,9 +9249,9 @@ In first case say only red data points are in the dataset, then fitting the curv
  
  <entry>
    <title>Normal Equation</title>
-   <link href="https://machinelearningmedium.com/2017/08/28/normal-equation/"/>
+   <link href="http://localhost:4000/2017/08/28/normal-equation/"/>
    <updated>2017-08-28T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/08/28/normal-equation</id>
+   <id>http://localhost:4000/2017/08/28/normal-equation</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -8962,9 +9576,9 @@ Plot Graph
  
  <entry>
    <title>Multivariate Linear Regression</title>
-   <link href="https://machinelearningmedium.com/2017/08/23/multivariate-linear-regression/"/>
+   <link href="http://localhost:4000/2017/08/23/multivariate-linear-regression/"/>
    <updated>2017-08-23T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/08/23/multivariate-linear-regression</id>
+   <id>http://localhost:4000/2017/08/23/multivariate-linear-regression</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -9258,9 +9872,9 @@ Gradient Descent For Multivariate Regression
  
  <entry>
    <title>Linear Algebra Review</title>
-   <link href="https://machinelearningmedium.com/2017/08/20/linear-algebra/"/>
+   <link href="http://localhost:4000/2017/08/20/linear-algebra/"/>
    <updated>2017-08-20T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/08/20/linear-algebra</id>
+   <id>http://localhost:4000/2017/08/20/linear-algebra</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -9529,9 +10143,9 @@ Consider three hypothesis as follows,&lt;/p&gt;
  
  <entry>
    <title>Gradient Descent for Linear Regression</title>
-   <link href="https://machinelearningmedium.com/2017/08/17/gradient-descent-for-linear-regression/"/>
+   <link href="http://localhost:4000/2017/08/17/gradient-descent-for-linear-regression/"/>
    <updated>2017-08-17T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/08/17/gradient-descent-for-linear-regression</id>
+   <id>http://localhost:4000/2017/08/17/gradient-descent-for-linear-regression</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -9711,9 +10325,9 @@ Gradient Descent For Linear Regression
  
  <entry>
    <title>Gradient Descent</title>
-   <link href="https://machinelearningmedium.com/2017/08/15/gradient-descent/"/>
+   <link href="http://localhost:4000/2017/08/15/gradient-descent/"/>
    <updated>2017-08-15T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/08/15/gradient-descent</id>
+   <id>http://localhost:4000/2017/08/15/gradient-descent</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -9824,9 +10438,9 @@ Gradient Descent For Linear Regression
  
  <entry>
    <title>Cost Function of Linear Regression</title>
-   <link href="https://machinelearningmedium.com/2017/08/11/cost-function-of-linear-regression/"/>
+   <link href="http://localhost:4000/2017/08/11/cost-function-of-linear-regression/"/>
    <updated>2017-08-11T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/08/11/cost-function-of-linear-regression</id>
+   <id>http://localhost:4000/2017/08/11/cost-function-of-linear-regression</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -9959,9 +10573,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>Model Representation And Hypothesis</title>
-   <link href="https://machinelearningmedium.com/2017/08/10/model-representation-and-hypothesis/"/>
+   <link href="http://localhost:4000/2017/08/10/model-representation-and-hypothesis/"/>
    <updated>2017-08-10T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/08/10/model-representation-and-hypothesis</id>
+   <id>http://localhost:4000/2017/08/10/model-representation-and-hypothesis</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -10012,9 +10626,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>Supervised and Unsupervised Learning</title>
-   <link href="https://machinelearningmedium.com/2017/08/09/supervised-learning/"/>
+   <link href="http://localhost:4000/2017/08/09/supervised-learning/"/>
    <updated>2017-08-09T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/08/09/supervised-learning</id>
+   <id>http://localhost:4000/2017/08/09/supervised-learning</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -10076,9 +10690,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>Introduction to Machine Learning</title>
-   <link href="https://machinelearningmedium.com/2017/08/09/introduction-to-machine-learning/"/>
+   <link href="http://localhost:4000/2017/08/09/introduction-to-machine-learning/"/>
    <updated>2017-08-09T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/08/09/introduction-to-machine-learning</id>
+   <id>http://localhost:4000/2017/08/09/introduction-to-machine-learning</id>
    <content type="html">&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -10143,9 +10757,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>The Normal Distribution</title>
-   <link href="https://machinelearningmedium.com/2017/07/31/normal-distribution/"/>
+   <link href="http://localhost:4000/2017/07/31/normal-distribution/"/>
    <updated>2017-07-31T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/07/31/normal-distribution</id>
+   <id>http://localhost:4000/2017/07/31/normal-distribution</id>
    <content type="html">&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;The concept of normal distribution as explained using the game of darts is easier to understand and explain. Consider a game of dart with aim of throwing the dart at the origin of a cartesian plane. The errors in throwing the dart at the origin will have random errors and produce varying results in different trials. Some of the assumptions one can make in this game are:&lt;/p&gt;
 
@@ -10359,9 +10973,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>Random Projection in Dimensionality Reduction</title>
-   <link href="https://machinelearningmedium.com/2017/07/28/random-projection-in-dimensionality-reduction/"/>
+   <link href="http://localhost:4000/2017/07/28/random-projection-in-dimensionality-reduction/"/>
    <updated>2017-07-28T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/07/28/random-projection-in-dimensionality-reduction</id>
+   <id>http://localhost:4000/2017/07/28/random-projection-in-dimensionality-reduction</id>
    <content type="html">&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;Random Projections have emerged as a powerful method for dimensionality reduction. Theoretical results indicate that it &lt;strong&gt;preserves distances&lt;/strong&gt; quite nicely but empirical results are &lt;strong&gt;sparse&lt;/strong&gt;. It is often employed in dimensionality reduction in both &lt;strong&gt;noisy and noiseless data&lt;/strong&gt; especially image and text data. Results of projecting on &lt;strong&gt;random lower-dimensional subspace&lt;/strong&gt; yields results comparable to conventional methods like PCA etc but using it is &lt;strong&gt;computationally less expensive&lt;/strong&gt; than the traditional alternatives.&lt;/p&gt;
 
@@ -10609,9 +11223,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>Continuous Random Variables</title>
-   <link href="https://machinelearningmedium.com/2017/07/28/continuous-random-variable/"/>
+   <link href="http://localhost:4000/2017/07/28/continuous-random-variable/"/>
    <updated>2017-07-28T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/07/28/continuous-random-variable</id>
+   <id>http://localhost:4000/2017/07/28/continuous-random-variable</id>
    <content type="html">&lt;h3 id=&quot;probability-series&quot;&gt;Probability Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -10821,10 +11435,28 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  </entry>
  
  <entry>
+   <title>Distributed Representations of Sentences and Documents</title>
+   <link href="http://localhost:4000/2017/07/27/distributed-representation-of-sentences-and-documents/"/>
+   <updated>2017-07-27T00:00:00+05:30</updated>
+   <id>http://localhost:4000/2017/07/27/distributed-representation-of-sentences-and-documents</id>
+   <content type="html">&lt;h3 id=&quot;drawbacks-of-bag-of-words-models&quot;&gt;Drawbacks of Bag-of-Words Models&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Loss of word order which may be of importance in infering the meaning of sentence.&lt;/li&gt;
+  &lt;li&gt;Ignoring the semantics of the words i.e. different words may mean different things in different contexts.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Bag-of-n-grams&lt;/strong&gt; considers word only only in a short context and brings in &lt;strong&gt;data sparsity&lt;/strong&gt; and &lt;strong&gt;high dimentionality&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;references&quot;&gt;REFERENCES&lt;/h1&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;a href=&quot;https://arxiv.org/pdf/1405.4053v2.pdf&quot; target=&quot;_blank&quot;&gt;Distributed Representations of Sentences and Documents&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Improvements on Word2Vec</title>
-   <link href="https://machinelearningmedium.com/2017/07/26/improvements-on-word2vec/"/>
+   <link href="http://localhost:4000/2017/07/26/improvements-on-word2vec/"/>
    <updated>2017-07-26T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/07/26/improvements-on-word2vec</id>
+   <id>http://localhost:4000/2017/07/26/improvements-on-word2vec</id>
    <content type="html">&lt;h3 id=&quot;distributed-vector-representation-series&quot;&gt;Distributed Vector Representation Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -10983,9 +11615,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>Discounted Cumulative Gain</title>
-   <link href="https://machinelearningmedium.com/2017/07/24/discounted-cumulative-gain/"/>
+   <link href="http://localhost:4000/2017/07/24/discounted-cumulative-gain/"/>
    <updated>2017-07-24T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/07/24/discounted-cumulative-gain</id>
+   <id>http://localhost:4000/2017/07/24/discounted-cumulative-gain</id>
    <content type="html">&lt;h3 id=&quot;discounted-cumulative-gain&quot;&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Discounted_cumulative_gain&quot; target=&quot;_blank&quot;&gt;Discounted cumulative gain&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;DCG measures the usefulness, or &lt;strong&gt;gain&lt;/strong&gt;, of a document based on its position in the result list. The gain is accumulated from the top of the result list to the bottom, with the gain of each result discounted at lower ranks.&lt;/p&gt;
 
@@ -11067,7 +11699,7 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
     &lt;p&gt;The average of nDCG for all queries gives a measure of average performance of ranking algorithms in the search process.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;For a &lt;em&gt;*perfect ranking algorithm&lt;/em&gt;,&lt;/p&gt;
+    &lt;p&gt;For a &lt;strong&gt;perfect ranking algorithm&lt;/strong&gt;,&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -11253,9 +11885,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>Merge Sort</title>
-   <link href="https://machinelearningmedium.com/2017/07/21/merge-sort/"/>
+   <link href="http://localhost:4000/2017/07/21/merge-sort/"/>
    <updated>2017-07-21T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/07/21/merge-sort</id>
+   <id>http://localhost:4000/2017/07/21/merge-sort</id>
    <content type="html">&lt;h3 id=&quot;merge-sort&quot;&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Merge_sort&quot; target=&quot;_blank&quot;&gt;Merge Sort&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Merge sort is an efficient, general-purpose, comparison-based sorting algorithm. Most implementations produce a stable sort, which means that the implementation preserves the input order of equal elements in the sorted output. Merge sort is a &lt;strong&gt;divide and conquer&lt;/strong&gt; algorithm that was invented by John von Neumann in 1945.&lt;/p&gt;
 
@@ -11447,9 +12079,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>UMLS Knowledge Sources</title>
-   <link href="https://machinelearningmedium.com/2017/07/19/umls-knowledge-sources/"/>
+   <link href="http://localhost:4000/2017/07/19/umls-knowledge-sources/"/>
    <updated>2017-07-19T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/07/19/umls-knowledge-sources</id>
+   <id>http://localhost:4000/2017/07/19/umls-knowledge-sources</id>
    <content type="html">&lt;h3 id=&quot;umls&quot;&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Unified_Medical_Language_System&quot; target=&quot;_blank&quot;&gt;UMLS&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;The Unified Medical Language System (UMLS) is a compendium of many controlled vocabularies in the biomedical sciences (created 1986). It provides a mapping structure among these vocabularies and thus allows one to translate among the various terminology systems. It may also be viewed as a comprehensive thesaurus and ontology of biomedical concepts. UMLS further provides facilities for natural language processing. It is intended to be used mainly by developers of systems in medical informatics.&lt;/p&gt;
 
@@ -11522,9 +12154,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>Divide and Conquer</title>
-   <link href="https://machinelearningmedium.com/2017/07/18/recursion-and-divide-and-conquer/"/>
+   <link href="http://localhost:4000/2017/07/18/recursion-and-divide-and-conquer/"/>
    <updated>2017-07-18T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/07/18/recursion-and-divide-and-conquer</id>
+   <id>http://localhost:4000/2017/07/18/recursion-and-divide-and-conquer</id>
    <content type="html">&lt;h3 id=&quot;recursion&quot;&gt;Recursion&lt;/h3&gt;
 &lt;p&gt;The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called as &lt;strong&gt;recursive function&lt;/strong&gt;.&lt;/p&gt;
 
@@ -11570,9 +12202,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>Basics of Linguistics</title>
-   <link href="https://machinelearningmedium.com/2017/07/14/introduction-to-linguistics/"/>
+   <link href="http://localhost:4000/2017/07/14/introduction-to-linguistics/"/>
    <updated>2017-07-14T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/07/14/introduction-to-linguistics</id>
+   <id>http://localhost:4000/2017/07/14/introduction-to-linguistics</id>
    <content type="html">&lt;h3 id=&quot;dimensions-of-human-language&quot;&gt;Dimensions of human language:&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Discrete infinity&lt;/strong&gt;: A discrete set, a set with finite number of elements which can be used to make infinitely many combinations is called a discrete infinity. For example, the alphabets in english are 26 and form a discrete set but can be combined to form infinitely many sentences and hence is a discrete infinity.&lt;/li&gt;
@@ -11639,9 +12271,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>Pseudocode</title>
-   <link href="https://machinelearningmedium.com/2017/07/13/pseudocode/"/>
+   <link href="http://localhost:4000/2017/07/13/pseudocode/"/>
    <updated>2017-07-13T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/07/13/pseudocode</id>
+   <id>http://localhost:4000/2017/07/13/pseudocode</id>
    <content type="html">&lt;h3 id=&quot;pseudocode&quot;&gt;Pseudocode&lt;/h3&gt;
 &lt;p&gt;Logic of algorithms is often expressed as pseudocode which is similar in many respects to languages like C, C++, Java etc. Major difference lies in that pseudocode uses the most &lt;strong&gt;concise and meaningful&lt;/strong&gt; way of expressing the algorithm which can be sometimes as simple as plain english.&lt;/p&gt;
 
@@ -11698,9 +12330,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>Insertion Sort</title>
-   <link href="https://machinelearningmedium.com/2017/07/13/insertion-sort/"/>
+   <link href="http://localhost:4000/2017/07/13/insertion-sort/"/>
    <updated>2017-07-13T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/07/13/insertion-sort</id>
+   <id>http://localhost:4000/2017/07/13/insertion-sort</id>
    <content type="html">&lt;h3 id=&quot;insertion-sort&quot;&gt;Insertion Sort&lt;/h3&gt;
 &lt;p&gt;Given an array A[1…n] of length n to be sorted. The algorithm sorts the list &lt;strong&gt;inplace&lt;/strong&gt;. It picks an element i as &lt;strong&gt;key&lt;/strong&gt; and places it in the correct position in the sorted A[1..(i-1)].&lt;/p&gt;
 
@@ -11772,9 +12404,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>Algorithms and Data Structures</title>
-   <link href="https://machinelearningmedium.com/2017/07/12/algorithms-in-computing/"/>
+   <link href="http://localhost:4000/2017/07/12/algorithms-in-computing/"/>
    <updated>2017-07-12T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/07/12/algorithms-in-computing</id>
+   <id>http://localhost:4000/2017/07/12/algorithms-in-computing</id>
    <content type="html">&lt;h3 id=&quot;algorithm&quot;&gt;Algorithm&lt;/h3&gt;
 &lt;p&gt;Any well-defined computational procedure that takes some value, or set of values, as &lt;strong&gt;input&lt;/strong&gt; and produces some value, or set of values, as &lt;strong&gt;output&lt;/strong&gt;. So, algorithm is a sequence of computational steps that transform the input into the output. An algorithm is correct if, for every input instance of a problem, it halts with the correct output.&lt;/p&gt;
 
@@ -11816,9 +12448,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>Word2Vec</title>
-   <link href="https://machinelearningmedium.com/2017/07/11/word-to-vector-word-representations/"/>
+   <link href="http://localhost:4000/2017/07/11/word-to-vector-word-representations/"/>
    <updated>2017-07-11T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/07/11/word-to-vector-word-representations</id>
+   <id>http://localhost:4000/2017/07/11/word-to-vector-word-representations</id>
    <content type="html">&lt;h3 id=&quot;distributed-vector-representation-series&quot;&gt;Distributed Vector Representation Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -12001,9 +12633,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>Building Stopword List for Information Retrieval System</title>
-   <link href="https://machinelearningmedium.com/2017/07/04/building-stopword-list-for-information-retrieval-system/"/>
+   <link href="http://localhost:4000/2017/07/04/building-stopword-list-for-information-retrieval-system/"/>
    <updated>2017-07-04T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/07/04/building-stopword-list-for-information-retrieval-system</id>
+   <id>http://localhost:4000/2017/07/04/building-stopword-list-for-information-retrieval-system</id>
    <content type="html">&lt;h3 id=&quot;what-are-stopwords-&quot;&gt;What are stopwords ?&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;Words in a document that are &lt;strong&gt;frequently occuring but meaningless&lt;/strong&gt; in terms of Information Retrieval (IR) are called &lt;strong&gt;stopwords&lt;/strong&gt;.&lt;/li&gt;
@@ -12260,9 +12892,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>Zero Sum Subarrays</title>
-   <link href="https://machinelearningmedium.com/2017/07/03/zero-sum-subarray/"/>
+   <link href="http://localhost:4000/2017/07/03/zero-sum-subarray/"/>
    <updated>2017-07-03T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/07/03/zero-sum-subarray</id>
+   <id>http://localhost:4000/2017/07/03/zero-sum-subarray</id>
    <content type="html">&lt;h3 id=&quot;q-given-an-array-find-all-sub-arrays-that-have-sum-0&quot;&gt;Q: Given an array find all sub arrays that have sum 0.&lt;/h3&gt;
 
 &lt;h4 id=&quot;input&quot;&gt;Input:&lt;/h4&gt;
@@ -12320,9 +12952,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>Sort Binary Array</title>
-   <link href="https://machinelearningmedium.com/2017/07/03/sort-binary-array/"/>
+   <link href="http://localhost:4000/2017/07/03/sort-binary-array/"/>
    <updated>2017-07-03T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/07/03/sort-binary-array</id>
+   <id>http://localhost:4000/2017/07/03/sort-binary-array</id>
    <content type="html">&lt;h3 id=&quot;q-sort-a-given-binary-array&quot;&gt;Q: Sort a given binary array.&lt;/h3&gt;
 
 &lt;h4 id=&quot;input&quot;&gt;Input:&lt;/h4&gt;
@@ -12403,9 +13035,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>Pair Sums In An Array</title>
-   <link href="https://machinelearningmedium.com/2017/07/03/pair-sums-in-an-array/"/>
+   <link href="http://localhost:4000/2017/07/03/pair-sums-in-an-array/"/>
    <updated>2017-07-03T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/07/03/pair-sums-in-an-array</id>
+   <id>http://localhost:4000/2017/07/03/pair-sums-in-an-array</id>
    <content type="html">&lt;h3 id=&quot;q-given-an-array-find-a-pair-of-element-with-the-given-sum&quot;&gt;Q: Given an array find a pair of element with the given sum.&lt;/h3&gt;
 
 &lt;h4 id=&quot;input&quot;&gt;Input:&lt;/h4&gt;
@@ -12487,9 +13119,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>Duplicate In Limited Range Array (XOR)</title>
-   <link href="https://machinelearningmedium.com/2017/07/03/duplicate-in-limited-range-array-using-xor/"/>
+   <link href="http://localhost:4000/2017/07/03/duplicate-in-limited-range-array-using-xor/"/>
    <updated>2017-07-03T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/07/03/duplicate-in-limited-range-array-using-xor</id>
+   <id>http://localhost:4000/2017/07/03/duplicate-in-limited-range-array-using-xor</id>
    <content type="html">&lt;h3 id=&quot;q-find-duplicate-in-limited-range-1-to-n-1-array-of-size-n-using-xor-operation&quot;&gt;Q: Find duplicate in limited range (1 to n-1) array of size n using XOR operation.&lt;/h3&gt;
 
 &lt;h4 id=&quot;input&quot;&gt;Input:&lt;/h4&gt;
@@ -12542,9 +13174,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>Blockchain</title>
-   <link href="https://machinelearningmedium.com/2017/07/02/blockchain/"/>
+   <link href="http://localhost:4000/2017/07/02/blockchain/"/>
    <updated>2017-07-02T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/07/02/blockchain</id>
+   <id>http://localhost:4000/2017/07/02/blockchain</id>
    <content type="html">&lt;h3 id=&quot;cryptocurrency-series&quot;&gt;Cryptocurrency Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -12675,9 +13307,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>Discrete Random Variables</title>
-   <link href="https://machinelearningmedium.com/2017/06/23/discrete-random-variables/"/>
+   <link href="http://localhost:4000/2017/06/23/discrete-random-variables/"/>
    <updated>2017-06-23T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/06/23/discrete-random-variables</id>
+   <id>http://localhost:4000/2017/06/23/discrete-random-variables</id>
    <content type="html">&lt;h3 id=&quot;probability-series&quot;&gt;Probability Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -12842,7 +13474,7 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
 &lt;p&gt;&lt;strong&gt;Uniform Distribution&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;All outcomes are eqully possible.&lt;/li&gt;
+  &lt;li&gt;All outcomes are equally possible.&lt;/li&gt;
   &lt;li&gt;Eg: Probability of getting a heads or tails for a fair coin.&lt;/li&gt;
   &lt;li&gt;Uniform(N) implies N outcomes and each has probability 1/N.&lt;/li&gt;
 &lt;/ul&gt;
@@ -12931,9 +13563,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>Conditional Probability and Bayes' Rule</title>
-   <link href="https://machinelearningmedium.com/2017/06/22/bayes-rule-conditional-probability-chain-rule/"/>
+   <link href="http://localhost:4000/2017/06/22/bayes-rule-conditional-probability-chain-rule/"/>
    <updated>2017-06-22T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/06/22/bayes-rule-conditional-probability-chain-rule</id>
+   <id>http://localhost:4000/2017/06/22/bayes-rule-conditional-probability-chain-rule</id>
    <content type="html">&lt;h3 id=&quot;probability-series&quot;&gt;Probability Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
@@ -13044,9 +13676,9 @@ In linear regression, the relationships are modeled using &lt;strong&gt;linear p
  
  <entry>
    <title>The One With Github Pages</title>
-   <link href="https://machinelearningmedium.com/2017/06/16/initial-site-setup/"/>
+   <link href="http://localhost:4000/2017/06/16/initial-site-setup/"/>
    <updated>2017-06-16T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/06/16/initial-site-setup</id>
+   <id>http://localhost:4000/2017/06/16/initial-site-setup</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;https://pages.github.com/&quot; target=&quot;_blank&quot;&gt;GitHub Pages&lt;/a&gt; is a web hosting service offered by &lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot;&gt;GitHub&lt;/a&gt; for hosting &lt;strong&gt;static web pages&lt;/strong&gt; for GitHub users, user blogs, project documentation, or even whole books.
 It is integrated with the &lt;a href=&quot;https://jekyllrb.com/&quot; target=&quot;_blank&quot;&gt;Jekyll&lt;/a&gt; software for static web site and blog generation. The Jekyll source pages for a web site can be stored on GitHub as a Git repository, and when the repository is updated, github servers will automatically regenerate the site.
 GitHub Pages was launched in late 2008. As with the rest of GitHub, it includes both free and paid tiers of service, instead of being supported by web advertising. Web sites generated through this service are hosted either as subdomains of the github.io domain, or as &lt;strong&gt;custom domains&lt;/strong&gt; bought through a third-party domain name registrars.&lt;/p&gt;
@@ -13084,9 +13716,9 @@ Head over to the post &lt;a href=&quot;http://patricksteadman.ca/2014/08/04/lany
  
  <entry>
    <title>Basic Probability Concepts</title>
-   <link href="https://machinelearningmedium.com/2017/06/16/basic-probability-models-and-rules/"/>
+   <link href="http://localhost:4000/2017/06/16/basic-probability-models-and-rules/"/>
    <updated>2017-06-16T00:00:00+05:30</updated>
-   <id>https://machinelearningmedium.com/2017/06/16/basic-probability-models-and-rules</id>
+   <id>http://localhost:4000/2017/06/16/basic-probability-models-and-rules</id>
    <content type="html">&lt;h3 id=&quot;probability-series&quot;&gt;Probability Series&lt;/h3&gt;
 
 &lt;blockquote&gt;
