@@ -12,7 +12,6 @@ exclude:
   - init_algolia_index.sh
   - _algolia_api_key
   - _algolia_api_key.sample
-  - Dockerfile
 
 # Dependencies
 markdown:         kramdown
