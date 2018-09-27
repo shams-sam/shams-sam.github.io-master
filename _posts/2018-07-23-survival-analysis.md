@@ -2,7 +2,7 @@
 layout: post
 title: "Introduction to Survival Analysis"
 categories: []
-tags: [machine-learning, papers, mathematics]
+tags: [machine-learning, papers, mathematics, featured]
 description: The term survival time is used to describe the length of time until a specified event. The widespread use of these models in medicine to analyze survival times leads to the name survival analysis.
 cover: "/assets/images/ecg.jpg"
 cover_source: "https://images3.alphacoders.com/170/thumb-1920-170789.jpg"
@@ -295,7 +295,136 @@ Over time it has been observed that even though some of these parametric distrib
 
 - For an individual with the vector of characteristics, \\(x\\), the proportional hazards model assumes a hazard rate of the form, 
 
-$$h(t \mid x) = h_0(t) e^{x' \beta} \tag{24} \label{24}$$
+$$h(t \mid x) = h_0(t) e^{x_i^\prime \beta} \tag{24} \label{24}$$
+
+where \\(h_0(t)\\) is completely arbitrary and unspecified baseline hazard function. **Thus, the model assumes that the hazard functions of all individuals differ only by a factor of proportionality,** i.e. if an individuals hazard rate is 10 times higher than another's at a given point of time, then it must be 10 times higher at all points in time. **Each hazard function follows same pattern over time.** 
+
+However, there is no restriction on what this pattern can be, i.e. it puts no restriction on the \\(h_0(t)\\) curve, which determines the shape of \\(h(t \vert x)\\) curve. **\\(\beta\\) can be estimated without specifying \\(h_0(t)\\), and \\(h_0(t)\\) can be estimated non-parametrically and thus with flexibility.**
+
+
+Consider a sample of \\(N\\) individuals, \\(n\\) of whom fail before the end of their follow-up period. Let the observations be ordered such that individual 1 has the shortest failure time, individual 2 has the second shortest failure time, and so forth. Thus, for individual \\(i\\), failure time \\(t_i\\) is observed, with,
+
+$$t_1 \lt t_2 \lt \cdots \lt t_n \tag{25} \label{25}$$
+
+A vector \\(x_i\\) represents individual characteristics for each individual \\(i = 1, 2, \cdots, N\\), irrespective of whether they failed.
+
+For each observed failure times, \\(t_i\\), \\(R(t_i)\\) is defined as set of all individuals who were at risk just prior to time \\(t_i\\), i.e., it includes the individuals with failure times greater than or equal to \\(t_i\\), as well as the individuals whose follow-up is at least of length \\(t_i\\).
+
+Using these definitions, the **partial-likelihood** function proposed by Cox can be defined for any failure time \\(t_i\\), as the probability that it is individual \\(i\\) who fails, given that exactly one individual from set \\(R(t_i\\)) fails, is given by,
+
+$$\frac {h(t_i \vert x_i)} {\sum_{j \in R(t_i)} h(t_i \vert x_j)} = \frac {exp(x_i^\prime \beta)} {\sum_{j \in R(t_i)} exp(x_j^\prime \beta)} \tag{26} \label{26}$$
+
+The partial-likelyhood function is formed by multiplying \eqref{26} over all \\(n\\) failure times,
+
+$$ L = \prod_{i=1}^n \frac {exp(x_i^\prime \beta)} {\sum_{j \in R(t_i)} exp(x_j^\prime \beta)} \tag{27} \label{27}$$
+
+The estimate of \\(\beta\\) by maximizing \eqref{27} numerically w.r.t \\(\beta\\) is the **partial maximum-likelyhood estimate**. The word **partial** in partial likelyhood refers to the fact that not all available information is used in estimating \\(\beta\\), i.e., it only depends on knowing which individuals were at risk when each observed failure occured. The exact numerical values of the failure times \\(t_i\\) or of the censoring times for the non recedivists are not needed; only their **order matters**.
+
+Once \\(\beta\\) is estimated, \\(h_0(t)\\), the baseline hazard function can be estimated non-parametrically. The estimated baseline hazard function is constant over the intervals between failure times. One can also calculate **survivor function** \\(S_0(t)\\) or equivalently the baseline cumulative distribution function \\(F_0(t)\\), that corresponds to the estimated baseline hazard function.
+
+**The estimated survivor function is a step function that falls at each time at which there is a failure.**
+
+The point of proportional hazard model is that the survivor function is estimated non-parametrically (i.e. not imposing any structure on its pattern over time, except that it must decrease as \\(t\\) increases) and estimation of \\(\beta\\) can proceed seperately from estimation of survivor function.
+
+### Split Population Models
+
+The models considered so far assume some cumulative distribution function, \\(F(t)\\) for the survival time, that gives the probability of a failure upto and including time \\(t\\), and it approaches one as \\(t\\) approaches infinity. This basically means that every individual must eventually fail, if they were observed for long enough time. This assumption is not true in all cases.
+
+**Split Population Models** (or split models) do not imply that every individual would eventually fail. Rather the population is divided into two groups, one of which would never fail.
+
+Mathematically, let \\(Y\\) be an observable indicator with two values, one implying ultimate failure and zero implying perpetual success. Then,
+
+$$
+\begin{align}
+P(Y=1) &= \delta \\
+P(Y=0) &= 1 - \delta
+\end{align}
+\tag{28} \label{28}
+$$
+
+where \\(\delta\\) is the proportion of the population that would eventually fail, and \\(1 - \delta\\) is the proportion that would never fail.
+
+Let \\(g(t \vert Y=1)\\) be density of survival times for the ultimate failures, and \\(G(t \vert Y=1)\\) be the corresponding cumulative distribution function. If one considers exponential model to represent them, then
+
+$$
+\begin{align}
+g(t \vert Y=1) = \theta e^{-\theta t} \\
+G(t \vert Y=1) = 1 - e^{-\theta t}
+\end{align}
+\tag{29} \label{29}
+$$
+
+It can also be noted that \\(g (t \vert Y = 0)\\) and \\(G(t \vert Y=0)\\) are not defined.
+
+Let \\(T\\) be the length of the follow up period and let \\(R\\) be an observable indicator equal to one if there is failure by time \\(T\\) and zero if there is not. The probability for individuals who do not fail during the follow up period, i.e, the event of \\(R = 0\\) is given by,
+
+$$
+\begin{align}
+P(R=0) &= P(Y=0) + P(Y=1)P(t \gt T \vert Y=1) \\
+&= 1 - \delta + \delta e^{-\theta T}
+\end{align}
+
+\tag{30} \label{30}
+$$
+
+Similarly, probability density for people who fail with survival time \\(t\\) is given by,
+
+$$
+P(Y=1)P(t \lt T \vert Y=1) g(t \vert t \lt T, Y=1) = P(Y=1) g(t \vert Y=1) = \delta \theta e^{-\theta t} \tag{31} \label{31}
+$$
+
+So the likelyhood function is made up of \eqref{29} for those who do not fail and \eqref{30} for those who do. It is given by,
+
+$$
+L = \prod_{i=1}^n \delta \theta exp(-\theta t_i) \prod_{i = n+1}^N (1 - \delta + \delta exp(-\theta T_i)) \tag{32} \label{32}
+$$
+
+The maximum likelyhood estimate of both \\(\theta\\) and \\(\delta\\) can be obtained by maximizing \eqref{32} numerically. It can be noted that when \\(\delta = 1\\), \eqref{32} reduces to \eqref{14}, the original exponential survival time model.
+
+The split population model can be seen as a model of two seperate subpopulations, one with hazard rate \\(\theta\\) and other with zero. A more generalized model exists where the subpopulations exist with two non-zero hazard rates namely, \\(\theta_1\\) and \\(\theta_2\\). Such models help to account for population that is heterogenous in nature. 
+
+Split models can also be based on other distributions such as lognormal etc. Also, it is possible to include explanatory variables into a split model. In such cases, the explanatory variables maybe taken to affect the probabiliy of failure, \\(\delta\\) or distribution of time until failure. 
+
+For example, for a given feature vector \\(x_i\\) of explanatory variables, using **logit/individual lognormal model**, \\(\delta\\) is modeled using, 
+
+$$\delta_i = 1/(1+exp(x_i^\prime \alpha)) \tag{33} \label{33}$$
+
+and parameter \\(\mu\\) of the lognormal distribution is given by,
+
+$$\mu_i = x_i^\prime \beta \tag{34} \label{34}$$
+
+Here, the parameter \\(\alpha\\) gives the effect of \\(x_i\\) on the probablity of failure, and \\(\beta\\) gives the effect of \\(x_i\\) on the time until failure.
+
+Such models are of importance because they let one distinguish between effects of explanatory variable on probability of eventual failure from effects on time until failure who eventually do fail.
+
+### Heterogeneity and State Dependence
+
+The two major causes of observed declining hazard rates are:
+
+- state dependence
+- heterogeneity
+
+The phenomenon of an actually decreasing hazard rate over time due to an actual change in behavior over time at individual level is referred to as **state dependence**.
+
+The second possible reason is **heterogeneity**. This basically means that the hazard rates are different across individuals, i.e., some individuals are more prone to failure than others. Naturally, individuals with higher hazard rates tend to fail earlier, on average, than individuals with lower hazard rates. As a result the average hazard rate of the surviving group will decrease with length of time simply because the most failure prone individuals have been removed already. This is true even without state dependence, i.e, each individual has a constant hazard rate but hazard rate varies across individuals. Even such a group would display decreasing hazard rate.
+
+It is important to understand the difference because a decrease in a hazard rate due to state dependance means a success of the underlying program, while decrease due to heterogeneity does not imply that the program is effective in preventing failure, because it is happening by the virtue of the data at hand.
+
+### Time Varying Covariates
+
+Until now explanatory variables affecting the time until failure do not potray changing values over time, but is a possibility that can not be denied.
+
+The types of explanatory variables can be categorizaed as follows:
+
+- variables that do not change over time, e.g race, sex etc.
+- variables that change over time but not within a single follow-up period, e.g. number of times followed up etc.
+- variables that change continuously over time, such as age, education etc.
+
+The last type of variables make it reasonable to use a statistical model that allows covariates to vary over time. Such incorporation is relatively straightforward in hazard-based models such as proportional hazard models. At each point in time, hazard rate is determined by the values of explanatory variables at that time.
+
+However, it is much more difficult to introduce time-varying components into parametric models because these models are parameterized in terms of density and cumulative distribution function, and the density of distribution function at time \\(t\\) depends on the whole history of the explanatory variables up to time \\(t\\). **In the presence of time varying covariates, a parameterization of the hazard rate would be much more convenient.**
+
+**Panel or Longitudinal Data:** data on individuals over time without reference to just a single follow-up. Such datasets include a large number of time-varying explanatory variables.
 
 ## REFERENCES:
 

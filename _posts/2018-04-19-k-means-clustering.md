@@ -2,7 +2,7 @@
 layout: post
 title: "K-Means Clustering"
 categories: [basics-of-machine-learning]
-tags: [machine-learning, andrew-ng, featured]
+tags: [machine-learning, andrew-ng]
 description: K-means clustering, a method from vector quantization, aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean, serving as a prototype of the cluster.
 cover: "/assets/images/clustering.png"
 cover_source: "http://graphalchemist.github.io/Alchemy/images/features/cluster_team.png"

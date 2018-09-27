@@ -3,57 +3,11 @@
   <channel>
     <title>Machine Learning Medium</title>
     <description>A step away from the illusion of knowledge.</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 23 Aug 2018 15:44:41 +0530</pubDate>
-    <lastBuildDate>Thu, 23 Aug 2018 15:44:41 +0530</lastBuildDate>
+    <link>https://machinelearningmedium.com/</link>
+    <atom:link href="https://machinelearningmedium.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 27 Sep 2018 20:41:29 +0000</pubDate>
+    <lastBuildDate>Thu, 27 Sep 2018 20:41:29 +0000</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
-    
-      <item>
-        <title>The Language of Bits</title>
-        <description>
-</description>
-        <pubDate>Thu, 09 Aug 2018 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2018/08/09/language-of-bits/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/08/09/language-of-bits/</guid>
-        
-        <category>computer-science</category>
-        
-        <category>nptel</category>
-        
-        
-        <category>nptel-computer-architecture</category>
-        
-      </item>
-    
-      <item>
-        <title>Todo</title>
-        <description>&lt;ol&gt;
-  &lt;li&gt;continuous random variable derivations for cdf and expected value, and variance for different distributions.&lt;/li&gt;
-  &lt;li&gt;difference between regression in statistics vs in supervised learning&lt;/li&gt;
-  &lt;li&gt;maximum likelyhood estimation&lt;/li&gt;
-  &lt;li&gt;Value of regularization parameter in gradient descent vs normal equation&lt;/li&gt;
-  &lt;li&gt;Primality Test https://en.wikipedia.org/wiki/Primality_test&lt;/li&gt;
-  &lt;li&gt;Euclid’s Algorithm, https://en.wikipedia.org/wiki/Euclidean_algorithm, https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm, http://e-maxx.ru/algo/extended_euclid_algorithm#3&lt;/li&gt;
-  &lt;li&gt;Legal Side of Open Source https://opensource.guide/legal/#why-do-people-care-so-much-about-the-legal-side-of-open-source&lt;/li&gt;
-  &lt;li&gt;Chinese Remainder Theorem&lt;/li&gt;
-  &lt;li&gt;Unsupervised learning&lt;/li&gt;
-  &lt;li&gt;SVM&lt;/li&gt;
-  &lt;li&gt;AdaBoost&lt;/li&gt;
-  &lt;li&gt;Deaggregation of time series data&lt;/li&gt;
-  &lt;li&gt;http://lamda.nju.edu.cn/weixs/project/CNNTricks/CNNTricks.html&lt;/li&gt;
-  &lt;li&gt;Symmetric Positive Definite in Covariance matrix PCA&lt;/li&gt;
-  &lt;li&gt;low rank matrix factorization&lt;/li&gt;
-  &lt;li&gt;Expander Graph Learning Approach&lt;/li&gt;
-  &lt;li&gt;Beam Search&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Thu, 26 Jul 2018 01:27:20 +0530</pubDate>
-        <link>http://localhost:4000/2018/07/26/todo/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/07/26/todo/</guid>
-        
-        
-      </item>
     
       <item>
         <title>Introduction to Computer Architecture</title>
@@ -296,9 +250,9 @@ mem[a] = r3
 
 &lt;p&gt;&lt;small&gt;&lt;a href=&quot;https://onlinecourses.nptel.ac.in/noc18_cs29/unit?unit=6&amp;amp;lesson=8&quot; target=&quot;_blank&quot;&gt;NPTEL: Introduction to Computer Architecture&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Wed, 25 Jul 2018 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2018/07/25/introduction-to-computer-architecture/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/07/25/introduction-to-computer-architecture/</guid>
+        <pubDate>Wed, 25 Jul 2018 00:00:00 +0000</pubDate>
+        <link>https://machinelearningmedium.com/2018/07/25/introduction-to-computer-architecture/</link>
+        <guid isPermaLink="true">https://machinelearningmedium.com/2018/07/25/introduction-to-computer-architecture/</guid>
         
         <category>computer-science</category>
         
@@ -654,21 +608,147 @@ L = &amp;- {n \over 2} ln(2\pi) - {n \over 2} ln(\sigma^2) - {1 \over 2\sigma^2}
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;h(t \mid x) = h_0(t) e^{x' \beta} \tag{24} \label{24}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;h(t \mid x) = h_0(t) e^{x_i^\prime \beta} \tag{24} \label{24}&lt;/script&gt;
+
+&lt;p&gt;where \(h_0(t)\) is completely arbitrary and unspecified baseline hazard function. &lt;strong&gt;Thus, the model assumes that the hazard functions of all individuals differ only by a factor of proportionality,&lt;/strong&gt; i.e. if an individuals hazard rate is 10 times higher than another’s at a given point of time, then it must be 10 times higher at all points in time. &lt;strong&gt;Each hazard function follows same pattern over time.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;However, there is no restriction on what this pattern can be, i.e. it puts no restriction on the \(h_0(t)\) curve, which determines the shape of \(h(t \vert x)\) curve. &lt;strong&gt;\(\beta\) can be estimated without specifying \(h_0(t)\), and \(h_0(t)\) can be estimated non-parametrically and thus with flexibility.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Consider a sample of \(N\) individuals, \(n\) of whom fail before the end of their follow-up period. Let the observations be ordered such that individual 1 has the shortest failure time, individual 2 has the second shortest failure time, and so forth. Thus, for individual \(i\), failure time \(t_i\) is observed, with,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;t_1 \lt t_2 \lt \cdots \lt t_n \tag{25} \label{25}&lt;/script&gt;
+
+&lt;p&gt;A vector \(x_i\) represents individual characteristics for each individual \(i = 1, 2, \cdots, N\), irrespective of whether they failed.&lt;/p&gt;
+
+&lt;p&gt;For each observed failure times, \(t_i\), \(R(t_i)\) is defined as set of all individuals who were at risk just prior to time \(t_i\), i.e., it includes the individuals with failure times greater than or equal to \(t_i\), as well as the individuals whose follow-up is at least of length \(t_i\).&lt;/p&gt;
+
+&lt;p&gt;Using these definitions, the &lt;strong&gt;partial-likelihood&lt;/strong&gt; function proposed by Cox can be defined for any failure time \(t_i\), as the probability that it is individual \(i\) who fails, given that exactly one individual from set \(R(t_i\)) fails, is given by,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac {h(t_i \vert x_i)} {\sum_{j \in R(t_i)} h(t_i \vert x_j)} = \frac {exp(x_i^\prime \beta)} {\sum_{j \in R(t_i)} exp(x_j^\prime \beta)} \tag{26} \label{26}&lt;/script&gt;
+
+&lt;p&gt;The partial-likelyhood function is formed by multiplying \eqref{26} over all \(n\) failure times,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;L = \prod_{i=1}^n \frac {exp(x_i^\prime \beta)} {\sum_{j \in R(t_i)} exp(x_j^\prime \beta)} \tag{27} \label{27}&lt;/script&gt;
+
+&lt;p&gt;The estimate of \(\beta\) by maximizing \eqref{27} numerically w.r.t \(\beta\) is the &lt;strong&gt;partial maximum-likelyhood estimate&lt;/strong&gt;. The word &lt;strong&gt;partial&lt;/strong&gt; in partial likelyhood refers to the fact that not all available information is used in estimating \(\beta\), i.e., it only depends on knowing which individuals were at risk when each observed failure occured. The exact numerical values of the failure times \(t_i\) or of the censoring times for the non recedivists are not needed; only their &lt;strong&gt;order matters&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Once \(\beta\) is estimated, \(h_0(t)\), the baseline hazard function can be estimated non-parametrically. The estimated baseline hazard function is constant over the intervals between failure times. One can also calculate &lt;strong&gt;survivor function&lt;/strong&gt; \(S_0(t)\) or equivalently the baseline cumulative distribution function \(F_0(t)\), that corresponds to the estimated baseline hazard function.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The estimated survivor function is a step function that falls at each time at which there is a failure.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The point of proportional hazard model is that the survivor function is estimated non-parametrically (i.e. not imposing any structure on its pattern over time, except that it must decrease as \(t\) increases) and estimation of \(\beta\) can proceed seperately from estimation of survivor function.&lt;/p&gt;
+
+&lt;h3 id=&quot;split-population-models&quot;&gt;Split Population Models&lt;/h3&gt;
+
+&lt;p&gt;The models considered so far assume some cumulative distribution function, \(F(t)\) for the survival time, that gives the probability of a failure upto and including time \(t\), and it approaches one as \(t\) approaches infinity. This basically means that every individual must eventually fail, if they were observed for long enough time. This assumption is not true in all cases.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Split Population Models&lt;/strong&gt; (or split models) do not imply that every individual would eventually fail. Rather the population is divided into two groups, one of which would never fail.&lt;/p&gt;
+
+&lt;p&gt;Mathematically, let \(Y\) be an observable indicator with two values, one implying ultimate failure and zero implying perpetual success. Then,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+P(Y=1) &amp;= \delta \\
+P(Y=0) &amp;= 1 - \delta
+\end{align}
+\tag{28} \label{28} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;where \(\delta\) is the proportion of the population that would eventually fail, and \(1 - \delta\) is the proportion that would never fail.&lt;/p&gt;
+
+&lt;p&gt;Let \(g(t \vert Y=1)\) be density of survival times for the ultimate failures, and \(G(t \vert Y=1)\) be the corresponding cumulative distribution function. If one considers exponential model to represent them, then&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align}
+g(t \vert Y=1) = \theta e^{-\theta t} \\
+G(t \vert Y=1) = 1 - e^{-\theta t}
+\end{align}
+\tag{29} \label{29}&lt;/script&gt;
+
+&lt;p&gt;It can also be noted that \(g (t \vert Y = 0)\) and \(G(t \vert Y=0)\) are not defined.&lt;/p&gt;
+
+&lt;p&gt;Let \(T\) be the length of the follow up period and let \(R\) be an observable indicator equal to one if there is failure by time \(T\) and zero if there is not. The probability for individuals who do not fail during the follow up period, i.e, the event of \(R = 0\) is given by,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+P(R=0) &amp;= P(Y=0) + P(Y=1)P(t \gt T \vert Y=1) \\
+&amp;= 1 - \delta + \delta e^{-\theta T}
+\end{align}
+
+\tag{30} \label{30} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Similarly, probability density for people who fail with survival time \(t\) is given by,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;P(Y=1)P(t \lt T \vert Y=1) g(t \vert t \lt T, Y=1) = P(Y=1) g(t \vert Y=1) = \delta \theta e^{-\theta t} \tag{31} \label{31}&lt;/script&gt;
+
+&lt;p&gt;So the likelyhood function is made up of \eqref{29} for those who do not fail and \eqref{30} for those who do. It is given by,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;L = \prod_{i=1}^n \delta \theta exp(-\theta t_i) \prod_{i = n+1}^N (1 - \delta + \delta exp(-\theta T_i)) \tag{32} \label{32}&lt;/script&gt;
+
+&lt;p&gt;The maximum likelyhood estimate of both \(\theta\) and \(\delta\) can be obtained by maximizing \eqref{32} numerically. It can be noted that when \(\delta = 1\), \eqref{32} reduces to \eqref{14}, the original exponential survival time model.&lt;/p&gt;
+
+&lt;p&gt;The split population model can be seen as a model of two seperate subpopulations, one with hazard rate \(\theta\) and other with zero. A more generalized model exists where the subpopulations exist with two non-zero hazard rates namely, \(\theta_1\) and \(\theta_2\). Such models help to account for population that is heterogenous in nature.&lt;/p&gt;
+
+&lt;p&gt;Split models can also be based on other distributions such as lognormal etc. Also, it is possible to include explanatory variables into a split model. In such cases, the explanatory variables maybe taken to affect the probabiliy of failure, \(\delta\) or distribution of time until failure.&lt;/p&gt;
+
+&lt;p&gt;For example, for a given feature vector \(x_i\) of explanatory variables, using &lt;strong&gt;logit/individual lognormal model&lt;/strong&gt;, \(\delta\) is modeled using,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\delta_i = 1/(1+exp(x_i^\prime \alpha)) \tag{33} \label{33}&lt;/script&gt;
+
+&lt;p&gt;and parameter \(\mu\) of the lognormal distribution is given by,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mu_i = x_i^\prime \beta \tag{34} \label{34}&lt;/script&gt;
+
+&lt;p&gt;Here, the parameter \(\alpha\) gives the effect of \(x_i\) on the probablity of failure, and \(\beta\) gives the effect of \(x_i\) on the time until failure.&lt;/p&gt;
+
+&lt;p&gt;Such models are of importance because they let one distinguish between effects of explanatory variable on probability of eventual failure from effects on time until failure who eventually do fail.&lt;/p&gt;
+
+&lt;h3 id=&quot;heterogeneity-and-state-dependence&quot;&gt;Heterogeneity and State Dependence&lt;/h3&gt;
+
+&lt;p&gt;The two major causes of observed declining hazard rates are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;state dependence&lt;/li&gt;
+  &lt;li&gt;heterogeneity&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The phenomenon of an actually decreasing hazard rate over time due to an actual change in behavior over time at individual level is referred to as &lt;strong&gt;state dependence&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The second possible reason is &lt;strong&gt;heterogeneity&lt;/strong&gt;. This basically means that the hazard rates are different across individuals, i.e., some individuals are more prone to failure than others. Naturally, individuals with higher hazard rates tend to fail earlier, on average, than individuals with lower hazard rates. As a result the average hazard rate of the surviving group will decrease with length of time simply because the most failure prone individuals have been removed already. This is true even without state dependence, i.e, each individual has a constant hazard rate but hazard rate varies across individuals. Even such a group would display decreasing hazard rate.&lt;/p&gt;
+
+&lt;p&gt;It is important to understand the difference because a decrease in a hazard rate due to state dependance means a success of the underlying program, while decrease due to heterogeneity does not imply that the program is effective in preventing failure, because it is happening by the virtue of the data at hand.&lt;/p&gt;
+
+&lt;h3 id=&quot;time-varying-covariates&quot;&gt;Time Varying Covariates&lt;/h3&gt;
+
+&lt;p&gt;Until now explanatory variables affecting the time until failure do not potray changing values over time, but is a possibility that can not be denied.&lt;/p&gt;
+
+&lt;p&gt;The types of explanatory variables can be categorizaed as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;variables that do not change over time, e.g race, sex etc.&lt;/li&gt;
+  &lt;li&gt;variables that change over time but not within a single follow-up period, e.g. number of times followed up etc.&lt;/li&gt;
+  &lt;li&gt;variables that change continuously over time, such as age, education etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The last type of variables make it reasonable to use a statistical model that allows covariates to vary over time. Such incorporation is relatively straightforward in hazard-based models such as proportional hazard models. At each point in time, hazard rate is determined by the values of explanatory variables at that time.&lt;/p&gt;
+
+&lt;p&gt;However, it is much more difficult to introduce time-varying components into parametric models because these models are parameterized in terms of density and cumulative distribution function, and the density of distribution function at time \(t\) depends on the whole history of the explanatory variables up to time \(t\). &lt;strong&gt;In the presence of time varying covariates, a parameterization of the hazard rate would be much more convenient.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Panel or Longitudinal Data:&lt;/strong&gt; data on individuals over time without reference to just a single follow-up. Such datasets include a large number of time-varying explanatory variables.&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;REFERENCES:&lt;/h2&gt;
 
 &lt;p&gt;&lt;small&gt;&lt;a href=&quot;https://link.springer.com/article/10.1007/BF01083132#&quot; target=&quot;_blank&quot;&gt;Survival Analysis: A Survey&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 23 Jul 2018 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2018/07/23/survival-analysis/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/07/23/survival-analysis/</guid>
+        <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+        <link>https://machinelearningmedium.com/2018/07/23/survival-analysis/</link>
+        <guid isPermaLink="true">https://machinelearningmedium.com/2018/07/23/survival-analysis/</guid>
         
         <category>machine-learning</category>
         
         <category>papers</category>
         
         <category>mathematics</category>
+        
+        <category>featured</category>
         
         
       </item>
@@ -1030,9 +1110,9 @@ L = &amp;- {n \over 2} ln(2\pi) - {n \over 2} ln(\sigma^2) - {1 \over 2\sigma^2}
 &lt;p&gt;&lt;small&gt;&lt;a href=&quot;https://ai.google/research/pubs/pub45189&quot; target=&quot;_blank&quot;&gt;Smart Reply: Automated Response Suggestion for Email&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
 &lt;small&gt;&lt;a href=&quot;https://www.blog.google/products/gmail/save-time-with-smart-reply-in-gmail/&quot; target=&quot;_blank&quot;&gt;Save time with Smart Reply in Gmail&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sun, 22 Jul 2018 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2018/07/22/google-smart-reply/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/07/22/google-smart-reply/</guid>
+        <pubDate>Sun, 22 Jul 2018 00:00:00 +0000</pubDate>
+        <link>https://machinelearningmedium.com/2018/07/22/google-smart-reply/</link>
+        <guid isPermaLink="true">https://machinelearningmedium.com/2018/07/22/google-smart-reply/</guid>
         
         <category>NLP</category>
         
@@ -1202,9 +1282,9 @@ L = &amp;- {n \over 2} ln(2\pi) - {n \over 2} ln(\sigma^2) - {1 \over 2\sigma^2}
 &lt;small&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning/lecture/ABO2q/online-learning&quot; target=&quot;_blank&quot;&gt;Machine Learning: Coursera - Online Learning&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
 &lt;small&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning/lecture/10sqI/map-reduce-and-data-parallelism&quot; target=&quot;_blank&quot;&gt;Machine Learning: Coursera - Map Reduce and Data Parallelism&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 22 Jun 2018 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2018/06/22/large-scale-learning/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/06/22/large-scale-learning/</guid>
+        <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
+        <link>https://machinelearningmedium.com/2018/06/22/large-scale-learning/</link>
+        <guid isPermaLink="true">https://machinelearningmedium.com/2018/06/22/large-scale-learning/</guid>
         
         <category>machine-learning</category>
         
@@ -1212,101 +1292,6 @@ L = &amp;- {n \over 2} ln(2\pi) - {n \over 2} ln(\sigma^2) - {1 \over 2\sigma^2}
         
         
         <category>basics-of-machine-learning</category>
-        
-      </item>
-    
-      <item>
-        <title>Word Embedding</title>
-        <description>&lt;h3 id=&quot;distributed-vector-representation-series&quot;&gt;Distributed Vector Representation Series&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;a href=&quot;/2017/07/11/word-to-vector-word-representations/&quot;&gt;Word2Vec&lt;/a&gt;&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;/2017/07/26/improvements-on-word2vec/&quot;&gt;Improvements on Word2Vec&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;horizontal-divider&quot;&gt;· · ·&lt;/div&gt;
-
-&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
-
-&lt;p&gt;The need of vector representation for words arises from the fact that most of the NLP and machine learning techniques operate on fixed-length numerical values (except algorithms like decisions trees etc. which can operate on raw text as well).&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The conversion of words into numbers or vector of number is termed as feature extraction or feature encoding.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Bag of Words (BoW) is one of the most popular feature encoding techniques in NLP that is simple to understand, easy to implement and gives promising results on a large dataset (that helps generalization over varieties).&lt;/p&gt;
-
-&lt;h3 id=&quot;bag-of-words-model&quot;&gt;Bag of Words Model&lt;/h3&gt;
-
-&lt;p&gt;The bag of words is a representations of text that describes the occurences of words in a sentence using two attributes:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Vocabulary&lt;/strong&gt;: is the set of all known words.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Word Occurence Measure (Score)&lt;/strong&gt;: defines the words that are present in a document.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The word “bag” symbolizes the fact that the order/structure of words represented by this model is lost in the BoW representation.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This model stems from the observation that documents with similar words have similar content.&lt;/p&gt;
-
-&lt;p&gt;The implementation of a BoW model can vary in a lot of ways as one can customize the way the vocabulary is built or the way occurences of words scored.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Vocabulary can be built by taking all unique words or considering n-grams for frequently occuring phrases, with or without case sensitivity while ignoring or keeping the punctuations.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Scoring:&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Simplest way is to score the presence of word as 1 and absence as 0.&lt;/li&gt;
-      &lt;li&gt;Apart from 1/0 encoding, one can score the presence with term count, term frequency, tf-idf etc.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As the size of vocabulary increases, the length of vector representing a document also increases. As a direct result of this one would observe that BoW model over a big corpus leads to a sparse matrix, which increase memory utilization and affect the computation cost as well.&lt;/p&gt;
-
-&lt;p&gt;In order to cope with this one can limit vocabulary by following basic approaches:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Ignore case&lt;/li&gt;
-  &lt;li&gt;Ignore punctuations&lt;/li&gt;
-  &lt;li&gt;Remove stopwords&lt;/li&gt;
-  &lt;li&gt;Avoiding spell errors&lt;/li&gt;
-  &lt;li&gt;stemming or lemmatization&lt;/li&gt;
-  &lt;li&gt;incorporate n-grams&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Word hashing&lt;/strong&gt; can also be used to limit the vocabulary. But one has to consider the trade-off between probability of collision and sparsity. This is called the &lt;strong&gt;hashing trick&lt;/strong&gt; or &lt;strong&gt;feature hashing&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Limitations of BoW model:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Vocabulary selection must be done carefully as it may lead to exploding sparsity.&lt;/li&gt;
-  &lt;li&gt;Sparsity of the encoded space cannot be avoided most BoW models.&lt;/li&gt;
-  &lt;li&gt;Discarding of word order often times leads to loss of meaning and context.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;skip-gram&quot;&gt;Skip Gram&lt;/h3&gt;
-
-&lt;h2 id=&quot;references&quot;&gt;REFERENCES:&lt;/h2&gt;
-
-&lt;p&gt;&lt;small&gt;&lt;a href=&quot;https://machinelearningmastery.com/gentle-introduction-bag-words-model/&quot; target=&quot;_blank&quot;&gt;A Gentle Introduction to the Bag-of-Words Model&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
-&lt;small&gt;&lt;a href=&quot;https://arxiv.org/pdf/1301.3781.pdf&quot; target=&quot;_blank&quot;&gt;Efficient Estimation of Word Representations in Vector Space&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 07 Jun 2018 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2018/06/07/word-embedding/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/06/07/word-embedding/</guid>
-        
-        <category>NLP</category>
-        
-        <category>machine-learning</category>
-        
-        <category>papers</category>
-        
-        <category>word-embedding</category>
-        
         
       </item>
     
@@ -1653,9 +1638,9 @@ Y = \left[
 &lt;small&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning/lecture/CEXN0/vectorization-low-rank-matrix-factorization&quot; target=&quot;_blank&quot;&gt;Machine Learning: Coursera - Low Rank Matrix Factorization&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
 &lt;small&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning/lecture/Adk8G/implementational-detail-mean-normalization&quot; target=&quot;_blank&quot;&gt;Machine Learning: Coursera - Mean Normalization&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 11 May 2018 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2018/05/11/recommender-systems/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/05/11/recommender-systems/</guid>
+        <pubDate>Fri, 11 May 2018 00:00:00 +0000</pubDate>
+        <link>https://machinelearningmedium.com/2018/05/11/recommender-systems/</link>
+        <guid isPermaLink="true">https://machinelearningmedium.com/2018/05/11/recommender-systems/</guid>
         
         <category>machine-learning</category>
         
@@ -2035,9 +2020,9 @@ x_n &amp;\sim \mathcal{N}(\mu_n, \sigma_n^2) \\
 &lt;small&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning/lecture/Rkc5x/anomaly-detection-vs-supervised-learning&quot; target=&quot;_blank&quot;&gt;Machine Learning: Coursera - Anomaly Detection vs Supervised Learning&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
 &lt;small&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning/lecture/Cf8DF/multivariate-gaussian-distribution&quot; target=&quot;_blank&quot;&gt;Machine Learning: Coursera - Multivariate Gaussian Distribution&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
 </description>
-        <pubDate>Wed, 02 May 2018 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2018/05/02/anomaly-detection/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/05/02/anomaly-detection/</guid>
+        <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+        <link>https://machinelearningmedium.com/2018/05/02/anomaly-detection/</link>
+        <guid isPermaLink="true">https://machinelearningmedium.com/2018/05/02/anomaly-detection/</guid>
         
         <category>machine-learning</category>
         
@@ -2317,9 +2302,730 @@ x_n &amp;\sim \mathcal{N}(\mu_n, \sigma_n^2) \\
 &lt;small&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning/lecture/S1bq1/choosing-the-number-of-principal-components&quot; target=&quot;_blank&quot;&gt;Machine Learning: Coursera - Choosing the number of principal components&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
 &lt;small&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning/lecture/RBqQl/advice-for-applying-pca&quot; target=&quot;_blank&quot;&gt;Machine Learning: Coursera - Advice&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sun, 22 Apr 2018 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2018/04/22/principal-component-analysis/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/04/22/principal-component-analysis/</guid>
+        <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
+        <link>https://machinelearningmedium.com/2018/04/22/principal-component-analysis/</link>
+        <guid isPermaLink="true">https://machinelearningmedium.com/2018/04/22/principal-component-analysis/</guid>
+        
+        <category>machine-learning</category>
+        
+        <category>andrew-ng</category>
+        
+        
+        <category>basics-of-machine-learning</category>
+        
+      </item>
+    
+      <item>
+        <title>K-Means Clustering</title>
+        <description>&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;/collection/basics-of-machine-learning&quot;&gt;Index&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;horizontal-divider&quot;&gt;· · ·&lt;/div&gt;
+
+&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;K-means clustering is one of the most popular clustering algorithms.&lt;/li&gt;
+  &lt;li&gt;It gets it name based on its property that it tries to find most optimal user specified k number of clusters in a any dataset. The quality of the dataset and their seperability is subject to implementation details, but it is fairly straight forward iterative algorithm.&lt;/li&gt;
+  &lt;li&gt;It basically involves a random centroid initialization step followed by two steps, namely, cluster assignment step, and centroid calculation step that are executed iteratively until a stable mean set is arrived upon. It becomes more clear in the animation below.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-04-19-k-means-clustering/fig-1-clustering-animation.gif?raw=true&quot; alt=&quot;Fig-1 K-Means Animation&quot; width=&quot;70%&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Cluster Assignment&lt;/strong&gt;: Assign each data point to one of the two clusters based on its distance from them. A point is assigned to the cluster, whose centroid it is closer to.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Move Centroid:&lt;/strong&gt; After cluster assignment, centroids are moved to the mean of clusters formed. And then the process is repeated. After a certain number of steps the centroids will no longer move around and then the iterations can stop.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;k-means-algorithm&quot;&gt;K-Means Algorithm&lt;/h3&gt;
+
+&lt;p&gt;Input:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;\(K\), number of clusters&lt;/li&gt;
+  &lt;li&gt;Training set, \(x^{(1)}, x^{(2)}, \cdots, x^{(m)}\)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;where:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;\(x^{(i)} \in \mathbb{R}^n\), as there are no bias terms, \(x_0=1\)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Algorithm:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Randomly initialize \(K\) cluster centroids, \(\mu_1, \mu_2, \cdots, \mu_k \in \mathbb{R}^n\)&lt;/li&gt;
+  &lt;li&gt;Then,&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+Repeat \{ \\
+    \text{for }i &amp;= 1\text{ to }m \\
+        &amp; c^{(i)} =\text{ index (from }1\text{ to }K\text{) of centroid closest to }x^{(i)}\text{, i.e., } min_k \lVert x^{(i)} - \mu_k \rVert^2 \\
+    \text{for }k &amp;= 1\text{ to }K \\
+        &amp; \mu_k =\text{ average (mean) of points assigned to cluster, }k\text{, i.e., } \frac {\text{sum of } x^{(i)}\text{, where }c^{(i)} = k} {\text{number of }c^{(i)} = k} \\
+\}
+\end{align}
+\tag{1} \label{1} %]]&gt;&lt;/script&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;It is common to apply k-means to a non-seperated clusters. This has particular applications in segmentation problems, like market segmentation or population division based on pre-selected features.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;optimization-objective&quot;&gt;Optimization Objective&lt;/h3&gt;
+
+&lt;p&gt;Notation:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;\(c^{(i)}\) - index of cluster \(\{1, 2, \cdots, K\}\) to which example \(x^{(i)}\) is currently assigned&lt;/li&gt;
+  &lt;li&gt;\(\mu_k\) - cluster centroid \(k\), \(\mu_k \in \mathbb{R}^n\)&lt;/li&gt;
+  &lt;li&gt;\(\mu_{c^{(i)}}\) - cluster centroid of the cluster to which the example \(x^{(i)}\) is assigned&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Following the above notation, the cost function of the k-means clustering is given by,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;J(c^{(1)}, c^{(2)}, \cdots, c^{(m)}, \mu_1, \mu_2, \cdots, \mu_K) = {1 \over m} \sum_{i=1}^m \lVert x^{(i)} - \mu_{c^{(i)}} \rVert^2 \tag{2} \label{2}&lt;/script&gt;
+
+&lt;p&gt;Hence the optimization objective is,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;min_{c^{(1)}, c^{(2)}, \cdots, c^{(m)},\\ \mu_1, \mu_2, \cdots, \mu_K} J(c^{(1)}, c^{(2)}, \cdots, c^{(m)}, \mu_1, \mu_2, \cdots, \mu_K) \tag{3} \label{3}&lt;/script&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The cost function in \eqref{2} is called distortion cost function or the distortion of k-means clustering.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It can argued that the k-means algorithm in \eqref{1}, is implementing the cost function optimization. This is so because the first step of k-mean clustering, i.e. the cluster assignment step is nothing but the minimization of the cost w.r.t. \(c^{(1)}, c^{(2)}, \cdots, c^{(m)}\) as this step involves assigning a data point to the nearest possible cluster. Similarly the second step, i.e. moving the centroid step is the minimization of the clustering cost w.r.t. \(\mu_1, \mu_2, \cdots, \mu_K\) as the most optimal position of centroid for minimizing the distortion for a given set of points is the mean position.&lt;/p&gt;
+
+&lt;p&gt;One handy way of checking if the clustering alorithm is working correctly is to plot distortion as a function of number of iterations. As both the steps in the k-means are calculated steps for minimization it is always going to decrease or remain approximately constant as the number of iterations increase.&lt;/p&gt;
+
+&lt;h3 id=&quot;random-initialization&quot;&gt;Random Initialization&lt;/h3&gt;
+
+&lt;p&gt;There are various ways for randomly picking out \(K &amp;lt; m\) cluster centroids, but the most recommended one involves picking \(K\) randomly picked training examples and initialize \(\{\mu_1, \mu_2, \cdots, \mu_K\}\) equal to these \(K\) examples.&lt;/p&gt;
+
+&lt;p&gt;Based on initialization, it is possible that k-means could converge to different centroids or stuck in some local optima. One possible solution to this is to try multiple random initializations and then choose the one with the least distortion. It’s fairly usual to run k-means around 50-1000 times with random initialization to make sure that it does not get stuck in local optima.&lt;/p&gt;
+
+&lt;p&gt;Generally the trick of multiple random initializations will help only if the number of clusters is small, i.e. between 2-10. For higher number of clusters the multiple number of random initializations are less likely to help improve the distortion cost function.&lt;/p&gt;
+
+&lt;h3 id=&quot;choosing-the-number-of-clusters&quot;&gt;Choosing the Number of Clusters&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;One way of choosing the number of clusters is by manually visualizing the data.&lt;/li&gt;
+  &lt;li&gt;Sometimes it is ambiguous as to how many clusters exist in the dataset and in such cases it’s rather more useful to choose the number of clusters on the basis of end goal or the number of clusters that serve well the later down stream goal that needs to be extracted from the datasets.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Elbow Method:&lt;/strong&gt; On plotting the distortion as a function of number of clusters, \(K\), this methods says that the optimal number of cluster at the point the elbow occurs as can be seen for line B in the plot below. It is a reasonable way of choosing the number of clusters. But this method does not always work because the sometimes the plot would look like line A which does not have clear elbow to choose.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-04-19-k-means-clustering/fig-2-elbow-method.png?raw=true&quot; alt=&quot;Fig-2 Elbow Method&quot; width=&quot;70%&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;As a strict rule in k-means, as the number of cluster \(K\) increases, the distortion would decrease. But after some point the increase in cluster would not give much decrease in the distortion.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;example&quot;&gt;Example&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/shams-sam/CourseraMachineLearningAndrewNg/blob/master/k-means.ipynb&quot; target=&quot;\_blank&quot;&gt;&lt;strong&gt;Ipython Notebook&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;cv2&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Given a image it is reshaped into a vector for ease of processing,&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;vec_img&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reshape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;astype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Following this K points are randomly chosen and assigned as centroids,&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;choose_random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;K&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;randint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;K&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;mu&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;choose_random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;K&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec_img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The two basic steps of k-means clustering, cluster assignment and moving centroids can be implemented as follows,&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;cluster_assignment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newaxis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argmin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;move_centroid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)):&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;vec_sub&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;mu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vec_sub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mu&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The distortion cost fuction is calculated as follows,&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;distortion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Once all the modules are in place, k-means needs to iterate over the steps of cluster assignment and moving centroids until the distorion is within the threshold (threshold chosen = 1),&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;last_dist&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;distortion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec_img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;curr_dist&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;last_dist&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;last_dist&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;curr_dist&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;last_dist&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;curr_dist&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cluster_assignment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec_img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;mu&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;move_centroid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec_img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;    
+    &lt;span class=&quot;n&quot;&gt;curr_dist&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;distortion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vec_img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Following plots are obtained after running k-means for image compression on two different images,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-04-19-k-means-clustering/fig-3-image-compression-1.png?raw=true&quot; alt=&quot;K-Means Compression - Image 1&quot; width=&quot;70%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-04-19-k-means-clustering/fig-4-image-compression-2.png?raw=true&quot; alt=&quot;K-Means Compression - Image 2&quot; width=&quot;70%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Following code implements k-means for different values of K.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;elbow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;K_hist&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;dist_hist&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;K&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tqdm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)):&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;K_hist&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;K&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;mu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dist&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k_means&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;K&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;dist_hist&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;K_hist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dist_hist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;K&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;final distortion&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'elbow plot of image 1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;elbow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img_1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;elbow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img_2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'elbow plot of image 2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-04-19-k-means-clustering/fig-5-elbow-plot.png?raw=true&quot; alt=&quot;K-Means Compression - Image 2&quot; width=&quot;80%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Seeing the two plots it is evident while the elbow plot gives a optimal value of two for image 1, there is no well defined elbow for the image 2 and it is not very clear which value would be optimal as mentioned in the &lt;a href=&quot;#choosing-the-number-of-clusters&quot;&gt;section&lt;/a&gt; above.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;REFERENCES:&lt;/h2&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning/lecture/93VPG/k-means-algorithm&quot; target=&quot;_blank&quot;&gt;Machine Learning: Coursera - K-Means Clustering&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning/lecture/G6QWt/optimization-objective&quot; target=&quot;_blank&quot;&gt;Machine Learning: Coursera - Optimization Objective&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning/lecture/drcBh/random-initialization&quot; target=&quot;_blank&quot;&gt;Machine Learning: Coursera - Random Initialization&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning/lecture/Ks0E9/choosing-the-number-of-clusters&quot; target=&quot;_blank&quot;&gt;Machine Learning: Coursera - Choosing the number of clusters&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 19 Apr 2018 00:00:00 +0000</pubDate>
+        <link>https://machinelearningmedium.com/2018/04/19/k-means-clustering/</link>
+        <guid isPermaLink="true">https://machinelearningmedium.com/2018/04/19/k-means-clustering/</guid>
+        
+        <category>machine-learning</category>
+        
+        <category>andrew-ng</category>
+        
+        
+        <category>basics-of-machine-learning</category>
+        
+      </item>
+    
+      <item>
+        <title>Support Vector Machine</title>
+        <description>&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;/collection/basics-of-machine-learning&quot;&gt;Index&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;horizontal-divider&quot;&gt;· · ·&lt;/div&gt;
+
+&lt;h3 id=&quot;optimization-objective&quot;&gt;Optimization Objective&lt;/h3&gt;
+
+&lt;p&gt;The support vector machine objective can seen as a modification to the cost of logistic regression. Consider the sigmoid function, given as,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;h_\theta(x) = \frac {1} {1 + e^{-z}} \tag{1} \label{1}&lt;/script&gt;
+
+&lt;p&gt;where \(z = \theta^T x \)&lt;/p&gt;
+
+&lt;p&gt;The cost function of logistic regression as in the post &lt;a href=&quot;/2017/09/02/logistic-regression-model/#mjx-eqn-6&quot;&gt;&lt;strong&gt;Logistic Regression Model&lt;/strong&gt;&lt;/a&gt;, is given by,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+J(\theta) &amp;= -{1 \over m} \sum_{i=1}^m \left( y^{(i)}\,log(h_\theta(x^{(i)}) + (1-y^{(i)})\,log(1 - h_\theta(x^{(i)})) \right) \\
+    &amp;= -{1 \over m} \sum_{i=1}^m \left( y^{(i)}\,log(\frac {1} {1 + e^{-\theta^T x}}) + (1-y^{(i)})\,log(1 - \frac {1} {1 + e^{-\theta^T x}}) \right)
+\tag{2} \label{2}
+\end{align} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Each training instance contributes to the cost function the following term,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;-y\,log(\frac {1} {1 + e^{-z}}) - (1-y)\,log(1 - \frac {1} {1 + e^{-z}})&lt;/script&gt;
+
+&lt;p&gt;So when \(y = 1\), the contributed term is \(-log(\frac {1} {1 + e^{-z}})\), which can be seen in the plot below. The cost function of SVM, denoted as \(cost_1(z)\), is a modification the former and a close approximation.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-04-10-support-vector-machines/fig-1-svm-cost-at-y-1.png&quot; alt=&quot;Fig-1. SVM Cost function at y = 1&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;svm_cost_1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.26&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linspace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;exp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;negative&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;svm_cost_1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;legend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'logistic regression cost function'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'modified SVM cost function'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Similarly, when \(y = 0\), the contributed term is \(-log(1 - \frac {1} {1 + e^{-z}})\), which can be seen in the plot below. The cost function of SVM, denoted as \(cost_0(z)\), is a modification the former and a close approximation.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-04-10-support-vector-machines/fig-2-svm-cost-at-y-0.png&quot; alt=&quot;Fig-2. SVM Cost function at y = 0&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;svm_cost_0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.26&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;exp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;negative&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))))))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;svm_cost_0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;legend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'logistic regression cost function'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'modified SVM cost function'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;While the slope the straight line is not of as much importance, it is the linear approximation that gives SVMs computational advantages that helps in formulating an easier optimization problem.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Regularized version of \eqref{2} can from the post &lt;a href=&quot;/2017/09/15/regularized-logistic-regression/#mjx-eqn-1&quot;&gt;&lt;strong&gt;Regularized Logistic Regression&lt;/strong&gt;&lt;/a&gt; can rewritten as,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;J(\theta) = {1 \over m} \sum_{i=1}^m \left( y^{(i)}\,(-log(h_\theta(x^{(i)}))) + (1-y^{(i)})\,(-log(1 - h_\theta(x^{(i)}))) \right) + {\lambda \over 2m } \sum_{j=1}^n \theta_j^2  \tag{3} \label{3}&lt;/script&gt;
+
+&lt;p&gt;In order to come up with the cost function for the SVM, \eqref{3} is modified by replacing the corresponding cost terms, which gives,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;J(\theta) = {1 \over m} \sum_{i=1}^m \left( y^{(i)}\,cost_1(z) + (1-y^{(i)})\,cost_0(z) \right) + {\lambda \over 2m } \sum_{j=1}^n \theta_j^2 \tag{4} \label{4}&lt;/script&gt;
+
+&lt;p&gt;Following the conventions of SVM the following modifications are made to the cost in \eqref{4}, which effectively is a change in notation but not the underlying logic,&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;removing \({1 \over m}\) does not affect the minimization logic at all as the minima of a function is not changed by the linear scaling.&lt;/li&gt;
+  &lt;li&gt;change the form of parameterization from \(A + \lambda B\) to \(CA + B\) where it can be intuitively thought that \(C = {1 \over \lambda}\).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After applying the above changes, \eqref{4} gives,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;J(\theta) = C \sum_{i=1}^m \left[ y^{(i)}\,cost_1(\theta^T x^{(i)}) + (1-y^{(i)})\,cost_0(\theta^T x^{(i)}) \right] + {1 \over 2 } \sum_{j=1}^n \theta_j^2 \tag{5} \label{5}&lt;/script&gt;
+
+&lt;p&gt;The SVM hypothesis does not predict probability, instead gives hard class labels,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;h_\theta(x) = 
+\begin{cases}
+1 \text{, if } \theta^Tx \geq 0 \\
+0 \text{, otherwise}
+\end{cases}
+\tag{6} \label{6}&lt;/script&gt;
+
+&lt;h3 id=&quot;large-margin-intuition&quot;&gt;Large Margin Intuition&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-04-10-support-vector-machines/fig-3-cost-plots.png?raw=true&quot; alt=&quot;Fig-3. SVM Cost function plots&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;According to \eqref{5} and the plots of the cost function as shown in the image above, the following are two desirable states for SVM,&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;if \(y=1\), then \(\theta^Tx \geq 1\) (not just \(\geq 0\))&lt;/li&gt;
+  &lt;li&gt;if \(y=0\), then \(\theta^Tx \leq -1\) (not just \(\lt 0\))&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let C in \eqref{5} be a large value. Consequently, in order to minimize the cost, the corresponding term \(\sum_{i=1}^m \left[ y^{(i)}\,cost_1(\theta^T x^{(i)}) + (1-y^{(i)})\,cost_0(\theta^T x^{(i)}) \right]\) must be close to 0.&lt;/p&gt;
+
+&lt;p&gt;Hence, in order to minimize the cost function, when \(y=1\), \(cost_1(\theta^T x)\) should be 0, and similarly, when \(y=0\), \(cost_0(\theta^T x)\) should be 0. And thus, from the plots in Fig.3, it is clear that it can only fulfilled by the two states listed above.&lt;/p&gt;
+
+&lt;p&gt;Following the above intuition, the cost function can we written as,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;min_\theta J(\theta) = min_\theta {1 \over 2 } \sum_{j=1}^n \theta_j^2 \tag{7} \label{7}&lt;/script&gt;
+
+&lt;p&gt;subject to contraints,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+\theta^Tx^{(i)} &amp;\geq 1 \text{, if } y^{(i)}=1 \\
+\theta^Tx^{(i)} &amp;\leq -1 \text{, if } y^{(i)}=0
+\end{align} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;What this basically leads to is the selection of a decision boundary that tries to maximize the margin from the support vectors as shown in the plot below. This maximization of the margin as seen for decision boundary A increases the robustness over decision boundaries with lesser margins like B. And it is this property of the SVMs that attributes the name &lt;strong&gt;large margin classifier&lt;/strong&gt; to it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-04-10-support-vector-machines/fig-4-large-margin-decision-boundary.png?raw=true&quot; alt=&quot;Fig-4. Large Margin Decision Boundary&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;effect-of-parameter-c&quot;&gt;Effect of Parameter C&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-04-10-support-vector-machines/fig-5-effect-of-regularization.png?raw=true&quot; alt=&quot;Fig-5. Effect of Parameter C&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As discussed in the &lt;a href=&quot;#optimization-objective&quot;&gt;section&lt;/a&gt; above, the effect of C can be considered as reciprocal of regularization parameter, \(\lambda\). This is more clear from Fig-5. A single outlier, can make the model choose the decision boundary with smaller margin if the value of C is large. A small value of C ensures that the outliers are overlooked and best approximation of large margin boundary is determined.&lt;/p&gt;
+
+&lt;h3 id=&quot;mathematical-background&quot;&gt;Mathematical Background&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Vector Inner Product:&lt;/strong&gt; Consider two vectors, \(v\) and \(w\), given by,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;v = \begin{bmatrix}v_1 \\ v_2 \end{bmatrix}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;w = \begin{bmatrix}w_1 \\ w_2 \end{bmatrix}&lt;/script&gt;
+
+&lt;p&gt;Then, the &lt;strong&gt;inner product&lt;/strong&gt; or the &lt;strong&gt;dot product&lt;/strong&gt; is defined as \(v^Tw = w^Tv\).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Norm&lt;/strong&gt; of a vector, \(v\), denoted as \(\lVert v\rVert\) is the euclidean length of the vector given by the pythagoras theorem as,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\lVert v\rVert = \sqrt{\sum_{i=0}^n v_i^2} \in \mathbb{R} \tag{8} \label{8}&lt;/script&gt;
+
+&lt;p&gt;The inner product can also be defined as,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+\text{Inner_Product(v, w)} &amp;= v^Tw = w^Tv = \sum_{i=0}^n v_i \cdot w_i \\
+    &amp;= \lVert v\rVert \cdot \lVert w\rVert \cdot cos \theta = p \cdot \lVert v\rVert \tag{9} \label{9}
+\end{align} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;where \(p=\lVert w\rVert \cdot cos \theta\) can be described as the projection of vector \(w\) onto vector \(v\) which can be either positive or negative signed based on the angle \(\theta\) between the vectors as shown in the image below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-04-10-support-vector-machines/fig-6-dot-product.jpg?raw=true&quot; alt=&quot;Fig-6. Dot Product&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;SVM Decision Boundary:&lt;/strong&gt; From \eqref{7}, the optimization statement can be written as,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;min_\theta \, {1 \over 2 } \sum_{j=1}^n \theta_j^2 \tag{10} \label{10}&lt;/script&gt;
+
+&lt;p&gt;subject to contraints,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+\theta^Tx^{(i)} &amp;\geq 1 \text{, if } y^{(i)}=1 \\
+\theta^Tx^{(i)} &amp;\leq -1 \text{, if } y^{(i)}=0
+\end{align}
+\tag{11} \label{11} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Let \(\theta_0 = 0\) and \(n=2\), i.e. number of features is 2 for simplicity, then \eqref{10} can be written as,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;min_\theta \, {1 \over 2 } (\theta_1^2 + \theta_1^2) = {1 \over 2 } \sqrt{(\theta_1^2 + \theta_1^2)}^2 =  {1 \over 2 } \lVert \theta \rVert^2 \tag{12} \label{12}&lt;/script&gt;
+
+&lt;p&gt;Using \eqref{9}, \(\theta^Tx^{(i)}\) in \eqref{11} can be written as,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta^Tx^{(i)} = p^{(i)} \cdot \lVert \theta \rVert \tag{13} \label{13}&lt;/script&gt;
+
+&lt;p&gt;The plot of \eqref{13} can be seen below,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-04-10-support-vector-machines/fig-7-dot-product-in-svm.png?raw=true&quot; alt=&quot;Fig-7. Dot Product in SVM&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hence, using \eqref{12} and \eqref{13}, the optimization objective in \eqref{10} and the constraints in \eqref{11} are written as,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;min_\theta \, {1 \over 2 } \lVert \theta \rVert^2 \tag{14} \label{14}&lt;/script&gt;
+
+&lt;p&gt;subject to contraints,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+p^{(i)} \cdot \lVert \theta \rVert &amp;\geq 1 \text{, if } y^{(i)}=1 \\
+p^{(i)} \cdot \lVert \theta \rVert &amp;\leq -1 \text{, if } y^{(i)}=0
+\end{align}
+\tag{15} \label{15} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;where \(p^{(i)}\) is the projection of \(x^{(i)}\) onto vector \(\theta\).&lt;/p&gt;
+
+&lt;p&gt;Consider two decision boundaries, A and B, and their respective perpendicular parameters, \(\theta_A\) and \(\theta_B\) as shown in the plot below. As a consequence of choosing \(\theta_0 = 0\) for simplification, all the corresponding decision boundaries pass through the origin.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-04-10-support-vector-machines/fig-8-choosing-large-margin.png?raw=true&quot; alt=&quot;Fig-8. Choosing Large Margin Classifier&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Based on the two training examples of either class chosen, close to the boundaries, it can be seen that the magnitude of projection is more in case of \(\theta_B\) than \(\theta_A\). This basically tells that it would be possible to choose smaller values of \(\theta\) and satisfy \eqref{14} and \eqref{15} if the value of projection \(p\) is bigger and hence, the decision boundary, B is more favourable to the optimization objective.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Why is decision boundary perpendicular to the \(\theta\)?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Consider two points \(x_1\) and \(x_2\) on the decision boundary given by,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta\,x + c= 0 \tag{16} \label{16}&lt;/script&gt;
+
+&lt;p&gt;Since the two points are on the line, they must satisfy \eqref{16}. Substitution leads to the following,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta\,x_1 + c= 0 \tag{17} \label{17}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta\,x_2 + c= 0 \tag{18} \label{18}&lt;/script&gt;
+
+&lt;p&gt;Subtracting \eqref{18} from \eqref{17},&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta\,(x_1 - x_2) = 0 \tag{17} \label{19}&lt;/script&gt;
+
+&lt;p&gt;Since \(x_1\) and \(x_2\) lie on the line, the vector \((x_1 - x_2)\) is on the line too. Following the property of orthogonal vectors, \eqref{19} is possible only if \(\theta\) is orthogonal or perpendicular to \((x_1 - x_2)\), and hence perpendicular to the decision boundary.&lt;/p&gt;
+
+&lt;h3 id=&quot;kernels&quot;&gt;Kernels&lt;/h3&gt;
+
+&lt;p&gt;When dealing with non-linear decision boundaries, a learning method like logistic regression relies on high order polynomial features to find a complex decision boundary and fit the dataset, i.e. predict \(y=1\) if,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta_0\,f_0 + \theta_1\,f_1 + \theta_2\,f_2 + \theta_3\,f_3 + \cdots \geq 0 \tag{20} \label{20}&lt;/script&gt;
+
+&lt;p&gt;where \(f_0 = x_0,\, f_1=x_1,\, f_2=x_2,\, f_3=x_1x_2,\, f_4=x_1^2,\, \cdots \).&lt;/p&gt;
+
+&lt;p&gt;A natural question that arises is if there are choices of better/different features than in \eqref{20}? A SVM does this by picking points in the space called &lt;strong&gt;landmarks&lt;/strong&gt; and defining functions called &lt;strong&gt;similarity&lt;/strong&gt; corresponding to the landmarks.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-04-10-support-vector-machines/fig-9-svm-landmarks.png?raw=true&quot; alt=&quot;Fig-9. SVM Landmarks&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Say, there are three landmarks defined, \(l^{(1)}\), \(l^{(2)}\) and \(l^{(3)}\) as shown in the plot above, the for any given x, \(f_1\), \(f_2\) and \(f_3\) are defined as follows,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+f_1 &amp;= similarity(x, l^{(1)}) = exp \left(- \frac {\lVert x - l^{(1)} \rVert^2} {2 \sigma^2} \right) \\
+f_2 &amp;= similarity(x, l^{(2)}) = exp \left(- \frac {\lVert x - l^{(2)} \rVert^2} {2 \sigma^2} \right) \\
+f_3 &amp;= similarity(x, l^{(3)}) = exp \left(- \frac {\lVert x - l^{(3)} \rVert^2} {2 \sigma^2} \right) \\
+    &amp; \vdots
+\end{align}
+\tag{21} \label{21} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Here, the similarity function is mathematically termed a &lt;strong&gt;kernel&lt;/strong&gt;. The specific kernel used in \eqref{21} is called the \(Gaussian Kernel\). Kernels are sometimes also denoted as \(k(x, l^{(i)})\).&lt;/p&gt;
+
+&lt;p&gt;Consider \(f_1\) from \eqref{21}. If there exists \(x\) close to landmark \(l^{(1)}\), then \(\lVert x - l^{(1)} \rVert \approx 0\) and hence, \(f_1 \approx 1\). Similarly for a \(x\) far from the landmark, \(\lVert x - l^{(1)} \rVert\) will be a larger value and hence exponential fall will cause \(f_1 \approx 0\). So effectively the choice of landmarks has helped in increasing the number of features \(x\) had from 2 to 3. which can be helpful in discrimination.&lt;/p&gt;
+
+&lt;p&gt;For a gaussian kernel, the value of \(\sigma\) defines the spread of the normal distribution. If \(\sigma\) is small, the spread will be narrower and when its large the spread will be wider.&lt;/p&gt;
+
+&lt;p&gt;Also, the intuition is clear about how landmarks help in generating the new features. Along with the values of parameter, \(\theta\) and \(\sigma\), various different decision boundaries can be achieved.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-choose-optimal-landmarks&quot;&gt;How to choose optimal landmarks?&lt;/h3&gt;
+
+&lt;p&gt;In a complex machine learning problem it would be advantageous to choose a lot more landmarks. This is generally acheived by choosing landmarks at the point of the training examples, i.e. landmarks equal to the number of training examples are chosen, ending up in \(l^{(1)}, l^{(2)}, \cdots l^{(m)}\) if there are \(m\) training examples. This translates to the fact that each feature is a measure of how close is an instance to the existing points of the class, leading to generation of new feature vectors.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;For SVM training, given training examples, \(x\), features \(f\) are computed, and \(y=1\), if \(\theta^Tf \geq 0\)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The training objective from \eqref{5} is modified as follows,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;min_\theta \, C \sum_{i=1}^m \left[ y^{(i)}\,cost_1(\theta^T f^{(i)}) + (1-y^{(i)})\,cost_0(\theta^T f^{(i)}) \right] + {1 \over 2 } \sum_{j=1}^m \theta_j^2 \tag{22} \label{22}&lt;/script&gt;
+
+&lt;p&gt;In this case, \(n=m\) in \eqref{5} by the virtue of procedure used to choose \(f\).&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The regularization term in \eqref{22} can be written as \(\theta^T\theta\). But in practice most SVM libraries, instead \(\theta^TM\theta\), which can be considered a scaled version is used as it gives certain optimization benefits and scaling to bigger training sets, which will be taken up at a later point in maybe another post.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;While the kernels idea can be applied to other algorithms like logistic regression, the computational tricks that apply to SVMs do not generalize as well to other algorithms.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hence, SVMs and Kernels tend to go particularly well together.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;biasvariance&quot;&gt;Bias/Variance&lt;/h3&gt;
+
+&lt;p&gt;Since \(C (= {1 \over \lambda})\),&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Large C: Low bias, High Variance&lt;/li&gt;
+  &lt;li&gt;Small C: High bias, Low Variance&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Regarding \(\sigma\),&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Large \(\sigma^2\): High Bias, Low Variance (Features vary more smoothly)&lt;/li&gt;
+  &lt;li&gt;Small \(\sigma^2\): Low Bias, High Variance (Features vary less smoothly)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;choice-of-kernels&quot;&gt;Choice of Kernels&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Linear Kernel:&lt;/strong&gt; is equivalent to a no kernel setting giving a standard linear classifier given by,&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta_0\,x_0 + \theta_1\,x_1 + \theta_2\,x_2 + \theta_3\,x_3 + \cdots \geq 0 \tag{23} \label{23}&lt;/script&gt;
+
+&lt;p&gt;Linear kernels are used when the number of training data is less but the number of features in the training data is huge.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Gaussian Kernel:&lt;/strong&gt; Make a choice of \(\sigma^2\) to adjust the bias/variance trade-off.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Gaussian kernels are generally used when the number of training data is huge and the number of features are small.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Feature scaling is important when using SVM, especially Gaussian Kernels, because if the ranges vary a lot then the similarity feature would be dominated by features with higher range of values.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;All the kernels used for SVM, must satisfy Mercer’s Theorem, to make sure that SVM optimizations do not diverge.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Some other kernels known to be used with SVMs are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Polynomial kernels, \(k(x, l) = (x^T l + constant)^degree\)&lt;/li&gt;
+  &lt;li&gt;Esoteric kernels, like string kernel, chi-square kernel, histogram intersection kernel, ..&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;multi-class-classification&quot;&gt;Multi-Class Classification&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Most SVM libraries have multi-class classification.&lt;/li&gt;
+  &lt;li&gt;Alternatively, one may use one-vs-all technique to train \(k\) different SVMs and pick class with largest \(\theta^Tx\)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;logistic-regression-vs-svm&quot;&gt;Logistic Regression vs SVM&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If \(n\) is large relative to \(m\), use logistic regression or SVM with linear kernel, like if \(n=10000, m=10-1000\)&lt;/li&gt;
+  &lt;li&gt;If \(n\) is small and \(m\) is intermediate, use SVM with gaussian kernel, like if \(n=1-1000, m=10-10000\)&lt;/li&gt;
+  &lt;li&gt;If \(n\) is small and \(m\) is large, create/add more features, then use logistic regression or SVM with no kernel, as with huge datasets SVMs struggle with gaussian kernels, like if \(n=1-1000, m=50000+\)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Logistic Regression and SVM without a kernel (with linear kernel) generally give very similar. A neural network would work well on these training data too, but would be slower to train.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Also, the optimization problem of SVM is a convex problem, so the issue of getting stuck in local minima is non-existent for SVMs.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;REFERENCES:&lt;/h2&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning/lecture/sHfVT/optimization-objective&quot; target=&quot;_blank&quot;&gt;Machine Learning: Coursera - Optimization Objective&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning/lecture/wrjaS/large-margin-intuition&quot; target=&quot;_blank&quot;&gt;Machine Learning: Coursera - Large Margin Intuition&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning/lecture/3eNnh/mathematics-behind-large-margin-classification&quot; target=&quot;_blank&quot;&gt;Machine Learning: Coursera - Mathematics of Large Margin Classification&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning/lecture/YOMHn/kernels-i&quot; target=&quot;_blank&quot;&gt;Machine Learning: Coursera - Kernel I&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning/lecture/hxdcH/kernels-ii&quot; target=&quot;_blank&quot;&gt;Machine Learning: Coursera - Kernel II&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning/lecture/sKQoJ/using-an-svm&quot; target=&quot;_blank&quot;&gt;Machine Learning: Coursera - Using An SVM&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;a href=&quot;https://www.quora.com/Support-Vector-Machines-Why-is-theta-perpendicular-to-the-decision-boundary&quot; target=&quot;_blank&quot;&gt;Quora - Why is theta perpendicular to the decision boundary?&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;a href=&quot;https://docs.opencv.org/2.4/doc/tutorials/ml/introduction_to_svm/introduction_to_svm.html&quot; target=&quot;_blank&quot;&gt;Introduction to support vector machines&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 10 Apr 2018 00:00:00 +0000</pubDate>
+        <link>https://machinelearningmedium.com/2018/04/10/support-vector-machines/</link>
+        <guid isPermaLink="true">https://machinelearningmedium.com/2018/04/10/support-vector-machines/</guid>
+        
+        <category>machine-learning</category>
+        
+        <category>andrew-ng</category>
+        
+        
+        <category>basics-of-machine-learning</category>
+        
+      </item>
+    
+      <item>
+        <title>Error Metrics for Skewed Classes and Using Large Datasets</title>
+        <description>&lt;h3 id=&quot;basics-of-machine-learning-series&quot;&gt;Basics of Machine Learning Series&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;/collection/basics-of-machine-learning&quot;&gt;Index&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;horizontal-divider&quot;&gt;· · ·&lt;/div&gt;
+
+&lt;h3 id=&quot;what-are-skewed-classes&quot;&gt;What are Skewed Classes?&lt;/h3&gt;
+
+&lt;p&gt;Skewed classes basically refer to a dataset, wherein the number of training example belonging to one class out-numbers heavily the number of training examples beloning to the other.&lt;/p&gt;
+
+&lt;p&gt;Consider a binary classification, where a cancerous patient is to be detected based on some features. And say only \(1\ %\) of the data provided has cancer positive. In a setting where having cancer is labelled 1 and not cancer labelled 0, if a system naively gives the prediction as all 0’s, still the prediction accuracy will be 99%.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;naive&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prediction&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ignoring&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;features&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;predict_cancer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Therefore, it can be said with conviction that the accuracy metrics or mean-squared error for skewed classes, is not a proper indicator of model performance. Hence, there is a need for a different error metric for skewed classes.&lt;/p&gt;
+
+&lt;h3 id=&quot;precisionrecall&quot;&gt;Precision/Recall&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Note: \(y = 1\) is ther rarer class among the two.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In a binary classification, one of the following four scenarios may occur,&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;True Positive (TP):&lt;/strong&gt; the model predicts 1 and the actual class is 1&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;True Negative (TN):&lt;/strong&gt; the model predicts 0 and the actual class is 0&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;False Positive (FP):&lt;/strong&gt; the model predicts 1 but the actual class is 0&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;False Negative (FN):&lt;/strong&gt; the model predicts 0 but the actual class is 1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-04-08-error-metrics-for-skewed-data-and-large-datasets/fig-1-prediction-matrix.png?raw=true&quot; alt=&quot;Fig-1. Prediction Matrix&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then precision and recall can be defined as follows,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Precision = \frac {TP} {TP + FP}&lt;/script&gt;
+
+&lt;p&gt;Precision defines of all the predictions \(y=1\), which ones are correct.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;Recall = \frac {TP} {TP + FN}&lt;/script&gt;
+
+&lt;p&gt;Recall defines of all the actual \(y=1\), which ones did the model predict correctly.&lt;/p&gt;
+
+&lt;p&gt;Now, if we evaluate a scenario where the classifier predicts all 0’s then the recall of the model will be 0, which then points out the inability of the system.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In case of skewed classes, it’s not possible for the classifiers to cheat the evaluation metrics of recall and precision. Also, it is important to note that precision and recall metrics work better if \(y=1\), denotes the presence of the rarer class.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;the-tradeoff&quot;&gt;The Tradeoff&lt;/h3&gt;
+
+&lt;p&gt;By changing the threshold value for the classifier confidence, one can adjust the precision and recall for the model.&lt;/p&gt;
+
+&lt;p&gt;For example, in a logistic regression the threshold is generally at 0.5. If one increases it, we can be sure that of all the predictions made more will be correct, hence, high precision. But there are also higher chances of missing the positive cases, hence, the lower recall.&lt;/p&gt;
+
+&lt;p&gt;Similary, if one decreases the threshold, then the chances of false positives increases, hence low precision. Also, there is lesser probability of missing the actual cases, hence high recall.&lt;/p&gt;
+
+&lt;p&gt;A precision-recall tradeoff curve may look like one among the following,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2018-04-08-error-metrics-for-skewed-data-and-large-datasets/fig-2-precision-recall-curve.gif?raw=true&quot; alt=&quot;Fig-2. Precision Recall Curve&quot; width=&quot;50%&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;f-score&quot;&gt;F Score&lt;/h3&gt;
+
+&lt;p&gt;Given two pairs of precision and recall, how to choose the better pair. One of the options would be to choose the one which higher average. That is not the ideal solution as the pair with \((precision=0.02 and recall= 1)\) has a better mean than the pair \((precision=0.5 and recall= 0.4)\).&lt;/p&gt;
+
+&lt;p&gt;Enter \(F\,Score\) or \(F_1\,Score\), which is the &lt;strong&gt;harmonic mean of precision and recall&lt;/strong&gt;,  defined as,&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;F_1 = 2 \frac{P*R}{P+R}&lt;/script&gt;
+
+&lt;p&gt;The above formula has advantage over the average method because, if either precision or recall is small, the the numerator product \(P*R\) will weigh the F-Score low and consequently lead to choosing the better pair of precision and recall. So,&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;if \(P=0\) or \(R=0\), then \(F_1=0\)&lt;/li&gt;
+  &lt;li&gt;if \(P=1\) and \(R=1\), then \(F_1=1\)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;One reasonable way of automatically choosing threshold for classifier is to try a range of them on the cross-validation set and pick the one that gives the highest F-Score.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;sensitivityspecifivity&quot;&gt;Sensitivity/Specifivity&lt;/h3&gt;
+
+&lt;p&gt;Apart from precision and recall, sensitivity and specifivity are among the most used error metrics in classfication.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Sensitivity or True Positive Rate (TPR)&lt;/strong&gt; is another name for &lt;strong&gt;recall&lt;/strong&gt; and is also called &lt;strong&gt;hit rate&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;TPR = \frac {TP} {TP + FN}&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Specifivity (SPC) or True Negative Rate&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;SPC = \frac {TN} {TN + FP}&lt;/script&gt;
+
+&lt;h3 id=&quot;using-large-datasets&quot;&gt;Using Large Datasets&lt;/h3&gt;
+
+&lt;p&gt;Although, its been stated &lt;a href=&quot;/2018/04/02/evaluation-of-learning-algorithm/#learning-curves&quot;&gt;here&lt;/a&gt; that for a high bias problem in the model, gathering more and more data will not help the model improve.&lt;/p&gt;
+
+&lt;p&gt;But under certain conditions, getting a lot of data and training on a certain type of training algorithm can be an effective way to improve the learning algorithm’s performance.&lt;/p&gt;
+
+&lt;p&gt;The following are the conditions that should be met for the above statement to hold true,&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The features, \(x\), must have sufficient information to predict \(y\) accurately. One way to test this would be to check if human expert can make a confident predition using the features.&lt;/li&gt;
+  &lt;li&gt;Using a learning algorithm with a large number of parameters to learn (e.g. logistic regression, linear regression, neural network with many hidden units etc.). What this truly accomplishes is that these algorithms are &lt;strong&gt;low bias algorithm&lt;/strong&gt; due to the large number of learnable parameters.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In such settings, where the problem of high bias is removed by the virtue of highly parametrized learning algorithms, a large dataset ensures the &lt;strong&gt;low variance&lt;/strong&gt;. Hence, under the listed settings a large number of dataset is almost always going to help improve the model performance.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;It’s not who has the best algorithm that wins, it’s who has the most data.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;REFERENCES:&lt;/h2&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning/lecture/tKMWX/error-metrics-for-skewed-classes&quot; target=&quot;_blank&quot;&gt;Machine Learning: Coursera - Error Metrics for Skewed Classes&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning/lecture/CuONQ/trading-off-precision-and-recall&quot; target=&quot;_blank&quot;&gt;Machine Learning: Coursera - Trading off Precision and Recall&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;a href=&quot;https://www.coursera.org/learn/machine-learning/lecture/XcNcz/data-for-machine-learning&quot; target=&quot;_blank&quot;&gt;Machine Learning: Coursera - Data for Machine Learning&lt;/a&gt;&lt;/small&gt;&lt;br /&gt;
+&lt;small&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Sensitivity_and_specificity&quot; target=&quot;_blank&quot;&gt;Sensitivity and Specifivity - Wikipedia&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 08 Apr 2018 00:00:00 +0000</pubDate>
+        <link>https://machinelearningmedium.com/2018/04/08/error-metrics-for-skewed-data-and-large-datasets/</link>
+        <guid isPermaLink="true">https://machinelearningmedium.com/2018/04/08/error-metrics-for-skewed-data-and-large-datasets/</guid>
         
         <category>machine-learning</category>
         
