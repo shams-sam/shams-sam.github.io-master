@@ -2,7 +2,7 @@
 layout: post
 title: "Introduction to Survival Analysis"
 categories: []
-tags: [machine-learning, papers, mathematics, featured]
+tags: [machine-learning, papers, featured]
 description: The term survival time is used to describe the length of time until a specified event. The widespread use of these models in medicine to analyze survival times leads to the name survival analysis.
 cover: "/assets/images/ecg.jpg"
 cover_source: "https://images3.alphacoders.com/170/thumb-1920-170789.jpg"

@@ -2,7 +2,7 @@
 layout: post
 title: "Social Bias in Machine Learning"
 categories: []
-tags: [machine-learning, algorithmic-fairness, big-data]
+tags: [machine-learning, algorithmic-fairness]
 description: Algorithmic bias is machines making unfair decisions that have been observed in the history and recorded in to form of data that mirror the prevailing social, ethnic or gender inequalities of the time.
 cover: "/assets/images/bias.jpeg"
 cover_source: "https://cdn-images-1.medium.com/max/1280/1*l--yko0wJLMxahiXeoZ3kg.jpeg"
