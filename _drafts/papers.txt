@@ -1,0 +1,13 @@
+Y. Zhu, C. Yao, and X. Bai. Scene text detection and recognition: Recent advances and future trends. Frontiers of Computer Science, 2016.
+
+Q. Ye and D. Doermann. Text detection and recognition in imagery: A survey. IEEE Trans. PAMI, 37(7):1480–1500, 2014.
+
+S. Uchida. Text localization and recognition in images and video. Handbook of Document Image Processing and Recognition, pages 843–883, 2014.
+
+L. Huang, Y. Yang, Y. Deng, and Y. Yu. Densebox: Unifying landmark localization with end to end object detection. arXiv preprint arXiv:1509.04874, 2015.
+
+T. Kong, A. Yao, Y. Chen, and F. Sun. Hypernet: Towards accurate region proposal generation and joint object detection. arXiv preprint arXiv:1604.00600, 2016.
+
+B. Epshtein, E. Ofek, Y. Wexler. Detecting Text in Natural Scenes with Stroke Width Transform. CVPR, 2010. 
+
+L. Neumann, J. Matas. A method for text localization and recognition in real-world images. ACCV, 2010. 
