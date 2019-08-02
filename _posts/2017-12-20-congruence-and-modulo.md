@@ -78,9 +78,9 @@ since \\(10 = -1 + 11\\). Successively multiplying this congruence, using \eqref
 
 $$10^2 \equiv (-1)(-1) = 1 \pmod{11}$$
 
-$$10^3 \equiv = -1 \pmod{11}$$
+$$10^3 \equiv (-1)(-1)(-1)= -1 \pmod{11}$$
 
-$$10^4 \equiv = 1 \pmod{11}$$
+$$10^4 \equiv (-1)(-1)(-1)(-1)= 1 \pmod{11}$$
 
 $$\vdots$$
 

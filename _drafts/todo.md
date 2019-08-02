@@ -15,3 +15,14 @@
 15. low rank matrix factorization
 16. Expander Graph Learning Approach
 17. Beam Search
+18. Advnaced statistics, regression, t-test, p-value, heteroscadiscity
+19. Mann-Whitney U-test
+20. Shapiro test with p-value
+21. Box-plots etc for understanding distribution
+22. When to use kfold cross validation
+23. Chernoff Bound
+24. Null Hypothesis testing
+25. Kendall Tau Distance
+26. Kleinberg HITS-type Algorithm
+27. Random Walk Algorithm
+28. Homophily Principle

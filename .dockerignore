@@ -1,0 +1,6 @@
+# Ignore everything
+**
+
+# Include these files
+!Gemfile
+!Gemfile.lock
