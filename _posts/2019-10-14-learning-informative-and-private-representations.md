@@ -1,9 +1,9 @@
 ---
 layout: post
-title: A GAN Architecture for Privacy Preserving Encoding Generation
+title: Privacy Preserving Predictive Modeling GANs
 categories: []
-tags: [GAN, machine-learning, papers]
-description: This paper examines a GAN architecture to generate private encodings by ensuring a two player min-max optimization that regulates information leakage.
+tags: [GAN, machine-learning, papers, privacy-gans]
+description: This paper examines a GAN architecture to generate private encodings by ensuring a three player min-max optimization that regulates information leakage.
 cover: "/assets/images/privacy.jpg"
 cover_source: "https://www.incimages.com/uploaded_files/image/1940x900/getty_468867139_157971.jpg"
 comments: true

@@ -2,7 +2,7 @@
 layout: post
 title: "Social Learning Networks"
 categories: []
-tags: [machine-learning, papers]
+tags: [machine-learning, papers, sln]
 description: A type of network among students, instructors and modules of learning encoding the relationships among people and learning processes.
 cover: "/assets/images/social-learning-networks.jpeg"
 cover_source: "https://cdn-images-1.medium.com/max/1600/1*jSKvARO6h8PcfgFKpOWp3w.jpeg"

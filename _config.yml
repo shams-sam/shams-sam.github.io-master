@@ -34,7 +34,7 @@ permalink: /:year/:month/:day/:title/
 
 # Site settings
 title: "Machine Learning Medium"
-description: A step away from the illusion of knowledge.
+description: Recursing the Rabbit Hole
 cover: "/assets/images/cover.jpg"
 footer: "/assets/images/footer.jpg"
 url: "https://machinelearningmedium.com"
@@ -111,7 +111,7 @@ autopages:
 author:
   name: 'Shams S'
   email: shams.sam@live.com
-  description: 'Research Scientist @ Foundation AI'
+  description: 'Research Assistant @ Purdue University'
   image: "/assets/images/author.jpg"
   twitter_handle: '@sshamssam'
   twitter_url: 'https://twitter.com/sshamssam'
