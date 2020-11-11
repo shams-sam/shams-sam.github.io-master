@@ -110,11 +110,11 @@ autopages:
 # Author Info
 author:
   name: 'Shams S'
-  email: shams.sam@live.com
+  email: azam1@purdue.edu
   description: 'Research Assistant @ Purdue University'
   image: "/assets/images/author.jpg"
   twitter_handle: '@sshamssam'
-  twitter_url: 'https://twitter.com/sshamssam'
+  twitter_url: 'https://twitter.com/sshamsofficial'
   disqus: shams-sam
 
 # Social icons and sharing options
@@ -134,21 +134,21 @@ social:
     share_link: "&amp;u="
 
   - icon:	twitter
-    url:	https://twitter.com/sshamssam
+    url:	https://twitter.com/sshamsofficial
     desc: Twitter
     share_url: http://twitter.com/share
     share_title: ?text=
     share_link: "&amp;url="
 
   - icon: linkedin
-    url:  https://linkedin.com/in/shams-sheikh-20328154
+    url:  https://linkedin.com/in/shams-sam
     desc: LinkedIn
     share_url:
     share_title:
     share_link:
 
   - icon: envelope
-    url: "mailto:shams.sam@live.com"
+    url: "mailto:azam1@purdue.edu"
     desc: E-mail
     share_url:
     share_title:
